@@ -48,7 +48,7 @@ def _safe(val):
     return val
 
 
-def _row_to_setup(row, insider_data):
+def _row_to_setup(row, insider_data, ao_tickers: set):
     ticker = str(row.get('Ticker', ''))
     entry_date = str(row.get('Entry Date', ''))
     hold_days = 0
@@ -79,12 +79,27 @@ def _row_to_setup(row, insider_data):
         'ml_expected_pnl': _safe(row.get('ML_Expected_PnL')),
         'insider_net': int(insider_data.get(ticker, 0) or 0),
         'hold_days': hold_days,
+        'has_ao_entry': ticker in ao_tickers,
     }
 
 
+def _load_ao_tickers() -> set:
+    ao_path = DATA_DIR / 'ao_saucer_portfolio.csv'
+    if not ao_path.exists():
+        return set()
+    try:
+        df = pd.read_csv(ao_path)
+        active = df[df['Status'] == 'Active'] if 'Status' in df.columns else df
+        return set(active['Ticker'].tolist()) if 'Ticker' in active.columns else set()
+    except Exception as e:
+        logger.warning(f"Could not load AO portfolio: {e}")
+        return set()
+
 def write_screener_json(df_new, df_existing, spy_info, vix_level, insider_data):
-    new_setups = [_row_to_setup(row, insider_data) for _, row in df_new.iterrows()] if not df_new.empty else []
-    existing_setups = [_row_to_setup(row, insider_data) for _, row in df_existing.iterrows()] if not df_existing.empty else []
+    ao_tickers = _load_ao_tickers()
+    logger.info(f"AO active tickers for cross-reference: {len(ao_tickers)}")
+    new_setups = [_row_to_setup(row, insider_data, ao_tickers) for _, row in df_new.iterrows()] if not df_new.empty else []
+    existing_setups = [_row_to_setup(row, insider_data, ao_tickers) for _, row in df_existing.iterrows()] if not df_existing.empty else []
     data = {
         'new_setups': new_setups,
         'existing_setups': existing_setups,

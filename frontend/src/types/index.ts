@@ -16,6 +16,7 @@ export interface Setup {
   ml_expected_pnl: number;
   insider_net: number;
   hold_days: number;
+  has_ao_entry: boolean;
 }
 
 export interface ClosedPosition {

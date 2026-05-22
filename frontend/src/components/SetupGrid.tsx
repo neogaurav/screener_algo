@@ -165,6 +165,13 @@ export function SetupGrid({ setups }: SetupGridProps) {
         params.value == null ? '' : params.value >= 0 ? 'cell-positive' : 'cell-negative',
     },
     {
+      headerName: 'AO Entry',
+      field: 'has_ao_entry',
+      width: 90,
+      cellRenderer: (params: { value: boolean }) =>
+        params.value ? <span style={{ color: '#4ade80', fontWeight: 'bold' }}>✓ Yes</span> : <span style={{ color: '#6b7280' }}>—</span>,
+    },
+    {
       headerName: 'Insider Net',
       field: 'insider_net',
       width: 105,

@@ -87,9 +87,27 @@ def save_history(df):
 
 _TICKER_CACHE_FILE = _DATA_DIR / 'sp1500_tickers.json'
 
+# In-memory sector lookup populated from cache at startup
+_sector_lookup: dict = {}
+
+def _load_sector_lookup():
+    global _sector_lookup
+    if _sector_lookup:
+        return
+    if _TICKER_CACHE_FILE.exists():
+        try:
+            with open(_TICKER_CACHE_FILE) as f:
+                data = json.load(f)
+            _sector_lookup = {d['ticker']: d.get('sector', 'Unknown') for d in data}
+        except Exception:
+            pass
+
+_load_sector_lookup()
+
 def _fetch_wikipedia_tickers(headers):
-    """Fetch tickers from Wikipedia using io.StringIO to avoid lxml path confusion."""
+    """Fetch tickers+sectors from Wikipedia using io.StringIO to avoid lxml path confusion."""
     categories = {}
+    sectors = {}
     sources = [
         ('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies', 'Symbol', 'Large'),
         ('https://en.wikipedia.org/wiki/List_of_S%26P_400_companies', 'Symbol', 'Mid'),
@@ -99,22 +117,25 @@ def _fetch_wikipedia_tickers(headers):
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
         df = pd.read_html(io.StringIO(resp.text))[0]
-        for t in df[col].tolist():
-            categories[t.replace('.', '-')] = cap
-    return categories
+        for _, row in df.iterrows():
+            t = str(row[col]).replace('.', '-')
+            categories[t] = cap
+            sectors[t] = str(row.get('GICS Sector', '') or 'Unknown')
+    return categories, sectors
 
 def get_market_tickers():
     """Fetch S&P 1500 tickers (500 + 400 + 600) from Wikipedia, with JSON cache fallback."""
+    global _sector_lookup
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     try:
         logger.info("Fetching S&P 500, 400, and 600 tickers from Wikipedia...")
-        categories = _fetch_wikipedia_tickers(headers)
+        categories, sectors = _fetch_wikipedia_tickers(headers)
         tickers = sorted(list(categories.keys()))
         logger.info(f"Successfully loaded {len(tickers)} tickers from Wikipedia.")
-        # Update cache for future fallback
-        cache_data = [{'ticker': t, 'cap': categories[t]} for t in tickers]
+        _sector_lookup = sectors
+        cache_data = [{'ticker': t, 'cap': categories[t], 'sector': sectors.get(t, 'Unknown')} for t in tickers]
         try:
             with open(_TICKER_CACHE_FILE, 'w') as f:
                 json.dump(cache_data, f)
@@ -128,6 +149,7 @@ def get_market_tickers():
                 with open(_TICKER_CACHE_FILE) as f:
                     data = json.load(f)
                 categories = {d['ticker']: d['cap'] for d in data}
+                _sector_lookup = {d['ticker']: d.get('sector', 'Unknown') for d in data}
                 tickers = sorted(list(categories.keys()))
                 logger.info(f"Loaded {len(tickers)} tickers from cache.")
                 return tickers, categories
@@ -188,13 +210,8 @@ def calculate_indicators(df):
     return df
 
 def get_stock_sector(ticker):
-    """Get sector information for a stock"""
-    try:
-        stock = yf.Ticker(ticker)
-        info = stock.info
-        return info.get('sector', 'Unknown')
-    except:
-        return 'Unknown'
+    """Get sector from Wikipedia cache; avoids extra yfinance calls."""
+    return _sector_lookup.get(ticker, 'Unknown')
 
 def is_market_closed():
     """Check if US market is closed (after 4 PM ET)"""
