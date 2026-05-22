@@ -1,0 +1,14 @@
+{
+  "closed_positions": [],
+  "performance": {
+    "total_trades": 0,
+    "winners": 0,
+    "losers": 0,
+    "win_rate": 0.0,
+    "total_pnl_dollars": 0.0,
+    "avg_pnl_pct": 0.0,
+    "avg_win_pct": 0.0,
+    "avg_loss_pct": 0.0,
+    "profit_factor": 0.0
+  }
+}

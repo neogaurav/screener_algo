@@ -1,0 +1,14 @@
+{
+  "new_setups": [],
+  "existing_setups": [],
+  "summary": {
+    "new_count": 0,
+    "existing_count": 0,
+    "total_active": 0,
+    "spy_price": null,
+    "spy_above_200sma": null,
+    "spy_rsi": null,
+    "vix": null
+  },
+  "last_updated": null
+}

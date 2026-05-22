@@ -1,0 +1,47 @@
+name: 8/21 EMA Screener
+
+on:
+  schedule:
+    # 9:00 AM ET (13:00 UTC) and 4:30 PM ET (20:30 UTC) weekdays
+    - cron: '0 13 * * 1-5'   # 9:00 AM ET
+    - cron: '30 20 * * 1-5'  # 4:30 PM ET
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run screener
+        run: python backend/scanner.py
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Commit data changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add backend/data/*.json backend/data/screener_history.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update screener data $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
+            git push
+          fi

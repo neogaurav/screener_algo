@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+*.log
+
+# Logs directory
+backend/logs/
+
+# ML model files (large binary files, generated at runtime)
+backend/data/ml_models/
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+
+# Local data cache
+backend/data/insider_cache.json
+
+# OS
+.DS_Store
+Thumbs.db
