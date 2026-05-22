@@ -440,9 +440,18 @@ def validate_exit_conditions(ticker, entry_date, entry_price, stop_loss, target_
             return False, None, None
 
         stock = yf.Ticker(ticker)
-        hist = stock.history(period="1y")
+        hist = None
+        for attempt in range(3):
+            try:
+                hist = stock.history(period="1y")
+                break
+            except Exception as fetch_err:
+                if attempt < 2:
+                    time.sleep(10 * (attempt + 1))
+                else:
+                    raise fetch_err
 
-        if len(hist) < 200:
+        if hist is None or len(hist) < 200:
             return False, None, None
 
         # Get current price (including today if market is closed)
@@ -659,7 +668,7 @@ def run_screener(limit=None):
             stop_loss = row['Stop Loss']
             target_price = row.get('Fib Target', None)
 
-            # Use the new exit validation function
+            time.sleep(2)  # avoid rate-limit burst after main scan
             should_exit, exit_reason, exit_price_suggested = validate_exit_conditions(
                 t, entry_date, entry_price, stop_loss, target_price, spy_df
             )
