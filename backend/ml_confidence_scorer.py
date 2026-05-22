@@ -591,13 +591,7 @@ class TradingConfidenceScorer:
                 except Exception as e:
                     print(f"  -> Could not add closed positions sheet: {e}")
 
-                # Sheet 5: ML Performance Tracking
-                try:
-                    from ml_confidence_tracker import MLConfidenceTracker
-                    tracker = MLConfidenceTracker()
-                    tracker.export_tracking_to_excel(writer, 'ML Performance Tracking')
-                except Exception as e:
-                    print(f"  -> Could not add ML tracking sheet: {e}")
+                # Sheet 5: ML Performance Tracking (skipped — ml_confidence_tracker not used)
 
                 # Auto-adjust column widths
                 for sheet_name in writer.sheets:
@@ -946,13 +940,6 @@ class TradingConfidenceScorer:
             print("="*80)
             print(df_summary.to_string(index=False))
 
-            # Update ML confidence tracking with closed positions
-            try:
-                from ml_confidence_tracker import MLConfidenceTracker
-                tracker = MLConfidenceTracker()
-                tracker.display_performance_report()
-            except Exception as e:
-                print(f"\n[WARNING] Could not update ML confidence tracking: {e}")
 
             # Export to JSON (replaces Excel export for web deployment)
             self.export_to_json(Path(__file__).parent / 'data' / 'ml_summary.json')
