@@ -15,6 +15,7 @@ export function Header({ activeTab, onTabChange, screener, closed, mlSummary }: 
   const mlCount = mlSummary?.active_with_scores.length ?? 0;
 
   const tabs: { id: TabType; label: string; count: number }[] = [
+    { id: 'all-open', label: 'All Open', count: newCount + existingCount },
     { id: 'new-setups', label: 'New Setups', count: newCount },
     { id: 'existing-setups', label: 'Existing Setups', count: existingCount },
     { id: 'closed', label: 'Closed Positions', count: closedCount },

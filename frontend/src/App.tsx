@@ -9,7 +9,7 @@ import { TabType } from './types';
 
 function App() {
   const { screener, closed, mlSummary, loading, error, refresh, lastRefresh } = useScreener();
-  const [activeTab, setActiveTab] = useState<TabType>('new-setups');
+  const [activeTab, setActiveTab] = useState<TabType>('all-open');
 
   const renderContent = () => {
     if (error) {
@@ -26,6 +26,8 @@ function App() {
     }
 
     switch (activeTab) {
+      case 'all-open':
+        return <SetupGrid setups={[...(screener?.new_setups ?? []), ...(screener?.existing_setups ?? [])]} />;
       case 'new-setups':
         return <SetupGrid setups={screener?.new_setups ?? []} />;
       case 'existing-setups':

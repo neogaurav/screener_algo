@@ -104,4 +104,4 @@ export interface MLSummaryData {
   last_updated: string;
 }
 
-export type TabType = 'new-setups' | 'existing-setups' | 'closed' | 'ml-summary';
+export type TabType = 'all-open' | 'new-setups' | 'existing-setups' | 'closed' | 'ml-summary';
