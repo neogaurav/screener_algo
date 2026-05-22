@@ -414,7 +414,7 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
     except Exception as e:
         return f"Error: {str(e)}"
 
-def validate_exit_conditions(ticker, entry_date, entry_price, stop_loss, target_price=None, spy_df=None):
+def validate_exit_conditions(ticker, entry_date, entry_price, stop_loss, target_price=None, spy_df=None, prefetched_hist=None):
     """
     Separate exit validation with relaxed criteria.
     Only exits on major structure breaks, not minor technical violations.
@@ -426,6 +426,7 @@ def validate_exit_conditions(ticker, entry_date, entry_price, stop_loss, target_
         stop_loss: Stop loss price
         target_price: Target price (optional)
         spy_df: SPY data (optional, unused but kept for compatibility)
+        prefetched_hist: Pre-downloaded DataFrame to avoid extra yfinance calls
 
     Returns: (should_exit, reason, exit_price)
     """
@@ -439,17 +440,20 @@ def validate_exit_conditions(ticker, entry_date, entry_price, stop_loss, target_
         if hold_days < 3:
             return False, None, None
 
-        stock = yf.Ticker(ticker)
-        hist = None
-        for attempt in range(3):
-            try:
-                hist = stock.history(period="1y")
-                break
-            except Exception as fetch_err:
-                if attempt < 2:
-                    time.sleep(10 * (attempt + 1))
-                else:
-                    raise fetch_err
+        if prefetched_hist is not None:
+            hist = prefetched_hist
+        else:
+            stock = yf.Ticker(ticker)
+            hist = None
+            for attempt in range(3):
+                try:
+                    hist = stock.history(period="1y")
+                    break
+                except Exception as fetch_err:
+                    if attempt < 2:
+                        time.sleep(10 * (attempt + 1))
+                    else:
+                        raise fetch_err
 
         if hist is None or len(hist) < 200:
             return False, None, None
@@ -661,6 +665,25 @@ def run_screener(limit=None):
         # Use new exit validation for all active positions
         closed_tickers_this_run = []
 
+        # Batch-download all active tickers in one call to avoid per-ticker rate limits
+        active_tickers = df_history.loc[active_mask, 'Ticker'].tolist()
+        prefetched = {}
+        if active_tickers:
+            try:
+                logger.info(f"Batch downloading {len(active_tickers)} active position(s) for exit check...")
+                raw = yf.download(active_tickers, period="1y", group_by="ticker",
+                                  auto_adjust=True, progress=False, threads=True)
+                for t in active_tickers:
+                    try:
+                        hist_t = raw[t] if len(active_tickers) > 1 else raw
+                        hist_t = hist_t.dropna(subset=['Close'])
+                        if len(hist_t) >= 200:
+                            prefetched[t] = hist_t
+                    except Exception:
+                        pass
+            except Exception as e:
+                logger.warning(f"Batch download for exit check failed: {e}. Will fall back per-ticker.")
+
         for idx, row in df_history[active_mask].iterrows():
             t = row['Ticker']
             entry_date = row['Entry Date']
@@ -668,9 +691,9 @@ def run_screener(limit=None):
             stop_loss = row['Stop Loss']
             target_price = row.get('Fib Target', None)
 
-            time.sleep(2)  # avoid rate-limit burst after main scan
             should_exit, exit_reason, exit_price_suggested = validate_exit_conditions(
-                t, entry_date, entry_price, stop_loss, target_price, spy_df
+                t, entry_date, entry_price, stop_loss, target_price, spy_df,
+                prefetched_hist=prefetched.get(t)
             )
 
             if should_exit:
