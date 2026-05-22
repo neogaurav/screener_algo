@@ -241,7 +241,10 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         if len(hist) < 200:
             return "Insufficient Data"
 
-        # Only exclude today's candle if market is still open
+        # Capture live price before any candle stripping
+        live_price = float(hist['Close'].iloc[-1])
+
+        # Only exclude today's candle for indicator calculation if market is still open
         if not is_market_closed():
             today = datetime.now().date()
             last_candle_date = hist.index[-1].date()
@@ -253,7 +256,8 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
 
         df = calculate_indicators(hist)
 
-        # Get latest values
+        # current_price drives indicator logic (always a complete candle)
+        # live_price is used for the Price field returned to the frontend
         current_price = df['Close'].iloc[-1]
 
         ema_8 = df['EMA_8'].iloc[-1]
@@ -414,7 +418,7 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         return {
             'Ticker': ticker,
             'Signal': 'PERFECT SETUP',
-            'Price': round(current_price, 2),
+            'Price': round(live_price, 2),
             'Pullback Date': pullback_date,
             'DeMarker': round(demarker, 2),
             'RSI': round(rsi, 2),
@@ -817,6 +821,31 @@ def run_screener(limit=None):
                     pnl_pct = ((exit_price - entry_price) / entry_price) * 100
                     df_history.loc[idx, 'PnL %'] = round(pnl_pct, 2)
                     df_history.loc[idx, 'PnL $'] = round(pnl_pct * 50, 2)  # Assuming $5000 position
+
+    # Batch-update Current Price for all active positions with live intraday prices
+    active_mask = df_history['Status'] == 'Active'
+    active_tickers_live = df_history.loc[active_mask, 'Ticker'].tolist()
+    if active_tickers_live:
+        try:
+            logger.info(f"Fetching live prices for {len(active_tickers_live)} active positions...")
+            live_data = yf.download(
+                active_tickers_live, period='1d', interval='1m',
+                group_by='ticker', auto_adjust=True, progress=False, threads=True
+            )
+            updated = 0
+            for t in active_tickers_live:
+                try:
+                    t_data = live_data[t] if len(active_tickers_live) > 1 else live_data
+                    t_data = t_data.dropna(subset=['Close'])
+                    if not t_data.empty:
+                        price = float(t_data['Close'].iloc[-1])
+                        df_history.loc[(df_history['Ticker'] == t) & active_mask, 'Current Price'] = round(price, 2)
+                        updated += 1
+                except Exception:
+                    pass
+            logger.info(f"Updated live prices for {updated}/{len(active_tickers_live)} positions.")
+        except Exception as e:
+            logger.warning(f"Live price batch update failed: {e}")
 
     # Save enhanced history
     save_history(df_history)
