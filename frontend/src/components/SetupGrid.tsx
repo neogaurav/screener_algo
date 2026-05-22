@@ -89,6 +89,19 @@ export function SetupGrid({ setups }: SetupGridProps) {
       valueFormatter: nullSafe((v) => `$${v.toFixed(2)}`),
     },
     {
+      headerName: 'Dist to Target',
+      width: 115,
+      valueGetter: (params) => {
+        const cur = params.data?.current_price;
+        const tgt = params.data?.fib_target;
+        if (cur == null || tgt == null || cur === 0) return null;
+        return ((tgt - cur) / cur) * 100;
+      },
+      valueFormatter: nullSafe((v) => `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`),
+      cellClass: (params: CellClassParams) =>
+        params.value == null ? '' : params.value >= 0 ? 'cell-positive' : 'cell-negative',
+    },
+    {
       headerName: 'R/R',
       field: 'risk_reward',
       width: 70,
