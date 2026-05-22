@@ -36,6 +36,8 @@ export function SetupGrid({ setups }: SetupGridProps) {
       width: 50,
       pinned: 'left',
       sortable: false,
+      filter: false,
+      floatingFilter: false,
     },
     {
       headerName: 'Ticker',
@@ -58,6 +60,8 @@ export function SetupGrid({ setups }: SetupGridProps) {
       field: 'has_ao_entry',
       width: 60,
       pinned: 'left',
+      filter: false,
+      floatingFilter: false,
       cellRenderer: (params: { value: boolean | null }) =>
         params.value ? <span style={{ color: '#4ade80', fontWeight: 'bold', fontSize: '16px' }}>✓</span> : <span style={{ color: '#374151' }}>—</span>,
       headerTooltip: 'Also has an active AO Saucer entry',
@@ -191,6 +195,8 @@ export function SetupGrid({ setups }: SetupGridProps) {
   const defaultColDef = useMemo<ColDef>(() => ({
     sortable: true,
     resizable: true,
+    filter: true,
+    floatingFilter: true,
   }), []);
 
   return (
