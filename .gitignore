@@ -10,9 +10,6 @@ venv/
 # Logs directory
 backend/logs/
 
-# ML model files (large binary files, generated at runtime)
-backend/data/ml_models/
-
 # Node / frontend build
 frontend/node_modules/
 frontend/dist/

@@ -9,6 +9,8 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import requests
+import io
+import json
 from datetime import datetime, timedelta
 import logging
 import os
@@ -83,33 +85,55 @@ def load_history():
 def save_history(df):
     df.to_csv(HISTORY_FILE, index=False)
 
+_TICKER_CACHE_FILE = _DATA_DIR / 'sp1500_tickers.json'
+
+def _fetch_wikipedia_tickers(headers):
+    """Fetch tickers from Wikipedia using io.StringIO to avoid lxml path confusion."""
+    categories = {}
+    sources = [
+        ('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies', 'Symbol', 'Large'),
+        ('https://en.wikipedia.org/wiki/List_of_S%26P_400_companies', 'Symbol', 'Mid'),
+        ('https://en.wikipedia.org/wiki/List_of_S%26P_600_companies', 'Symbol', 'Small'),
+    ]
+    for url, col, cap in sources:
+        resp = requests.get(url, headers=headers, timeout=30)
+        resp.raise_for_status()
+        df = pd.read_html(io.StringIO(resp.text))[0]
+        for t in df[col].tolist():
+            categories[t.replace('.', '-')] = cap
+    return categories
+
 def get_market_tickers():
-    """Fetch S&P 1500 tickers (500 + 400 + 600) from Wikipedia"""
+    """Fetch S&P 1500 tickers (500 + 400 + 600) from Wikipedia, with JSON cache fallback."""
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
     try:
         logger.info("Fetching S&P 500, 400, and 600 tickers from Wikipedia...")
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        categories = {}
-
-        # S&P 500 (Large Cap)
-        sp500 = pd.read_html(requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies', headers=headers).text)[0]['Symbol'].tolist()
-        for t in sp500: categories[t.replace('.', '-')] = 'Large'
-
-        # S&P 400 (Mid Cap)
-        sp400 = pd.read_html(requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_400_companies', headers=headers).text)[0]['Symbol'].tolist()
-        for t in sp400: categories[t.replace('.', '-')] = 'Mid'
-
-        # S&P 600 (Small Cap)
-        sp600 = pd.read_html(requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_600_companies', headers=headers).text)[0]['Symbol'].tolist()
-        for t in sp600: categories[t.replace('.', '-')] = 'Small'
-
+        categories = _fetch_wikipedia_tickers(headers)
         tickers = sorted(list(categories.keys()))
-
-        logger.info(f"Successfully loaded {len(tickers)} tickers.")
+        logger.info(f"Successfully loaded {len(tickers)} tickers from Wikipedia.")
+        # Update cache for future fallback
+        cache_data = [{'ticker': t, 'cap': categories[t]} for t in tickers]
+        try:
+            with open(_TICKER_CACHE_FILE, 'w') as f:
+                json.dump(cache_data, f)
+        except Exception:
+            pass
         return tickers, categories
     except Exception as e:
-        logger.error(f"Error fetching ticker list: {e}")
+        logger.warning(f"Wikipedia fetch failed: {e}. Trying cached ticker file...")
+        if _TICKER_CACHE_FILE.exists():
+            try:
+                with open(_TICKER_CACHE_FILE) as f:
+                    data = json.load(f)
+                categories = {d['ticker']: d['cap'] for d in data}
+                tickers = sorted(list(categories.keys()))
+                logger.info(f"Loaded {len(tickers)} tickers from cache.")
+                return tickers, categories
+            except Exception as ce:
+                logger.error(f"Cache load failed: {ce}")
+        logger.error("Falling back to hardcoded ticker list.")
         fallback = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'JPM', 'V', 'UNH']
         return fallback, {t: 'Large' for t in fallback}
 
