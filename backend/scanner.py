@@ -172,7 +172,12 @@ def main():
     logger.info(' 8/21 EMA Screener - GitHub Actions Run ')
     logger.info('=' * 60)
 
-    # Step 1: Dynamic position management
+    # Step 1: Fetch SPY and VIX first, before the main scan exhausts the rate limit
+    spy_info = get_spy_info()
+    vix_level = get_vix_level()
+    logger.info(f"SPY: {spy_info}, VIX: {vix_level}")
+
+    # Step 2: Dynamic position management
     position_actions = {}
     try:
         manager = DynamicPositionManager()
@@ -181,14 +186,14 @@ def main():
     except Exception as e:
         logger.error(f'Error in position management: {e}')
 
-    # Step 2: Run core screener (saves screener_history.csv, returns DataFrames)
+    # Step 3: Run core screener (saves screener_history.csv, returns DataFrames)
     df_new_run, df_closed_run, df_history = run_screener()
 
     current_date = datetime.now().strftime('%Y-%m-%d')
     df_new = df_history[(df_history['Status'] == 'Active') & (df_history['Entry Date'] == current_date)].copy()
     df_existing = df_history[(df_history['Status'] == 'Active') & (df_history['Entry Date'] != current_date)].copy()
 
-    # Step 3: Insider data
+    # Step 4: Insider data
     insider_data = {}
     active_tickers = df_history[df_history['Status'] == 'Active']['Ticker'].unique().tolist()
     load_insider_cache()
@@ -212,9 +217,7 @@ def main():
     except Exception as e:
         logger.error(f'Error in ML scoring: {e}')
 
-    # Step 5: Write JSON files
-    spy_info = get_spy_info()
-    vix_level = get_vix_level()
+    # Step 6: Write JSON files
     write_screener_json(df_new, df_existing, spy_info, vix_level, insider_data)
     write_closed_json(df_history)
     logger.info('All JSON files written successfully')
