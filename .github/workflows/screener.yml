@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add backend/data/screener.json backend/data/closed.json backend/data/ml_summary.json backend/data/screener_history.csv
+          git add backend/data/screener.json backend/data/closed.json backend/data/ml_summary.json backend/data/screener_history.csv backend/data/ml_models/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

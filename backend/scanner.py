@@ -222,15 +222,46 @@ def main():
                 insider_data[t] = fut.result() or 0
         save_insider_cache()
 
-    # Step 4: ML scoring
+    # Step 5: ML retraining + scoring
     df_screener_export = pd.concat([df_new, df_existing], ignore_index=True) if (not df_new.empty or not df_existing.empty) else None
     try:
         scorer = TradingConfidenceScorer()
+
+        # Decide whether to retrain
+        retrain = False
+        model_pkl = Path(scorer.model_dir) / 'win_classifier_latest.pkl'
+        if not model_pkl.exists():
+            retrain = True
+            logger.info('No trained model found — will train from scratch.')
+        else:
+            import os as _os
+            model_age_days = (datetime.now() - datetime.fromtimestamp(_os.path.getmtime(model_pkl))).days
+            closed_count = int((df_history['Status'] == 'Closed').sum())
+            # Count closed positions added since last model training
+            # Use model mtime as a proxy — any row closed after that date is "new"
+            model_date = datetime.fromtimestamp(_os.path.getmtime(model_pkl)).strftime('%Y-%m-%d')
+            new_closed = df_history[
+                (df_history['Status'] == 'Closed') &
+                (df_history['Exit Date'] >= model_date) &
+                df_history['RSI_Entry'].notna()
+            ]
+            logger.info(f'Model age: {model_age_days} days | New closed since last train: {len(new_closed)}')
+            if model_age_days >= 7 or len(new_closed) >= 20:
+                retrain = True
+                logger.info('Retraining triggered.')
+
+        if retrain:
+            trained = scorer.train_models()
+            if trained:
+                logger.info('ML models retrained successfully.')
+            else:
+                logger.warning('ML training skipped (insufficient data).')
+
         insider_with_actions = {**insider_data, '__position_actions__': position_actions}
         scorer.evaluate_active_positions(insider_data=insider_with_actions, screener_data=df_screener_export)
         logger.info('ML scoring complete')
     except Exception as e:
-        logger.error(f'Error in ML scoring: {e}')
+        logger.error(f'Error in ML scoring/training: {e}')
 
     # Step 6: Write JSON files
     write_screener_json(df_new, df_existing, spy_info, vix_level, insider_data)
