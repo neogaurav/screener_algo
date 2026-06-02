@@ -1,20 +1,6 @@
 {
   "active_with_scores": [
     {
-      "ticker": "RS",
-      "entry_date": "2026-04-22",
-      "current_price": 382.95,
-      "entry_price": 335.99,
-      "ml_confidence": "nan",
-      "ml_win_prob": null,
-      "ml_expected_pnl": null,
-      "rsi": 57.85,
-      "adx": 51.99,
-      "rs_vs_spy": -0.98,
-      "market_cap": "Mid",
-      "sector": "Basic Materials"
-    },
-    {
       "ticker": "BK",
       "entry_date": "2026-04-29",
       "current_price": 131.88,
@@ -31,7 +17,7 @@
     {
       "ticker": "STT",
       "entry_date": "2026-05-04",
-      "current_price": 159.78,
+      "current_price": 160.7,
       "entry_price": 148.08,
       "ml_confidence": "nan",
       "ml_win_prob": null,
@@ -45,7 +31,7 @@
     {
       "ticker": "ADAM",
       "entry_date": "2026-05-04",
-      "current_price": 9.01,
+      "current_price": 9.03,
       "entry_price": 8.7,
       "ml_confidence": "nan",
       "ml_win_prob": null,
@@ -59,7 +45,7 @@
     {
       "ticker": "RHP",
       "entry_date": "2026-05-04",
-      "current_price": 115.03,
+      "current_price": 116.08,
       "entry_price": 105.4,
       "ml_confidence": "nan",
       "ml_win_prob": null,
@@ -71,23 +57,9 @@
       "sector": "Real Estate"
     },
     {
-      "ticker": "MSM",
-      "entry_date": "2026-05-04",
-      "current_price": 111.81,
-      "entry_price": 101.2,
-      "ml_confidence": "nan",
-      "ml_win_prob": null,
-      "ml_expected_pnl": null,
-      "rsi": 60.77,
-      "adx": 50.13,
-      "rs_vs_spy": 3.23,
-      "market_cap": "Mid",
-      "sector": "Industrials"
-    },
-    {
       "ticker": "CPRX",
       "entry_date": "2026-05-05",
-      "current_price": 31.27,
+      "current_price": 31.28,
       "entry_price": 28.94,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.3,
@@ -99,23 +71,9 @@
       "sector": "Healthcare"
     },
     {
-      "ticker": "AVT",
-      "entry_date": "2026-05-07",
-      "current_price": 86.97,
-      "entry_price": 80.86,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 47.3,
-      "ml_expected_pnl": -1.66,
-      "rsi": 59.87,
-      "adx": 33.43,
-      "rs_vs_spy": 1.94,
-      "market_cap": "Mid",
-      "sector": "Technology"
-    },
-    {
       "ticker": "PFG",
       "entry_date": "2026-05-07",
-      "current_price": 102.9,
+      "current_price": 104.02,
       "entry_price": 100.03,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.0,
@@ -129,7 +87,7 @@
     {
       "ticker": "TKR",
       "entry_date": "2026-05-07",
-      "current_price": 126.54,
+      "current_price": 129.36,
       "entry_price": 116.34,
       "ml_confidence": "LOW",
       "ml_win_prob": 36.3,
@@ -141,37 +99,9 @@
       "sector": "Industrials"
     },
     {
-      "ticker": "AMZN",
-      "entry_date": "2026-05-12",
-      "current_price": 261.24,
-      "entry_price": 268.99,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 30.4,
-      "ml_expected_pnl": -0.94,
-      "rsi": 60.81,
-      "adx": 35.16,
-      "rs_vs_spy": 0.41,
-      "market_cap": "Large",
-      "sector": "Consumer Cyclical"
-    },
-    {
-      "ticker": "OUT",
-      "entry_date": "2026-05-12",
-      "current_price": 31.68,
-      "entry_price": 32.24,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 32.5,
-      "ml_expected_pnl": -0.71,
-      "rsi": 54.04,
-      "adx": 46.22,
-      "rs_vs_spy": -0.76,
-      "market_cap": "Small",
-      "sector": "Real Estate"
-    },
-    {
       "ticker": "ARMK",
       "entry_date": "2026-05-12",
-      "current_price": 54.41,
+      "current_price": 53.65,
       "entry_price": 48.41,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.4,
@@ -183,51 +113,9 @@
       "sector": "Industrials"
     },
     {
-      "ticker": "LAMR",
-      "entry_date": "2026-05-12",
-      "current_price": 150.45,
-      "entry_price": 147.54,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 33.0,
-      "ml_expected_pnl": -1.16,
-      "rsi": 58.71,
-      "adx": 38.47,
-      "rs_vs_spy": 1.95,
-      "market_cap": "Mid",
-      "sector": "Real Estate"
-    },
-    {
-      "ticker": "WAFD",
-      "entry_date": "2026-05-12",
-      "current_price": 34.99,
-      "entry_price": 35.17,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 27.3,
-      "ml_expected_pnl": -1.29,
-      "rsi": 59.72,
-      "adx": 47.27,
-      "rs_vs_spy": 1.23,
-      "market_cap": "Small",
-      "sector": "Financial Services"
-    },
-    {
-      "ticker": "HAFC",
-      "entry_date": "2026-05-12",
-      "current_price": 29.78,
-      "entry_price": 29.38,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 28.3,
-      "ml_expected_pnl": -1.38,
-      "rsi": 54.66,
-      "adx": 48.02,
-      "rs_vs_spy": 0.69,
-      "market_cap": "Small",
-      "sector": "Financial Services"
-    },
-    {
       "ticker": "MCRI",
       "entry_date": "2026-05-12",
-      "current_price": 121.33,
+      "current_price": 120.0,
       "entry_price": 115.66,
       "ml_confidence": "LOW",
       "ml_win_prob": 33.0,
@@ -241,7 +129,7 @@
     {
       "ticker": "CGNX",
       "entry_date": "2026-05-14",
-      "current_price": 64.66,
+      "current_price": 66.63,
       "entry_price": 63.64,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.1,
@@ -255,7 +143,7 @@
     {
       "ticker": "IRM",
       "entry_date": "2026-05-14",
-      "current_price": 126.27,
+      "current_price": 127.91,
       "entry_price": 126.12,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.0,
@@ -269,7 +157,7 @@
     {
       "ticker": "WKC",
       "entry_date": "2026-05-14",
-      "current_price": 29.27,
+      "current_price": 29.15,
       "entry_price": 27.38,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.3,
@@ -283,7 +171,7 @@
     {
       "ticker": "CATY",
       "entry_date": "2026-05-14",
-      "current_price": 56.52,
+      "current_price": 57.3,
       "entry_price": 55.82,
       "ml_confidence": "LOW",
       "ml_win_prob": 34.9,
@@ -297,7 +185,7 @@
     {
       "ticker": "SHO",
       "entry_date": "2026-05-18",
-      "current_price": 10.99,
+      "current_price": 11.1,
       "entry_price": 10.15,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.0,
@@ -309,23 +197,9 @@
       "sector": "Real Estate"
     },
     {
-      "ticker": "ARWR",
-      "entry_date": "2026-05-18",
-      "current_price": 75.16,
-      "entry_price": 76.67,
-      "ml_confidence": "MEDIUM",
-      "ml_win_prob": 35.4,
-      "ml_expected_pnl": 3.97,
-      "rsi": 56.57,
-      "adx": 31.47,
-      "rs_vs_spy": 0.13,
-      "market_cap": "Mid",
-      "sector": "Healthcare"
-    },
-    {
       "ticker": "WCC",
       "entry_date": "2026-05-18",
-      "current_price": 355.59,
+      "current_price": 367.31,
       "entry_price": 358.72,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.0,
@@ -339,7 +213,7 @@
     {
       "ticker": "ACLS",
       "entry_date": "2026-05-18",
-      "current_price": 150.46,
+      "current_price": 154.94,
       "entry_price": 155.18,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.7,
@@ -353,7 +227,7 @@
     {
       "ticker": "CVS",
       "entry_date": "2026-05-21",
-      "current_price": 90.64,
+      "current_price": 90.17,
       "entry_price": 93.28,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 64.2,
@@ -367,7 +241,7 @@
     {
       "ticker": "UNH",
       "entry_date": "2026-05-21",
-      "current_price": 379.84,
+      "current_price": 375.69,
       "entry_price": 383.3,
       "ml_confidence": "LOW",
       "ml_win_prob": 57.9,
@@ -381,7 +255,7 @@
     {
       "ticker": "BEN",
       "entry_date": "2026-05-21",
-      "current_price": 30.95,
+      "current_price": 31.33,
       "entry_price": 31.2,
       "ml_confidence": "LOW",
       "ml_win_prob": 57.6,
@@ -395,7 +269,7 @@
     {
       "ticker": "ADM",
       "entry_date": "2026-05-21",
-      "current_price": 82.61,
+      "current_price": 82.05,
       "entry_price": 77.55,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 61.5,
@@ -409,7 +283,7 @@
     {
       "ticker": "CAT",
       "entry_date": "2026-05-21",
-      "current_price": 865.34,
+      "current_price": 903.01,
       "entry_price": 872.56,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 57.0,
@@ -423,7 +297,7 @@
     {
       "ticker": "LTH",
       "entry_date": "2026-05-21",
-      "current_price": 31.35,
+      "current_price": 32.07,
       "entry_price": 33.06,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 62.9,
@@ -437,7 +311,7 @@
     {
       "ticker": "OPLN",
       "entry_date": "2026-05-21",
-      "current_price": 38.21,
+      "current_price": 37.72,
       "entry_price": 35.28,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 56.3,
@@ -451,7 +325,7 @@
     {
       "ticker": "ROK",
       "entry_date": "2026-05-21",
-      "current_price": 456.74,
+      "current_price": 458.83,
       "entry_price": 436.23,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 56.0,
@@ -465,7 +339,7 @@
     {
       "ticker": "CHEF",
       "entry_date": "2026-05-21",
-      "current_price": 77.0,
+      "current_price": 77.28,
       "entry_price": 77.34,
       "ml_confidence": "LOW",
       "ml_win_prob": 55.7,
@@ -479,7 +353,7 @@
     {
       "ticker": "KALU",
       "entry_date": "2026-05-21",
-      "current_price": 183.62,
+      "current_price": 189.74,
       "entry_price": 168.95,
       "ml_confidence": "LOW",
       "ml_win_prob": 54.1,
@@ -493,7 +367,7 @@
     {
       "ticker": "GWW",
       "entry_date": "2026-05-21",
-      "current_price": 1243.03,
+      "current_price": 1259.18,
       "entry_price": 1244.05,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 57.7,
@@ -507,7 +381,7 @@
     {
       "ticker": "KRYS",
       "entry_date": "2026-05-21",
-      "current_price": 298.09,
+      "current_price": 291.7,
       "entry_price": 302.05,
       "ml_confidence": "LOW",
       "ml_win_prob": 55.7,
@@ -521,7 +395,7 @@
     {
       "ticker": "NPO",
       "entry_date": "2026-05-21",
-      "current_price": 305.33,
+      "current_price": 312.92,
       "entry_price": 305.45,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 59.3,
@@ -535,7 +409,7 @@
     {
       "ticker": "ELV",
       "entry_date": "2026-05-22",
-      "current_price": 402.71,
+      "current_price": 394.43,
       "entry_price": 389.82,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 61.0,
@@ -549,7 +423,7 @@
     {
       "ticker": "ASTH",
       "entry_date": "2026-05-22",
-      "current_price": 37.73,
+      "current_price": 36.92,
       "entry_price": 37.38,
       "ml_confidence": "LOW",
       "ml_win_prob": 65.0,
@@ -563,7 +437,7 @@
     {
       "ticker": "MATX",
       "entry_date": "2026-05-22",
-      "current_price": 188.16,
+      "current_price": 188.24,
       "entry_price": 182.75,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 64.6,
@@ -577,7 +451,7 @@
     {
       "ticker": "IIPR",
       "entry_date": "2026-05-22",
-      "current_price": 57.41,
+      "current_price": 57.9,
       "entry_price": 56.39,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 57.9,
@@ -591,7 +465,7 @@
     {
       "ticker": "DGII",
       "entry_date": "2026-05-22",
-      "current_price": 68.51,
+      "current_price": 69.45,
       "entry_price": 64.05,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 59.9,
@@ -605,7 +479,7 @@
     {
       "ticker": "CNC",
       "entry_date": "2026-05-22",
-      "current_price": 61.99,
+      "current_price": 60.41,
       "entry_price": 58.46,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 87.4,
@@ -619,7 +493,7 @@
     {
       "ticker": "NBIX",
       "entry_date": "2026-05-22",
-      "current_price": 161.06,
+      "current_price": 155.01,
       "entry_price": 156.89,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 80.7,
@@ -631,23 +505,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "CYTK",
-      "entry_date": "2026-05-22",
-      "current_price": 73.66,
-      "entry_price": 76.94,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 41.2,
-      "ml_expected_pnl": 0.19,
-      "rsi": 59.32,
-      "adx": 46.26,
-      "rs_vs_spy": 14.73,
-      "market_cap": "Mid",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "CON",
       "entry_date": "2026-05-22",
-      "current_price": 25.26,
+      "current_price": 25.38,
       "entry_price": 25.32,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.1,
@@ -661,7 +521,7 @@
     {
       "ticker": "MTX",
       "entry_date": "2026-05-22",
-      "current_price": 76.46,
+      "current_price": 76.84,
       "entry_price": 76.79,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.9,
@@ -675,7 +535,7 @@
     {
       "ticker": "AAON",
       "entry_date": "2026-05-26",
-      "current_price": 138.65,
+      "current_price": 142.74,
       "entry_price": 140.46,
       "ml_confidence": "LOW",
       "ml_win_prob": 69.6,
@@ -689,7 +549,7 @@
     {
       "ticker": "LFST",
       "entry_date": "2026-05-26",
-      "current_price": 7.95,
+      "current_price": 7.85,
       "entry_price": 7.57,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.4,
@@ -703,13 +563,13 @@
     {
       "ticker": "EXEL",
       "entry_date": "2026-05-26",
-      "current_price": 50.28,
+      "current_price": 48.92,
       "entry_price": 49.98,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.8,
       "ml_expected_pnl": 0.01,
       "rsi": 58.55,
-      "adx": 55.57,
+      "adx": 55.56,
       "rs_vs_spy": 9.85,
       "market_cap": "Mid",
       "sector": "Health Care"
@@ -717,7 +577,7 @@
     {
       "ticker": "PRG",
       "entry_date": "2026-05-26",
-      "current_price": 36.93,
+      "current_price": 36.18,
       "entry_price": 34.9,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.6,
@@ -731,7 +591,7 @@
     {
       "ticker": "POWL",
       "entry_date": "2026-05-27",
-      "current_price": 288.02,
+      "current_price": 287.53,
       "entry_price": 294.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 49.2,
@@ -745,7 +605,7 @@
     {
       "ticker": "CALY",
       "entry_date": "2026-05-27",
-      "current_price": 15.24,
+      "current_price": 15.06,
       "entry_price": 15.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.8,
@@ -759,7 +619,7 @@
     {
       "ticker": "CNO",
       "entry_date": "2026-05-27",
-      "current_price": 45.97,
+      "current_price": 47.25,
       "entry_price": 46.36,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.3,
@@ -773,7 +633,7 @@
     {
       "ticker": "AIZ",
       "entry_date": "2026-05-27",
-      "current_price": 248.78,
+      "current_price": 253.02,
       "entry_price": 252.06,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.6,
@@ -785,23 +645,9 @@
       "sector": "Financials"
     },
     {
-      "ticker": "ACA",
-      "entry_date": "2026-05-28",
-      "current_price": 124.55,
-      "entry_price": 128.66,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 47.9,
-      "ml_expected_pnl": -0.02,
-      "rsi": 57.8,
-      "adx": 30.98,
-      "rs_vs_spy": 3.13,
-      "market_cap": "Small",
-      "sector": "Industrials"
-    },
-    {
       "ticker": "DOC",
       "entry_date": "2026-05-28",
-      "current_price": 19.0,
+      "current_price": 19.3,
       "entry_price": 19.51,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.5,
@@ -815,7 +661,7 @@
     {
       "ticker": "MET",
       "entry_date": "2026-05-28",
-      "current_price": 81.85,
+      "current_price": 83.41,
       "entry_price": 81.96,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.2,
@@ -827,23 +673,9 @@
       "sector": "Financials"
     },
     {
-      "ticker": "MPC",
-      "entry_date": "2026-05-28",
-      "current_price": 258.66,
-      "entry_price": 251.33,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 36.6,
-      "ml_expected_pnl": -1.23,
-      "rsi": 54.68,
-      "adx": 28.1,
-      "rs_vs_spy": -1.71,
-      "market_cap": "Large",
-      "sector": "Energy"
-    },
-    {
       "ticker": "LIVN",
       "entry_date": "2026-05-28",
-      "current_price": 73.81,
+      "current_price": 73.85,
       "entry_price": 73.04,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.6,
@@ -855,23 +687,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "JAZZ",
-      "entry_date": "2026-05-28",
-      "current_price": 232.64,
-      "entry_price": 235.38,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 46.6,
-      "ml_expected_pnl": -0.94,
-      "rsi": 61.52,
-      "adx": 55.82,
-      "rs_vs_spy": 9.5,
-      "market_cap": "Mid",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "ENS",
       "entry_date": "2026-05-28",
-      "current_price": 227.96,
+      "current_price": 236.2,
       "entry_price": 228.33,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.5,
@@ -885,7 +703,7 @@
     {
       "ticker": "GVA",
       "entry_date": "2026-05-28",
-      "current_price": 136.57,
+      "current_price": 136.92,
       "entry_price": 137.31,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.1,
@@ -899,7 +717,7 @@
     {
       "ticker": "BHE",
       "entry_date": "2026-05-28",
-      "current_price": 85.01,
+      "current_price": 87.61,
       "entry_price": 84.55,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.1,
@@ -911,23 +729,9 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "ROIV",
-      "entry_date": "2026-05-29",
-      "current_price": 29.08,
-      "entry_price": 29.97,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 37.5,
-      "ml_expected_pnl": -1.5,
-      "rsi": 54.68,
-      "adx": 29.3,
-      "rs_vs_spy": -0.15,
-      "market_cap": "Mid",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "AMN",
       "entry_date": "2026-05-29",
-      "current_price": 29.32,
+      "current_price": 29.17,
       "entry_price": 28.23,
       "ml_confidence": "LOW",
       "ml_win_prob": 51.2,
@@ -939,37 +743,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "COHR",
-      "entry_date": "2026-05-29",
-      "current_price": 362.87,
-      "entry_price": 349.11,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 34.9,
-      "ml_expected_pnl": -1.35,
-      "rsi": 53.38,
-      "adx": 22.39,
-      "rs_vs_spy": 4.88,
-      "market_cap": "Large",
-      "sector": "Information Technology"
-    },
-    {
-      "ticker": "HLIT",
-      "entry_date": "2026-05-29",
-      "current_price": 15.81,
-      "entry_price": 15.11,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 58.5,
-      "ml_expected_pnl": -1.04,
-      "rsi": 63.75,
-      "adx": 72.45,
-      "rs_vs_spy": 26.93,
-      "market_cap": "Small",
-      "sector": "Information Technology"
-    },
-    {
       "ticker": "DINO",
       "entry_date": "2026-05-29",
-      "current_price": 70.82,
+      "current_price": 73.43,
       "entry_price": 69.89,
       "ml_confidence": "LOW",
       "ml_win_prob": 33.9,
@@ -983,7 +759,7 @@
     {
       "ticker": "KLIC",
       "entry_date": "2026-05-29",
-      "current_price": 103.31,
+      "current_price": 106.89,
       "entry_price": 101.89,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.2,
@@ -997,7 +773,7 @@
     {
       "ticker": "COCO",
       "entry_date": "2026-05-29",
-      "current_price": 75.06,
+      "current_price": 74.45,
       "entry_price": 75.13,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.4,
@@ -1009,23 +785,9 @@
       "sector": "Consumer Staples"
     },
     {
-      "ticker": "ARW",
-      "entry_date": "2026-05-29",
-      "current_price": 217.62,
-      "entry_price": 214.63,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 47.1,
-      "ml_expected_pnl": -1.03,
-      "rsi": 65.74,
-      "adx": 67.63,
-      "rs_vs_spy": 9.01,
-      "market_cap": "Mid",
-      "sector": "Information Technology"
-    },
-    {
       "ticker": "DVA",
       "entry_date": "2026-05-29",
-      "current_price": 189.77,
+      "current_price": 188.87,
       "entry_price": 194.36,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.3,
@@ -1039,7 +801,7 @@
     {
       "ticker": "AAMI",
       "entry_date": "2026-05-29",
-      "current_price": 72.35,
+      "current_price": 73.43,
       "entry_price": 72.31,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.3,
@@ -1053,7 +815,7 @@
     {
       "ticker": "MXL",
       "entry_date": "2026-06-01",
-      "current_price": 86.21,
+      "current_price": 88.59,
       "entry_price": 88.82,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.1,
@@ -1067,7 +829,7 @@
     {
       "ticker": "AKAM",
       "entry_date": "2026-06-01",
-      "current_price": 154.01,
+      "current_price": 162.44,
       "entry_price": 153.34,
       "ml_confidence": "LOW",
       "ml_win_prob": 59.2,
@@ -1081,7 +843,7 @@
     {
       "ticker": "MTSI",
       "entry_date": "2026-06-01",
-      "current_price": 353.8,
+      "current_price": 375.52,
       "entry_price": 349.96,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.9,
@@ -1095,7 +857,7 @@
     {
       "ticker": "NVDA",
       "entry_date": "2026-06-01",
-      "current_price": 224.42,
+      "current_price": 224.11,
       "entry_price": 224.36,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.5,
@@ -1109,7 +871,7 @@
     {
       "ticker": "QCOM",
       "entry_date": "2026-06-01",
-      "current_price": 228.98,
+      "current_price": 240.46,
       "entry_price": 228.99,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.1,
@@ -1121,37 +883,9 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "IVZ",
-      "entry_date": "2026-06-01",
-      "current_price": 27.62,
-      "entry_price": 27.62,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 37.4,
-      "ml_expected_pnl": -0.7,
-      "rsi": 57.19,
-      "adx": 25.71,
-      "rs_vs_spy": 2.26,
-      "market_cap": "Large",
-      "sector": "Financials"
-    },
-    {
-      "ticker": "P",
-      "entry_date": "2026-06-01",
-      "current_price": 84.49,
-      "entry_price": 84.45,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 52.6,
-      "ml_expected_pnl": -0.61,
-      "rsi": 57.41,
-      "adx": 42.22,
-      "rs_vs_spy": 12.66,
-      "market_cap": "Mid",
-      "sector": "Information Technology"
-    },
-    {
       "ticker": "NXPI",
       "entry_date": "2026-06-01",
-      "current_price": 311.39,
+      "current_price": 321.14,
       "entry_price": 311.38,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.2,
@@ -1163,23 +897,9 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "LLY",
-      "entry_date": "2026-06-01",
-      "current_price": 1082.0,
-      "entry_price": 1082.2,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 44.4,
-      "ml_expected_pnl": -0.66,
-      "rsi": 63.73,
-      "adx": 48.09,
-      "rs_vs_spy": 7.28,
-      "market_cap": "Large",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "NXT",
       "entry_date": "2026-06-01",
-      "current_price": 145.14,
+      "current_price": 149.61,
       "entry_price": 145.02,
       "ml_confidence": "LOW",
       "ml_win_prob": 51.7,
@@ -1193,7 +913,7 @@
     {
       "ticker": "IRDM",
       "entry_date": "2026-06-01",
-      "current_price": 47.81,
+      "current_price": 49.66,
       "entry_price": 47.81,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.0,
@@ -1207,7 +927,7 @@
     {
       "ticker": "ACMR",
       "entry_date": "2026-06-01",
-      "current_price": 82.11,
+      "current_price": 90.69,
       "entry_price": 82.05,
       "ml_confidence": "LOW",
       "ml_win_prob": 57.1,
@@ -1219,23 +939,9 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "PTCT",
-      "entry_date": "2026-06-01",
-      "current_price": 73.74,
-      "entry_price": 73.8,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 53.0,
-      "ml_expected_pnl": -0.7,
-      "rsi": 58.62,
-      "adx": 32.69,
-      "rs_vs_spy": 8.02,
-      "market_cap": "Small",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "QRVO",
       "entry_date": "2026-06-01",
-      "current_price": 100.0,
+      "current_price": 103.03,
       "entry_price": 99.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 34.5,
@@ -1247,23 +953,9 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "FUN",
-      "entry_date": "2026-06-01",
-      "current_price": 21.0,
-      "entry_price": 21.0,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 51.8,
-      "ml_expected_pnl": -0.72,
-      "rsi": 57.77,
-      "adx": 20.32,
-      "rs_vs_spy": 6.09,
-      "market_cap": "Small",
-      "sector": "Consumer Discretionary"
-    },
-    {
       "ticker": "LNTH",
       "entry_date": "2026-06-01",
-      "current_price": 97.11,
+      "current_price": 97.85,
       "entry_price": 97.13,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.4,
@@ -1275,93 +967,23 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "CRI",
-      "entry_date": "2026-06-01",
-      "current_price": 38.41,
-      "entry_price": 38.39,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 42.6,
-      "ml_expected_pnl": -0.78,
-      "rsi": 57.94,
-      "adx": 29.13,
-      "rs_vs_spy": 9.4,
-      "market_cap": "Small",
-      "sector": "Consumer Discretionary"
-    },
-    {
-      "ticker": "CHH",
-      "entry_date": "2026-06-01",
-      "current_price": 111.56,
-      "entry_price": 111.51,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 40.8,
-      "ml_expected_pnl": -0.64,
-      "rsi": 52.73,
-      "adx": 50.73,
-      "rs_vs_spy": 5.48,
-      "market_cap": "Mid",
-      "sector": "Consumer Discretionary"
-    },
-    {
-      "ticker": "LPG",
-      "entry_date": "2026-06-01",
-      "current_price": 41.32,
-      "entry_price": 41.31,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 30.4,
-      "ml_expected_pnl": -2.11,
-      "rsi": 52.85,
-      "adx": 32.19,
-      "rs_vs_spy": 2.82,
-      "market_cap": "Small",
-      "sector": "Energy"
-    },
-    {
       "ticker": "DY",
       "entry_date": "2026-06-01",
-      "current_price": 493.96,
+      "current_price": 485.27,
       "entry_price": 493.89,
       "ml_confidence": "LOW",
       "ml_win_prob": 54.7,
       "ml_expected_pnl": -0.81,
       "rsi": 62.62,
-      "adx": 23.0,
+      "adx": 22.99,
       "rs_vs_spy": 8.65,
       "market_cap": "Mid",
       "sector": "Industrials"
     },
     {
-      "ticker": "CVSA",
-      "entry_date": "2026-06-01",
-      "current_price": 122.12,
-      "entry_price": 122.07,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 31.6,
-      "ml_expected_pnl": -0.86,
-      "rsi": 51.4,
-      "adx": 46.92,
-      "rs_vs_spy": 1.95,
-      "market_cap": "Small",
-      "sector": "Consumer Discretionary"
-    },
-    {
-      "ticker": "OXM",
-      "entry_date": "2026-06-01",
-      "current_price": 44.61,
-      "entry_price": 44.67,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 40.3,
-      "ml_expected_pnl": 0.11,
-      "rsi": 56.5,
-      "adx": 28.34,
-      "rs_vs_spy": -0.23,
-      "market_cap": "Small",
-      "sector": "Consumer Discretionary"
-    },
-    {
       "ticker": "MYRG",
       "entry_date": "2026-06-01",
-      "current_price": 450.34,
+      "current_price": 440.25,
       "entry_price": 449.85,
       "ml_confidence": "LOW",
       "ml_win_prob": 31.4,
@@ -1373,15 +995,197 @@
       "sector": "Industrials"
     },
     {
-      "ticker": "CENT",
-      "entry_date": "2026-06-01",
-      "current_price": 38.69,
-      "entry_price": 38.68,
+      "ticker": "IVZ",
+      "entry_date": "2026-06-02",
+      "current_price": 27.77,
+      "entry_price": 27.77,
       "ml_confidence": "LOW",
-      "ml_win_prob": 33.5,
-      "ml_expected_pnl": -0.73,
+      "ml_win_prob": 40.8,
+      "ml_expected_pnl": -0.72,
+      "rsi": 57.19,
+      "adx": 25.71,
+      "rs_vs_spy": 2.26,
+      "market_cap": "Large",
+      "sector": "Financials"
+    },
+    {
+      "ticker": "COHR",
+      "entry_date": "2026-06-02",
+      "current_price": 425.0,
+      "entry_price": 425.29,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 39.0,
+      "ml_expected_pnl": -1.06,
+      "rsi": 53.38,
+      "adx": 22.39,
+      "rs_vs_spy": 4.88,
+      "market_cap": "Large",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "P",
+      "entry_date": "2026-06-02",
+      "current_price": 83.17,
+      "entry_price": 83.17,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 48.6,
+      "ml_expected_pnl": -0.58,
+      "rsi": 57.41,
+      "adx": 42.22,
+      "rs_vs_spy": 12.66,
+      "market_cap": "Mid",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2026-06-02",
+      "current_price": 1065.72,
+      "entry_price": 1065.72,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 47.2,
+      "ml_expected_pnl": -0.69,
+      "rsi": 63.73,
+      "adx": 48.09,
+      "rs_vs_spy": 7.28,
+      "market_cap": "Large",
+      "sector": "Health Care"
+    },
+    {
+      "ticker": "FUN",
+      "entry_date": "2026-06-02",
+      "current_price": 20.55,
+      "entry_price": 20.55,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 39.2,
+      "ml_expected_pnl": 0.01,
+      "rsi": 57.77,
+      "adx": 20.33,
+      "rs_vs_spy": 6.09,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "ticker": "PTCT",
+      "entry_date": "2026-06-02",
+      "current_price": 69.07,
+      "entry_price": 69.07,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 40.6,
+      "ml_expected_pnl": -0.91,
+      "rsi": 58.62,
+      "adx": 32.69,
+      "rs_vs_spy": 8.02,
+      "market_cap": "Small",
+      "sector": "Health Care"
+    },
+    {
+      "ticker": "JAZZ",
+      "entry_date": "2026-06-02",
+      "current_price": 226.46,
+      "entry_price": 226.46,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 38.3,
+      "ml_expected_pnl": -1.07,
+      "rsi": 61.52,
+      "adx": 55.82,
+      "rs_vs_spy": 9.5,
+      "market_cap": "Mid",
+      "sector": "Health Care"
+    },
+    {
+      "ticker": "CRI",
+      "entry_date": "2026-06-02",
+      "current_price": 39.45,
+      "entry_price": 39.45,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 45.8,
+      "ml_expected_pnl": -0.79,
+      "rsi": 57.94,
+      "adx": 29.13,
+      "rs_vs_spy": 9.4,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "ticker": "CHH",
+      "entry_date": "2026-06-02",
+      "current_price": 113.04,
+      "entry_price": 113.04,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 46.6,
+      "ml_expected_pnl": -0.82,
+      "rsi": 52.73,
+      "adx": 50.64,
+      "rs_vs_spy": 5.48,
+      "market_cap": "Mid",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "ticker": "LPG",
+      "entry_date": "2026-06-02",
+      "current_price": 40.06,
+      "entry_price": 40.06,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 29.0,
+      "ml_expected_pnl": -1.37,
+      "rsi": 52.85,
+      "adx": 32.19,
+      "rs_vs_spy": 2.82,
+      "market_cap": "Small",
+      "sector": "Energy"
+    },
+    {
+      "ticker": "LAMR",
+      "entry_date": "2026-06-02",
+      "current_price": 150.83,
+      "entry_price": 150.83,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 39.1,
+      "ml_expected_pnl": -1.02,
+      "rsi": 58.71,
+      "adx": 38.47,
+      "rs_vs_spy": 1.95,
+      "market_cap": "Mid",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "CVSA",
+      "entry_date": "2026-06-02",
+      "current_price": 122.62,
+      "entry_price": 122.62,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 38.5,
+      "ml_expected_pnl": -1.05,
+      "rsi": 51.4,
+      "adx": 46.91,
+      "rs_vs_spy": 1.95,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "ticker": "OXM",
+      "entry_date": "2026-06-02",
+      "current_price": 45.57,
+      "entry_price": 45.57,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 50.2,
+      "ml_expected_pnl": 0.3,
+      "rsi": 56.5,
+      "adx": 28.34,
+      "rs_vs_spy": -0.23,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "ticker": "CENT",
+      "entry_date": "2026-06-02",
+      "current_price": 38.29,
+      "entry_price": 38.29,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 33.7,
+      "ml_expected_pnl": -1.02,
       "rsi": 54.69,
-      "adx": 32.01,
+      "adx": 32.0,
       "rs_vs_spy": 0.05,
       "market_cap": "Small",
       "sector": "Consumer Staples"
@@ -1394,19 +1198,19 @@
       "avg_pnl_pct": 2.65
     },
     "MEDIUM": {
-      "count": 123,
-      "avg_win_rate": 56.1,
-      "avg_pnl_pct": -0.09
+      "count": 124,
+      "avg_win_rate": 55.6,
+      "avg_pnl_pct": -0.15
     },
     "LOW": {
-      "count": 1068,
-      "avg_win_rate": 44.5,
-      "avg_pnl_pct": -0.19
+      "count": 1093,
+      "avg_win_rate": 44.6,
+      "avg_pnl_pct": -0.21
     }
   },
   "model_info": {
-    "last_trained": "2026-06-01 22:41:10",
+    "last_trained": "2026-06-02 17:24:03",
     "is_trained": true
   },
-  "last_updated": "2026-06-01T22:41:14.773842Z"
+  "last_updated": "2026-06-02T17:24:08.284335Z"
 }
