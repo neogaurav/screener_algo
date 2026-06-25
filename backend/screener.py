@@ -25,6 +25,30 @@ warnings.filterwarnings('ignore')
 
 _DATA_DIR = Path(__file__).parent / 'data'
 
+# Dollar capital allocated per position; PnL $ is derived from this everywhere.
+POSITION_SIZE = 5000
+
+# --- Strategy tuning constants ---
+ATR_STOP_MULT = 2.0                  # volatility-adaptive stop = price - k*ATR
+REQUIRE_VOLUME_CONFIRMATION = False  # if True, require bounce-day volume >= 20d avg to enter
+EARNINGS_BLACKOUT_DAYS = 5           # skip new entries within N calendar days of earnings (0 disables)
+VIX_RISK_OFF = 30.0                  # above this VIX level, block new entries
+
+# Map GICS / yfinance sector names to SPDR sector ETFs (for sector relative strength)
+SECTOR_TO_ETF = {
+    'Information Technology': 'XLK', 'Technology': 'XLK',
+    'Financials': 'XLF', 'Financial Services': 'XLF', 'Financial': 'XLF',
+    'Health Care': 'XLV', 'Healthcare': 'XLV',
+    'Energy': 'XLE',
+    'Industrials': 'XLI',
+    'Consumer Discretionary': 'XLY', 'Consumer Cyclical': 'XLY',
+    'Consumer Staples': 'XLP', 'Consumer Defensive': 'XLP',
+    'Utilities': 'XLU',
+    'Materials': 'XLB', 'Basic Materials': 'XLB',
+    'Real Estate': 'XLRE',
+    'Communication Services': 'XLC', 'Communication': 'XLC',
+}
+
 # Setup Logging
 os.makedirs(Path(__file__).parent / 'logs', exist_ok=True)
 
@@ -70,7 +94,13 @@ def load_history():
             'SPY_RSI': None,
             'SPY_Trend': None,
             'VIX_Level': None,
-            'Sector': None
+            'Sector': None,
+            # New signals
+            'ATR_Pct': None,
+            'Bounce_Vol_Ratio': None,
+            'VIX_Regime': None,
+            'Sector_RS': None,
+            'Days_To_Earnings': None
         }
         for col, default in new_columns.items():
             if col not in df.columns:
@@ -80,7 +110,8 @@ def load_history():
                                  'Exit Price', 'PnL %', 'PnL $', 'Hold Days', 'Hit Target', 'Hit Stop',
                                  'RSI_Entry', 'ADX_Entry', 'DeMarker_Entry', 'DeMarker_Min_14d', 'RS_vs_SPY', 'Volume_Ratio',
                                  'Price_to_8EMA_%', 'Price_to_21EMA_%', 'EMA_Stack_Gap_%', 'Pullback_Depth_%', 'Pullback_Days',
-                                 'SPY_RSI', 'SPY_Trend', 'VIX_Level', 'Sector'])
+                                 'SPY_RSI', 'SPY_Trend', 'VIX_Level', 'Sector',
+                                 'ATR_Pct', 'Bounce_Vol_Ratio', 'VIX_Regime', 'Sector_RS', 'Days_To_Earnings'])
 
 def save_history(df):
     df.to_csv(HISTORY_FILE, index=False)
@@ -206,6 +237,7 @@ def calculate_indicators(df):
     minus_di = 100 * (pd.Series(minus_dm, index=df.index).rolling(14).mean() / atr)
     dx = 100 * abs(plus_di - minus_di) / (plus_di + minus_di)
     df['ADX'] = dx.rolling(14).mean()
+    df['ATR'] = atr
 
     return df
 
@@ -228,6 +260,101 @@ def is_market_closed():
     # Check if after 4 PM ET
     market_close = now_et.replace(hour=16, minute=0, second=0, microsecond=0)
     return now_et >= market_close
+
+# --- Earnings date cache (limits network calls to qualifying setups) ---
+_EARNINGS_CACHE_FILE = _DATA_DIR / 'earnings_cache.json'
+_earnings_cache = None
+_earnings_lock = threading.Lock()
+
+def load_earnings_cache():
+    global _earnings_cache
+    with _earnings_lock:
+        if _earnings_cache is not None:
+            return _earnings_cache
+        if _EARNINGS_CACHE_FILE.exists():
+            try:
+                with open(_EARNINGS_CACHE_FILE) as f:
+                    _earnings_cache = json.load(f)
+            except Exception:
+                _earnings_cache = {}
+        else:
+            _earnings_cache = {}
+        return _earnings_cache
+
+def save_earnings_cache():
+    global _earnings_cache
+    if _earnings_cache is None:
+        return
+    with _earnings_lock:
+        try:
+            with open(_EARNINGS_CACHE_FILE, 'w') as f:
+                json.dump(dict(_earnings_cache), f)
+        except Exception:
+            pass
+
+def get_days_to_earnings(ticker):
+    """Calendar days until the next earnings date, or None if unknown. Cached (7-day TTL)."""
+    cache = load_earnings_cache()
+    today = datetime.now().date()
+    with _earnings_lock:
+        entry = cache.get(ticker)
+    if entry:
+        try:
+            fetched = datetime.strptime(entry['fetched'], '%Y-%m-%d').date()
+            if (today - fetched).days <= 7:
+                if entry['next'] is None:
+                    return None
+                nxt = datetime.strptime(entry['next'], '%Y-%m-%d').date()
+                return (nxt - today).days
+        except Exception:
+            pass
+    next_date = None
+    try:
+        cal = yf.Ticker(ticker).calendar
+        dates = cal.get('Earnings Date') if isinstance(cal, dict) else None
+        if dates:
+            future = [d for d in dates if d >= today]
+            if future:
+                next_date = min(future)
+    except Exception:
+        next_date = None
+    if next_date is None:
+        try:
+            edf = yf.Ticker(ticker).get_earnings_dates(limit=12)
+            if edf is not None and not edf.empty:
+                future = [d.date() for d in edf.index if d.date() >= today]
+                if future:
+                    next_date = min(future)
+        except Exception:
+            next_date = None
+    with _earnings_lock:
+        cache[ticker] = {'next': next_date.strftime('%Y-%m-%d') if next_date else None,
+                         'fetched': today.strftime('%Y-%m-%d')}
+    return (next_date - today).days if next_date else None
+
+def compute_sector_rs(spy_df):
+    """20-day relative strength of each SPDR sector ETF vs SPY. Returns {ETF: rs_pct}."""
+    sector_rs = {}
+    if spy_df is None or len(spy_df) < 21:
+        return sector_rs
+    try:
+        spy_close = spy_df['Close'].iloc[-1]
+        spy_close_20 = spy_df['Close'].iloc[-21]
+        spy_perf = (spy_close - spy_close_20) / spy_close_20 * 100
+        etfs = sorted(set(SECTOR_TO_ETF.values()))
+        data = yf.download(etfs, period='2mo', group_by='ticker',
+                           auto_adjust=True, progress=False, threads=True)
+        for etf in etfs:
+            try:
+                closes = data[etf]['Close'].dropna() if len(etfs) > 1 else data['Close'].dropna()
+                if len(closes) >= 21:
+                    perf = (closes.iloc[-1] - closes.iloc[-21]) / closes.iloc[-21] * 100
+                    sector_rs[etf] = round(perf - spy_perf, 2)
+            except Exception:
+                pass
+    except Exception as e:
+        logger.warning(f"Sector RS computation failed: {e}")
+    return sector_rs
 
 def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=None):
     """
@@ -267,6 +394,7 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         rsi = df['RSI'].iloc[-1]
         adx = df['ADX'].iloc[-1]
         demarker = df['DeMarker'].iloc[-1]
+        atr = df['ATR'].iloc[-1] if 'ATR' in df.columns else None
 
         # Calculate all ML features regardless of pass/fail
         ml_features = {}
@@ -279,6 +407,9 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         # DeMarker min in last 14 days
         demarker_14d = df['DeMarker'].iloc[-14:]
         ml_features['DeMarker_Min_14d'] = round(demarker_14d.min(), 3) if len(demarker_14d) > 0 else None
+
+        # Volatility: ATR as % of price
+        ml_features['ATR_Pct'] = round(atr / current_price * 100, 2) if (atr is not None and not pd.isna(atr) and current_price) else None
 
         # Relative strength vs SPY
         rs_ratio = None
@@ -311,6 +442,11 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
             volume_ratio = None
         ml_features['Volume_Ratio'] = volume_ratio
 
+        # Bounce-day volume vs 20-day average (demand confirmation)
+        last_vol = df['Volume'].iloc[-1]
+        bounce_vol_ratio = round(last_vol / avg_vol_20, 2) if (avg_vol_20 and avg_vol_20 > 0) else None
+        ml_features['Bounce_Vol_Ratio'] = bounce_vol_ratio
+
         # Price distances from EMAs
         ml_features['Price_to_8EMA_%'] = round((current_price - ema_8) / ema_8 * 100, 2)
         ml_features['Price_to_21EMA_%'] = round((current_price - ema_21) / ema_21 * 100, 2)
@@ -335,6 +471,17 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         ml_features['SPY_RSI'] = market_context.get('SPY_RSI') if market_context else None
         ml_features['SPY_Trend'] = market_context.get('SPY_Trend') if market_context else None
         ml_features['VIX_Level'] = vix_level
+
+        # VIX regime: 0 = calm, 1 = elevated, 2 = risk-off
+        if vix_level is None:
+            ml_features['VIX_Regime'] = None
+        elif vix_level >= VIX_RISK_OFF:
+            ml_features['VIX_Regime'] = 2
+        elif vix_level >= 20:
+            ml_features['VIX_Regime'] = 1
+        else:
+            ml_features['VIX_Regime'] = 0
+        ml_features['Sector_RS'] = None  # computed for qualifying setups below
 
         # Now perform strategy checks
         failure_reason = None
@@ -369,9 +516,17 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         elif rs_ratio is not None and rs_ratio < -2.0:  # Allow 2% underperformance
             failure_reason = "RS < SPY"
 
+        # 7b. Risk-off regime gate (VIX too high for new entries)
+        elif vix_level is not None and vix_level > VIX_RISK_OFF:
+            failure_reason = f"Risk-off (VIX {vix_level:.0f})"
+
         # 8. Pullback check
         elif not pullback_mask.any():
             failure_reason = "No Pullback (Moved)"
+
+        # 8b. Optional bounce-volume confirmation
+        elif REQUIRE_VOLUME_CONFIRMATION and (bounce_vol_ratio is None or bounce_vol_ratio < 1.0):
+            failure_reason = "Weak Bounce Volume"
 
         # 9. DeMarker Oversold History - REMOVED from exit validation
         # Once entry is valid, this shouldn't re-invalidate (+0.96% avg PnL on exits)
@@ -402,7 +557,10 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
 
         # Perfect setup - calculate targets
         pullback_date = pullback_mask[pullback_mask].index[-1].strftime('%Y-%m-%d')
-        stop_loss = min(ema_21 * 0.99, swing_low * 0.99)
+        # Volatility-adaptive stop: below recent structure OR k*ATR below price, whichever is safer (lower)
+        atr_stop = (current_price - ATR_STOP_MULT * atr) if (atr is not None and not pd.isna(atr)) else None
+        structure_stop = min(ema_21 * 0.99, swing_low * 0.99)
+        stop_loss = min(structure_stop, atr_stop) if atr_stop is not None else structure_stop
         target = swing_low + ((swing_high - swing_low) * 1.618)
 
         # Calculate Risk/Reward Ratio
@@ -414,6 +572,21 @@ def analyze_stock_enhanced(ticker, spy_df=None, vix_level=None, market_context=N
         # Require at least 1.5:1 reward-to-risk ratio for quality setups
         if rr_ratio < 1.5:
             return {'failure_reason': f'Poor R/R ({rr_ratio})', 'ml_features': ml_features}
+
+        # Sector relative strength (vs SPY) via the stock's sector ETF (qualifying setups only)
+        try:
+            sector_rs_map = market_context.get('Sector_RS', {}) if market_context else {}
+            etf = SECTOR_TO_ETF.get(get_stock_sector(ticker))
+            if etf:
+                ml_features['Sector_RS'] = sector_rs_map.get(etf)
+        except Exception:
+            pass
+
+        # Earnings-proximity: skip new entries inside the blackout window
+        days_to_earnings = get_days_to_earnings(ticker)
+        ml_features['Days_To_Earnings'] = days_to_earnings
+        if EARNINGS_BLACKOUT_DAYS and days_to_earnings is not None and 0 <= days_to_earnings <= EARNINGS_BLACKOUT_DAYS:
+            return {'failure_reason': f'Earnings in {days_to_earnings}d', 'ml_features': ml_features}
 
         return {
             'Ticker': ticker,
@@ -629,6 +802,10 @@ def run_screener(limit=None):
     vix_level = get_vix_level()
     print(f"VIX Level: {vix_level}")
 
+    # Sector relative strength map + earnings cache for new-entry signals
+    market_context['Sector_RS'] = compute_sector_rs(spy_df)
+    load_earnings_cache()
+
     results = []
     all_analysis = {}
 
@@ -664,6 +841,9 @@ def run_screener(limit=None):
 
     elapsed = time.time() - start_time
     print(f"\nScan complete in {elapsed:.2f} seconds.")
+
+    # Persist any earnings dates fetched for qualifying setups during the scan
+    save_earnings_cache()
 
     # Process results
     if results:
@@ -820,7 +1000,7 @@ def run_screener(limit=None):
                 if pd.notna(entry_price) and pd.notna(exit_price) and entry_price > 0:
                     pnl_pct = ((exit_price - entry_price) / entry_price) * 100
                     df_history.loc[idx, 'PnL %'] = round(pnl_pct, 2)
-                    df_history.loc[idx, 'PnL $'] = round(pnl_pct * 50, 2)  # Assuming $5000 position
+                    df_history.loc[idx, 'PnL $'] = round((pnl_pct / 100) * POSITION_SIZE, 2)
 
     # Batch-update Current Price for all active positions with live intraday prices
     active_mask = df_history['Status'] == 'Active'

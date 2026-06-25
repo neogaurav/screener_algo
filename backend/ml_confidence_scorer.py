@@ -13,7 +13,8 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report, mean_squared_error, r2_score
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import classification_report, mean_squared_error, r2_score, roc_auc_score
 import joblib
 import warnings
 from datetime import datetime
@@ -49,16 +50,18 @@ class TradingConfidenceScorer:
         print(f"Overall win rate: {(df_closed['PnL %'] > 0).mean() * 100:.1f}%")
         print(f"Overall avg PnL: {df_closed['PnL %'].mean():.2f}%")
 
-        # Apply recency filter
+        # Recency handling: cap by age (keep a long lookback, never collapse to 30 days).
+        # Newer trades are later up-weighted via recency sample weights (see below).
         if 'Exit Date' in df_closed.columns:
             df_closed['Exit Date'] = pd.to_datetime(df_closed['Exit Date'], errors='coerce')
-            thirty_days_ago = pd.Timestamp.now() - pd.Timedelta(days=30)
-            recent_trades = df_closed[df_closed['Exit Date'] >= thirty_days_ago].copy()
-
-            if len(recent_trades) >= 100:
-                print(f"\nFiltering to last 30 days: {len(recent_trades)} trades")
-                print(f"  Win rate: {(recent_trades['PnL %'] > 0).mean() * 100:.1f}%")
-                df_closed = recent_trades
+            max_lookback = pd.Timestamp.now() - pd.Timedelta(days=548)  # ~18 months
+            capped = df_closed[df_closed['Exit Date'] >= max_lookback].copy()
+            if len(capped) >= 100:
+                print(f"\nUsing last 18 months: {len(capped)} of {len(df_closed)} closed trades")
+                print(f"  Win rate: {(capped['PnL %'] > 0).mean() * 100:.1f}%")
+                df_closed = capped
+            else:
+                print(f"\nKeeping all history ({len(df_closed)} trades); <100 in last 18 months")
 
         # CRITICAL: Adjust model expectations based on actual performance
         # If historical performance is poor, model will be pessimistic (which is correct!)
@@ -69,7 +72,9 @@ class TradingConfidenceScorer:
             'RSI_Entry', 'ADX_Entry', 'DeMarker_Entry', 'DeMarker_Min_14d',
             'RS_vs_SPY', 'Volume_Ratio', 'Price_to_8EMA_%', 'Price_to_21EMA_%',
             'EMA_Stack_Gap_%', 'Pullback_Depth_%', 'Pullback_Days',
-            'Risk/Reward', 'SPY_RSI', 'SPY_Trend', 'VIX_Level'
+            'Risk/Reward', 'SPY_RSI', 'SPY_Trend', 'VIX_Level',
+            # New signals
+            'ATR_Pct', 'Bounce_Vol_Ratio', 'VIX_Regime', 'Sector_RS', 'Days_To_Earnings'
         ]
 
         # Filter to features that exist in columns
@@ -136,7 +141,14 @@ class TradingConfidenceScorer:
         y_pnl = df_closed['PnL %']
         y_stop = df_closed['Hit_Stop_Binary']
 
-        return X, y_win, y_pnl, y_stop, df_closed
+        # Recency sample weights: newer closed trades count more (exp decay, ~180d half-life)
+        sample_weights = None
+        if 'Exit Date' in df_closed.columns and df_closed['Exit Date'].notna().any():
+            age_days = (pd.Timestamp.now() - df_closed['Exit Date']).dt.days
+            age_days = age_days.fillna(age_days.median()).clip(lower=0)
+            sample_weights = np.power(0.5, age_days / 180.0).to_numpy()
+
+        return X, y_win, y_pnl, y_stop, df_closed, sample_weights
 
     def train_models(self):
         """Train the ML models"""
@@ -150,76 +162,95 @@ class TradingConfidenceScorer:
             print("Insufficient data for training. Need more closed trades with ML features.")
             return False
 
-        X, y_win, y_pnl, y_stop, df_closed = result
+        X, y_win, y_pnl, y_stop, df_closed, sample_weights = result
+
+        if sample_weights is None:
+            sample_weights = np.ones(len(X))
 
         print(f"\nTraining on {len(X)} closed trades")
         print(f"Features used ({len(self.feature_columns)}): {', '.join(self.feature_columns)}")
 
-        # Scale features
-        X_scaled = self.scaler.fit_transform(X)
+        # --- Leakage-free evaluation: split FIRST, then scale on train only ---
+        X_arr = X.to_numpy()
+        rf_params = dict(n_estimators=100, max_depth=5, min_samples_split=5, random_state=42)
 
-        # Split data
-        X_train, X_test, y_win_train, y_win_test, y_pnl_train, y_pnl_test, y_stop_train, y_stop_test = \
-            train_test_split(X_scaled, y_win, y_pnl, y_stop, test_size=0.2, random_state=42)
-
-        # 1. Train Win/Loss Classifier
-        print("\n1. Training Win/Loss Classifier...")
-        self.win_classifier = RandomForestClassifier(
-            n_estimators=100,
-            max_depth=5,
-            min_samples_split=5,
-            random_state=42
+        (X_tr, X_te,
+         yw_tr, yw_te,
+         yp_tr, yp_te,
+         ys_tr, ys_te,
+         w_tr, w_te) = train_test_split(
+            X_arr, y_win, y_pnl, y_stop, sample_weights,
+            test_size=0.2, random_state=42
         )
-        self.win_classifier.fit(X_train, y_win_train)
 
-        # Evaluate
-        win_accuracy = self.win_classifier.score(X_test, y_win_test)
-        print(f"   Test Accuracy: {win_accuracy:.2%}")
+        eval_scaler = StandardScaler()
+        X_tr_s = eval_scaler.fit_transform(X_tr)
+        X_te_s = eval_scaler.transform(X_te)
 
-        # Cross-validation
-        cv_scores = cross_val_score(self.win_classifier, X_scaled, y_win, cv=min(5, len(X)//10))
-        print(f"   Cross-Val Accuracy: {cv_scores.mean():.2%} (+/- {cv_scores.std()*2:.2%})")
+        # 1. Win/Loss Classifier
+        print("\n1. Training Win/Loss Classifier...")
+        eval_win = RandomForestClassifier(**rf_params)
+        eval_win.fit(X_tr_s, yw_tr, sample_weight=w_tr)
+        win_train_acc = eval_win.score(X_tr_s, yw_tr)
+        win_test_acc = eval_win.score(X_te_s, yw_te)
+        print(f"   Train Accuracy: {win_train_acc:.2%}")
+        print(f"   Test Accuracy:  {win_test_acc:.2%}")
+        print(f"   Train-Test Gap: {(win_train_acc - win_test_acc):.2%}")
+        try:
+            win_proba_te = eval_win.predict_proba(X_te_s)
+            if win_proba_te.shape[1] > 1:
+                print(f"   Test ROC-AUC:   {roc_auc_score(yw_te, win_proba_te[:, 1]):.3f}")
+        except Exception as e:
+            print(f"   (ROC-AUC unavailable: {e})")
+        print("   Classification report (test):")
+        print(classification_report(yw_te, eval_win.predict(X_te_s), zero_division=0))
 
-        # Feature importance
+        # Leakage-free cross-validation: scaler refit inside each fold via Pipeline
+        n_splits = max(2, min(5, len(X_arr) // 20))
+        cv_pipe = Pipeline([('scaler', StandardScaler()),
+                            ('rf', RandomForestClassifier(**rf_params))])
+        cv_scores = cross_val_score(cv_pipe, X_arr, y_win, cv=n_splits)
+        print(f"   CV Accuracy ({n_splits}-fold): {cv_scores.mean():.2%} (+/- {cv_scores.std()*2:.2%})")
+
+        # 2. P&L Regressor
+        print("\n2. Training P&L Regressor...")
+        eval_pnl = RandomForestRegressor(**rf_params)
+        eval_pnl.fit(X_tr_s, yp_tr, sample_weight=w_tr)
+        pnl_pred = eval_pnl.predict(X_te_s)
+        rmse = np.sqrt(mean_squared_error(yp_te, pnl_pred))
+        test_r2 = r2_score(yp_te, pnl_pred)
+        train_r2 = r2_score(yp_tr, eval_pnl.predict(X_tr_s))
+        print(f"   Test RMSE: {rmse:.2f}%")
+        print(f"   Train R²: {train_r2:.3f} | Test R²: {test_r2:.3f} | Gap: {(train_r2 - test_r2):.3f}")
+
+        # 3. Stop Loss Risk Classifier
+        print("\n3. Training Stop Loss Risk Classifier...")
+        eval_stop = RandomForestClassifier(**rf_params)
+        eval_stop.fit(X_tr_s, ys_tr, sample_weight=w_tr)
+        stop_train_acc = eval_stop.score(X_tr_s, ys_tr)
+        stop_test_acc = eval_stop.score(X_te_s, ys_te)
+        print(f"   Train Accuracy: {stop_train_acc:.2%}")
+        print(f"   Test Accuracy:  {stop_test_acc:.2%}")
+        print(f"   Train-Test Gap: {(stop_train_acc - stop_test_acc):.2%}")
+
+        # --- Fit PRODUCTION models on ALL data (scaler + models), recency-weighted ---
+        self.scaler = StandardScaler()
+        X_full_s = self.scaler.fit_transform(X_arr)
+        self.win_classifier = RandomForestClassifier(**rf_params)
+        self.win_classifier.fit(X_full_s, y_win, sample_weight=sample_weights)
+        self.pnl_regressor = RandomForestRegressor(**rf_params)
+        self.pnl_regressor.fit(X_full_s, y_pnl, sample_weight=sample_weights)
+        self.stop_classifier = RandomForestClassifier(**rf_params)
+        self.stop_classifier.fit(X_full_s, y_stop, sample_weight=sample_weights)
+
+        # Feature importance (from production win model)
         feature_importance = pd.DataFrame({
             'feature': self.feature_columns,
             'importance': self.win_classifier.feature_importances_
         }).sort_values('importance', ascending=False)
-
         print("\n   Top 5 Most Important Features for Win/Loss:")
         for idx, row in feature_importance.head(5).iterrows():
             print(f"   - {row['feature']}: {row['importance']:.3f}")
-
-        # 2. Train P&L Regressor
-        print("\n2. Training P&L Regressor...")
-        self.pnl_regressor = RandomForestRegressor(
-            n_estimators=100,
-            max_depth=5,
-            min_samples_split=5,
-            random_state=42
-        )
-        self.pnl_regressor.fit(X_train, y_pnl_train)
-
-        # Evaluate
-        pnl_pred = self.pnl_regressor.predict(X_test)
-        rmse = np.sqrt(mean_squared_error(y_pnl_test, pnl_pred))
-        r2 = r2_score(y_pnl_test, pnl_pred)
-        print(f"   RMSE: {rmse:.2f}%")
-        print(f"   R² Score: {r2:.3f}")
-
-        # 3. Train Stop Loss Classifier
-        print("\n3. Training Stop Loss Risk Classifier...")
-        self.stop_classifier = RandomForestClassifier(
-            n_estimators=100,
-            max_depth=5,
-            min_samples_split=5,
-            random_state=42
-        )
-        self.stop_classifier.fit(X_train, y_stop_train)
-
-        # Evaluate
-        stop_accuracy = self.stop_classifier.score(X_test, y_stop_test)
-        print(f"   Test Accuracy: {stop_accuracy:.2%}")
 
         # Summary statistics
         print("\n" + "="*60)
@@ -310,14 +341,15 @@ class TradingConfidenceScorer:
         X_scaled = self.scaler.transform(X)
 
         # Get predictions
-        # Handle edge case where classifier only saw one class during training
-        win_proba = self.win_classifier.predict_proba(X_scaled)[0]
-        win_prob = win_proba[1] if len(win_proba) > 1 else (1.0 if self.win_classifier.classes_[0] == 1 else 0.0)
+        # Robust to single-class models: take P(label==1) via classes_, default 0 if unseen.
+        def _prob_positive(clf, Xs):
+            proba = clf.predict_proba(Xs)[0]
+            classes = list(clf.classes_)
+            return float(proba[classes.index(1)]) if 1 in classes else 0.0
 
+        win_prob = _prob_positive(self.win_classifier, X_scaled)
         expected_pnl = self.pnl_regressor.predict(X_scaled)[0]
-
-        stop_proba = self.stop_classifier.predict_proba(X_scaled)[0]
-        stop_risk = stop_proba[1] if len(stop_proba) > 1 else (1.0 if self.stop_classifier.classes_[0] == 1 else 0.0)
+        stop_risk = _prob_positive(self.stop_classifier, X_scaled)
 
         # Confidence scoring based on win probability, expected PnL, and stop risk
         # A good trade needs: decent win prob + positive expected returns + manageable risk

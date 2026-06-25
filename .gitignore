@@ -16,6 +16,10 @@ frontend/dist/
 
 # Local data cache
 backend/data/insider_cache.json
+backend/data/earnings_cache.json
+
+# Timestamped ML model snapshots (keep only the _latest set)
+backend/data/ml_models/*_20*.pkl
 
 # OS
 .DS_Store

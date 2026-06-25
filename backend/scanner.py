@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from screener import (
     run_screener, get_vix_level, get_insider_shares_purchased,
-    load_insider_cache, save_insider_cache, calculate_indicators
+    load_insider_cache, save_insider_cache, calculate_indicators,
+    POSITION_SIZE
 )
 from dynamic_position_manager import DynamicPositionManager
 from ml_confidence_scorer import TradingConfidenceScorer
@@ -128,7 +129,7 @@ def write_closed_json(df_history):
         pnl_pct = _safe(row.get('PnL %'))
         pnl_dollars = _safe(row.get('PnL $'))
         if pnl_dollars is None and pnl_pct is not None and entry_price:
-            pnl_dollars = round((pnl_pct / 100) * 5000, 2)
+            pnl_dollars = round((pnl_pct / 100) * POSITION_SIZE, 2)
         positions.append({
             'ticker': str(row.get('Ticker', '')),
             'entry_date': str(row.get('Entry Date', '') or ''),

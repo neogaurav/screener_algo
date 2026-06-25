@@ -14,6 +14,7 @@ import yfinance as yf
 from datetime import datetime, timedelta
 import numpy as np
 import logging
+from screener import POSITION_SIZE
 
 logger = logging.getLogger(__name__)
 
@@ -281,7 +282,7 @@ class DynamicPositionManager:
                     # Calculate PnL
                     pnl_pct = ((decision['exit_price'] - entry_price) / entry_price) * 100
                     df_history.loc[mask, 'PnL %'] = round(pnl_pct, 2)
-                    df_history.loc[mask, 'PnL $'] = round(pnl_pct * 50, 2)
+                    df_history.loc[mask, 'PnL $'] = round((pnl_pct / 100) * POSITION_SIZE, 2)
 
                     actions_taken['EXIT'].append((ticker, reason))
 
