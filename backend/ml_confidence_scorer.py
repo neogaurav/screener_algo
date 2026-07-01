@@ -546,6 +546,19 @@ class TradingConfidenceScorer:
                 # Sheet 3: Screener Results (if provided)
                 if df_screener is not None and not df_screener.empty:
                     df_screener_export = df_screener.copy()
+
+                    # Add Distance to Target and Est. Days to Target (same method as ML sheet)
+                    if 'Current Price' in df_screener_export.columns and 'Fib Target' in df_screener_export.columns:
+                        cur = pd.to_numeric(df_screener_export['Current Price'], errors='coerce')
+                        tgt = pd.to_numeric(df_screener_export['Fib Target'], errors='coerce')
+                        to_tgt = (tgt - cur) / cur * 100
+                        df_screener_export['To Target %'] = to_tgt.round(1)
+                        v = self.calculate_avg_days_to_target().get('win_velocity_pct_per_day', 0)
+                        if v and v > 0:
+                            est = (to_tgt / v).round().clip(lower=1, upper=90)
+                            est[to_tgt <= 0] = 0  # already at/above target
+                            df_screener_export['Est. Days to Target'] = est
+
                     # Remove helper columns
                     helper_cols = ['MC_Rank', 'ML_Conf_Order']
                     for col in helper_cols:
