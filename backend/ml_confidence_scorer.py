@@ -653,7 +653,7 @@ class TradingConfidenceScorer:
             closed = df[df['Status'] == 'Closed'].copy()
 
             if closed.empty:
-                return {'avg_days_win': 15, 'avg_days_loss': 10}  # Default estimates
+                return {'avg_days_win': 15, 'avg_days_loss': 10, 'win_velocity_pct_per_day': 0.27}  # Default estimates
 
             # Calculate days held for closed positions
             closed['Entry Date'] = pd.to_datetime(closed['Entry Date'], errors='coerce')
@@ -664,7 +664,7 @@ class TradingConfidenceScorer:
             valid_closed = closed[closed['Days Held'].notna() & (closed['Days Held'] > 0)]
 
             if valid_closed.empty:
-                return {'avg_days_win': 15, 'avg_days_loss': 10}
+                return {'avg_days_win': 15, 'avg_days_loss': 10, 'win_velocity_pct_per_day': 0.27}
 
             # Separate wins and losses
             winners = valid_closed[valid_closed['PnL %'] > 0]
@@ -672,10 +672,14 @@ class TradingConfidenceScorer:
 
             avg_days_win = int(winners['Days Held'].median()) if not winners.empty else 15
             avg_days_loss = int(losers['Days Held'].median()) if not losers.empty else 10
+            median_win_pct = float(winners['PnL %'].median()) if not winners.empty else 4.0
+            # Historical winner pace (% gained per day) -> used for time-to-target ETA
+            win_velocity = round(median_win_pct / avg_days_win, 3) if avg_days_win > 0 else 0.27
 
             return {
                 'avg_days_win': avg_days_win,
-                'avg_days_loss': avg_days_loss
+                'avg_days_loss': avg_days_loss,
+                'win_velocity_pct_per_day': win_velocity
             }
         except Exception as e:
             # Return defaults if calculation fails
@@ -796,25 +800,27 @@ class TradingConfidenceScorer:
                 except:
                     days_in_trade = 0
 
-                # Estimate days to target based on win probability and historical data
-                # Use weighted average: higher win prob = use winner avg, lower = use loser avg
-                win_prob = prediction['win_probability'] / 100.0
-                est_days_to_target = int(
-                    (win_prob * days_stats['avg_days_win']) +
-                    ((1 - win_prob) * days_stats['avg_days_loss'])
-                )
-
-                # Remaining days = estimated total - days already held
-                remaining_days = max(est_days_to_target - days_in_trade, 1)
-
                 # Format insider data: positive for net buying, negative for net selling
                 insider_fmt = f"{insider_shares:+,}" if insider_shares != 0 else "0"
 
-                # Calculate percentage to Fib target
+                # Percentage remaining to the Fib target
                 fib_target = row.get('Fib Target')
                 to_target_pct = None
                 if pd.notna(fib_target) and fib_target > 0 and live_price > 0:
                     to_target_pct = ((fib_target - live_price) / live_price) * 100
+
+                # Estimate days to target = remaining distance / historical winner velocity (%/day).
+                # (Old method blended winner+loser hold times and ignored distance to target,
+                #  so it did not actually estimate time-to-target.)
+                win_velocity = days_stats.get('win_velocity_pct_per_day', 0)
+                if to_target_pct is None:
+                    remaining_days = None
+                elif to_target_pct <= 0:
+                    remaining_days = 0  # already at or above target
+                elif win_velocity > 0:
+                    remaining_days = max(1, min(int(round(to_target_pct / win_velocity)), 90))
+                else:
+                    remaining_days = None
 
                 # Determine confidence change indicator
                 conf_change = ''
