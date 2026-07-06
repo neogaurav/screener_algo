@@ -16,6 +16,51 @@
       "risk_reward": 1.51
     },
     {
+      "ticker": "JBHT",
+      "entry_date": "2026-06-25",
+      "exit_date": "2026-07-06",
+      "entry_price": 274.68,
+      "exit_price": 277.4268,
+      "pnl_pct": 1.0,
+      "pnl_dollars": 50.0,
+      "hold_days": 11.0,
+      "exit_reason": "Stop Loss Hit",
+      "market_cap": "Large",
+      "sector": "Industrials",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.57
+    },
+    {
+      "ticker": "SHO",
+      "entry_date": "2026-07-01",
+      "exit_date": "2026-07-06",
+      "entry_price": 11.18,
+      "exit_price": 11.180000305175781,
+      "pnl_pct": 0.0,
+      "pnl_dollars": 0.0,
+      "hold_days": 5.0,
+      "exit_reason": "Sustained break of 21 EMA",
+      "market_cap": "Small",
+      "sector": "Real Estate",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.64
+    },
+    {
+      "ticker": "UNM",
+      "entry_date": "2026-07-01",
+      "exit_date": "2026-07-06",
+      "entry_price": 91.84,
+      "exit_price": 85.7,
+      "pnl_pct": -6.69,
+      "pnl_dollars": -334.5,
+      "hold_days": 5.0,
+      "exit_reason": "Stop Loss Hit",
+      "market_cap": "Mid",
+      "sector": "Financials",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.99
+    },
+    {
       "ticker": "GKOS",
       "entry_date": "2026-07-02",
       "exit_date": "2026-07-06",
@@ -29,6 +74,21 @@
       "sector": "Health Care",
       "ml_confidence": "LOW",
       "risk_reward": 1.5
+    },
+    {
+      "ticker": "LNN",
+      "entry_date": "2026-07-03",
+      "exit_date": "2026-07-06",
+      "entry_price": 122.12,
+      "exit_price": 117.61000061035156,
+      "pnl_pct": -3.69,
+      "pnl_dollars": -184.5,
+      "hold_days": 3.0,
+      "exit_reason": "Below 200 SMA",
+      "market_cap": "Small",
+      "sector": "Materials",
+      "ml_confidence": "LOW",
+      "risk_reward": 2.32
     },
     {
       "ticker": "IFF",
@@ -78032,12 +78092,12 @@
     }
   ],
   "performance": {
-    "total_trades": 5202,
-    "winners": 2294,
-    "losers": 2908,
+    "total_trades": 5206,
+    "winners": 2295,
+    "losers": 2911,
     "win_rate": 44.1,
-    "total_pnl_dollars": -26328.35,
-    "avg_pnl_pct": -0.03,
+    "total_pnl_dollars": -26797.35,
+    "avg_pnl_pct": -0.04,
     "avg_win_pct": 2.4,
     "avg_loss_pct": -1.95,
     "profit_factor": 0.92
