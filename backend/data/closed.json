@@ -1,6 +1,21 @@
 {
   "closed_positions": [
     {
+      "ticker": "HOPE",
+      "entry_date": "2026-07-06",
+      "exit_date": "2026-07-27",
+      "entry_price": 13.53,
+      "exit_price": 13.4399995803833,
+      "pnl_pct": -0.67,
+      "pnl_dollars": -33.5,
+      "hold_days": 21.0,
+      "exit_reason": "Time Stop (No Progress)",
+      "market_cap": "Small",
+      "sector": "Financials",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.58
+    },
+    {
       "ticker": "FIBK",
       "entry_date": "2026-07-08",
       "exit_date": "2026-07-24",
@@ -101927,11 +101942,11 @@
     }
   ],
   "performance": {
-    "total_trades": 6795,
+    "total_trades": 6796,
     "winners": 3030,
-    "losers": 3765,
+    "losers": 3766,
     "win_rate": 44.6,
-    "total_pnl_dollars": -54948.73,
+    "total_pnl_dollars": -54982.23,
     "avg_pnl_pct": -0.11,
     "avg_win_pct": 2.13,
     "avg_loss_pct": -1.91,
