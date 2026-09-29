@@ -1,6 +1,36 @@
 {
   "closed_positions": [
     {
+      "ticker": "PFG",
+      "entry_date": "2026-09-08",
+      "exit_date": "2026-09-29",
+      "entry_price": 115.04,
+      "exit_price": 114.7699966430664,
+      "pnl_pct": -0.23,
+      "pnl_dollars": -11.5,
+      "hold_days": 21.0,
+      "exit_reason": "Time Stop (No Progress)",
+      "market_cap": "Large",
+      "sector": "Financials",
+      "ml_confidence": "LOW",
+      "risk_reward": 2.51
+    },
+    {
+      "ticker": "PRGO",
+      "entry_date": "2026-09-23",
+      "exit_date": "2026-09-29",
+      "entry_price": 13.84,
+      "exit_price": 14.64249984741211,
+      "pnl_pct": 5.8,
+      "pnl_dollars": 290.0,
+      "hold_days": 6.0,
+      "exit_reason": "Stop Loss Hit",
+      "market_cap": "Small",
+      "sector": "Health Care",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.95
+    },
+    {
       "ticker": "AMRX",
       "entry_date": "2026-09-23",
       "exit_date": "2026-09-28",
@@ -159857,11 +159887,11 @@
     }
   ],
   "performance": {
-    "total_trades": 10657,
-    "winners": 4679,
-    "losers": 5978,
+    "total_trades": 10659,
+    "winners": 4680,
+    "losers": 5979,
     "win_rate": 43.9,
-    "total_pnl_dollars": -110033.7,
+    "total_pnl_dollars": -109755.2,
     "avg_pnl_pct": -0.17,
     "avg_win_pct": 1.82,
     "avg_loss_pct": -1.73,
