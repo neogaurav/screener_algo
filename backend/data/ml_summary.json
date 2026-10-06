@@ -17,7 +17,7 @@
     {
       "ticker": "EXEL",
       "entry_date": "2026-09-16",
-      "current_price": 58.86,
+      "current_price": 58.34,
       "entry_price": 57.69,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.2,
@@ -31,7 +31,7 @@
     {
       "ticker": "DV",
       "entry_date": "2026-09-21",
-      "current_price": 13.48,
+      "current_price": 13.49,
       "entry_price": 13.44,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.0,
@@ -45,7 +45,7 @@
     {
       "ticker": "NSIT",
       "entry_date": "2026-09-21",
-      "current_price": 159.7,
+      "current_price": 159.81,
       "entry_price": 156.7,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.3,
@@ -59,7 +59,7 @@
     {
       "ticker": "DELL",
       "entry_date": "2026-09-23",
-      "current_price": 552.22,
+      "current_price": 575.89,
       "entry_price": 549.83,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.5,
@@ -73,7 +73,7 @@
     {
       "ticker": "LPG",
       "entry_date": "2026-09-25",
-      "current_price": 57.72,
+      "current_price": 56.34,
       "entry_price": 53.36,
       "ml_confidence": "LOW",
       "ml_win_prob": 34.3,
@@ -87,7 +87,7 @@
     {
       "ticker": "OKTA",
       "entry_date": "2026-09-25",
-      "current_price": 218.37,
+      "current_price": 218.13,
       "entry_price": 195.19,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.8,
@@ -101,7 +101,7 @@
     {
       "ticker": "RNG",
       "entry_date": "2026-09-25",
-      "current_price": 79.08,
+      "current_price": 76.55,
       "entry_price": 76.16,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.0,
@@ -115,7 +115,7 @@
     {
       "ticker": "FFIV",
       "entry_date": "2026-09-28",
-      "current_price": 458.2,
+      "current_price": 468.4,
       "entry_price": 435.56,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.8,
@@ -129,7 +129,7 @@
     {
       "ticker": "MEDP",
       "entry_date": "2026-09-29",
-      "current_price": 620.64,
+      "current_price": 609.1,
       "entry_price": 620.8,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.4,
@@ -143,7 +143,7 @@
     {
       "ticker": "IOSP",
       "entry_date": "2026-10-01",
-      "current_price": 97.77,
+      "current_price": 98.47,
       "entry_price": 95.13,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.5,
@@ -157,7 +157,7 @@
     {
       "ticker": "A",
       "entry_date": "2026-10-02",
-      "current_price": 171.3,
+      "current_price": 169.73,
       "entry_price": 166.68,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.9,
@@ -171,7 +171,7 @@
     {
       "ticker": "BIIB",
       "entry_date": "2026-10-02",
-      "current_price": 223.38,
+      "current_price": 223.14,
       "entry_price": 222.82,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.4,
@@ -185,7 +185,7 @@
     {
       "ticker": "ANF",
       "entry_date": "2026-10-02",
-      "current_price": 141.45,
+      "current_price": 141.15,
       "entry_price": 136.36,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.6,
@@ -199,21 +199,21 @@
     {
       "ticker": "QRVO",
       "entry_date": "2026-10-02",
-      "current_price": 114.12,
+      "current_price": 114.17,
       "entry_price": 114.21,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.4,
       "ml_expected_pnl": -0.46,
-      "rsi": 53.1,
-      "adx": 55.31,
-      "rs_vs_spy": 11.41,
+      "rsi": 55.86,
+      "adx": 49.19,
+      "rs_vs_spy": 10.16,
       "market_cap": "Small",
       "sector": "Information Technology"
     },
     {
       "ticker": "PSX",
       "entry_date": "2026-10-02",
-      "current_price": 269.74,
+      "current_price": 271.59,
       "entry_price": 266.58,
       "ml_confidence": "LOW",
       "ml_win_prob": 51.8,
@@ -227,7 +227,7 @@
     {
       "ticker": "RVTY",
       "entry_date": "2026-10-02",
-      "current_price": 157.41,
+      "current_price": 153.68,
       "entry_price": 151.26,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.7,
@@ -241,7 +241,7 @@
     {
       "ticker": "TMO",
       "entry_date": "2026-10-02",
-      "current_price": 676.65,
+      "current_price": 661.74,
       "entry_price": 653.95,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.4,
@@ -255,7 +255,7 @@
     {
       "ticker": "WAT",
       "entry_date": "2026-10-02",
-      "current_price": 440.2,
+      "current_price": 436.36,
       "entry_price": 426.19,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.1,
@@ -269,7 +269,7 @@
     {
       "ticker": "WST",
       "entry_date": "2026-10-02",
-      "current_price": 376.77,
+      "current_price": 374.35,
       "entry_price": 365.85,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.5,
@@ -278,20 +278,6 @@
       "adx": 53.78,
       "rs_vs_spy": 6.44,
       "market_cap": "Large",
-      "sector": "Health Care"
-    },
-    {
-      "ticker": "AVTR",
-      "entry_date": "2026-10-02",
-      "current_price": 15.81,
-      "entry_price": 15.34,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 39.1,
-      "ml_expected_pnl": -0.16,
-      "rsi": 58.11,
-      "adx": 32.76,
-      "rs_vs_spy": 1.2,
-      "market_cap": "Mid",
       "sector": "Health Care"
     },
     {
@@ -311,7 +297,7 @@
     {
       "ticker": "HALO",
       "entry_date": "2026-10-02",
-      "current_price": 108.32,
+      "current_price": 110.51,
       "entry_price": 109.86,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.5,
@@ -323,37 +309,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "NEO",
-      "entry_date": "2026-10-02",
-      "current_price": 19.12,
-      "entry_price": 18.47,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 37.5,
-      "ml_expected_pnl": -0.16,
-      "rsi": 52.39,
-      "adx": 39.04,
-      "rs_vs_spy": 5.99,
-      "market_cap": "Small",
-      "sector": "Health Care"
-    },
-    {
-      "ticker": "RGEN",
-      "entry_date": "2026-10-02",
-      "current_price": 189.6,
-      "entry_price": 181.7,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 38.4,
-      "ml_expected_pnl": -0.41,
-      "rsi": 53.0,
-      "adx": 41.22,
-      "rs_vs_spy": 7.34,
-      "market_cap": "Mid",
-      "sector": "Health Care"
-    },
-    {
       "ticker": "MTD",
       "entry_date": "2026-10-02",
-      "current_price": 1541.22,
+      "current_price": 1534.87,
       "entry_price": 1486.19,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.4,
@@ -365,51 +323,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "AAPL",
-      "entry_date": "2026-10-05",
-      "current_price": 333.13,
-      "entry_price": 332.89,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 42.5,
-      "ml_expected_pnl": -0.16,
-      "rsi": 53.81,
-      "adx": 25.84,
-      "rs_vs_spy": 3.19,
-      "market_cap": "Large",
-      "sector": "Information Technology"
-    },
-    {
-      "ticker": "FIVN",
-      "entry_date": "2026-10-05",
-      "current_price": 34.38,
-      "entry_price": 34.37,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 40.5,
-      "ml_expected_pnl": -0.24,
-      "rsi": 51.69,
-      "adx": 25.2,
-      "rs_vs_spy": 2.45,
-      "market_cap": "Small",
-      "sector": "Information Technology"
-    },
-    {
-      "ticker": "DOCN",
-      "entry_date": "2026-10-05",
-      "current_price": 137.14,
-      "entry_price": 137.23,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 42.6,
-      "ml_expected_pnl": -0.16,
-      "rsi": 55.2,
-      "adx": 33.19,
-      "rs_vs_spy": 21.16,
-      "market_cap": "Mid",
-      "sector": "Information Technology"
-    },
-    {
       "ticker": "IQV",
       "entry_date": "2026-10-05",
-      "current_price": 266.05,
+      "current_price": 262.83,
       "entry_price": 266.09,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.4,
@@ -421,37 +337,9 @@
       "sector": "Health Care"
     },
     {
-      "ticker": "CRSR",
-      "entry_date": "2026-10-05",
-      "current_price": 13.53,
-      "entry_price": 13.53,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 40.8,
-      "ml_expected_pnl": -0.16,
-      "rsi": 57.57,
-      "adx": 26.11,
-      "rs_vs_spy": 5.52,
-      "market_cap": "Small",
-      "sector": "Information Technology"
-    },
-    {
-      "ticker": "SNX",
-      "entry_date": "2026-10-05",
-      "current_price": 277.51,
-      "entry_price": 277.28,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 45.0,
-      "ml_expected_pnl": -0.16,
-      "rsi": 58.3,
-      "adx": 26.24,
-      "rs_vs_spy": 4.72,
-      "market_cap": "Mid",
-      "sector": "Information Technology"
-    },
-    {
       "ticker": "GNRC",
       "entry_date": "2026-10-05",
-      "current_price": 215.32,
+      "current_price": 224.85,
       "entry_price": 215.2,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.9,
@@ -463,12 +351,82 @@
       "sector": "Industrials"
     },
     {
-      "ticker": "INSP",
-      "entry_date": "2026-10-05",
-      "current_price": 70.76,
-      "entry_price": 70.75,
+      "ticker": "AAPL",
+      "entry_date": "2026-10-06",
+      "current_price": 333.4,
+      "entry_price": 333.41,
       "ml_confidence": "LOW",
-      "ml_win_prob": 39.5,
+      "ml_win_prob": 41.9,
+      "ml_expected_pnl": -0.17,
+      "rsi": 53.81,
+      "adx": 25.84,
+      "rs_vs_spy": 3.19,
+      "market_cap": "Large",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "FIVN",
+      "entry_date": "2026-10-06",
+      "current_price": 33.47,
+      "entry_price": 33.48,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 39.9,
+      "ml_expected_pnl": -0.22,
+      "rsi": 51.69,
+      "adx": 25.18,
+      "rs_vs_spy": 2.45,
+      "market_cap": "Small",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "DOCN",
+      "entry_date": "2026-10-06",
+      "current_price": 134.65,
+      "entry_price": 134.43,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 41.7,
+      "ml_expected_pnl": -0.19,
+      "rsi": 55.2,
+      "adx": 33.18,
+      "rs_vs_spy": 21.16,
+      "market_cap": "Mid",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "CRSR",
+      "entry_date": "2026-10-06",
+      "current_price": 13.79,
+      "entry_price": 13.79,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 41.7,
+      "ml_expected_pnl": -0.18,
+      "rsi": 57.57,
+      "adx": 26.11,
+      "rs_vs_spy": 5.52,
+      "market_cap": "Small",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "SNX",
+      "entry_date": "2026-10-06",
+      "current_price": 280.03,
+      "entry_price": 280.05,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 45.4,
+      "ml_expected_pnl": -0.17,
+      "rsi": 58.3,
+      "adx": 26.24,
+      "rs_vs_spy": 4.72,
+      "market_cap": "Mid",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "INSP",
+      "entry_date": "2026-10-06",
+      "current_price": 68.32,
+      "entry_price": 68.33,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 41.0,
       "ml_expected_pnl": -0.18,
       "rsi": 55.32,
       "adx": 37.72,
@@ -478,11 +436,11 @@
     },
     {
       "ticker": "AMPH",
-      "entry_date": "2026-10-05",
-      "current_price": 25.39,
-      "entry_price": 25.37,
+      "entry_date": "2026-10-06",
+      "current_price": 25.82,
+      "entry_price": 25.82,
       "ml_confidence": "LOW",
-      "ml_win_prob": 39.5,
+      "ml_win_prob": 39.6,
       "ml_expected_pnl": -0.18,
       "rsi": 59.02,
       "adx": 70.09,
@@ -492,17 +450,31 @@
     },
     {
       "ticker": "LQDT",
-      "entry_date": "2026-10-05",
-      "current_price": 43.28,
-      "entry_price": 43.22,
+      "entry_date": "2026-10-06",
+      "current_price": 42.5,
+      "entry_price": 42.54,
       "ml_confidence": "LOW",
-      "ml_win_prob": 40.0,
-      "ml_expected_pnl": -0.16,
+      "ml_win_prob": 41.5,
+      "ml_expected_pnl": -0.17,
       "rsi": 55.49,
       "adx": 33.7,
       "rs_vs_spy": 1.78,
       "market_cap": "Small",
       "sector": "Industrials"
+    },
+    {
+      "ticker": "PFBC",
+      "entry_date": "2026-10-06",
+      "current_price": 104.25,
+      "entry_price": 104.25,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 42.4,
+      "ml_expected_pnl": -0.17,
+      "rsi": 51.18,
+      "adx": 24.91,
+      "rs_vs_spy": 1.57,
+      "market_cap": "Small",
+      "sector": "Financials"
     }
   ],
   "summary_by_confidence": {
@@ -517,14 +489,14 @@
       "avg_pnl_pct": 0.36
     },
     "LOW": {
-      "count": 8396,
+      "count": 8407,
       "avg_win_rate": 44.0,
       "avg_pnl_pct": -0.24
     }
   },
   "model_info": {
-    "last_trained": "2026-10-06 01:22:10",
+    "last_trained": "2026-10-06 18:50:30",
     "is_trained": true
   },
-  "last_updated": "2026-10-06T01:22:13.908037Z"
+  "last_updated": "2026-10-06T18:50:34.972319Z"
 }
