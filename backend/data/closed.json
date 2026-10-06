@@ -1,6 +1,21 @@
 {
   "closed_positions": [
     {
+      "ticker": "MPC",
+      "entry_date": "2026-09-25",
+      "exit_date": "2026-10-06",
+      "entry_price": 385.84,
+      "exit_price": 409.6550006103515,
+      "pnl_pct": 6.17,
+      "pnl_dollars": 308.5,
+      "hold_days": 11.0,
+      "exit_reason": "Stop Loss Hit",
+      "market_cap": "Large",
+      "sector": "Energy",
+      "ml_confidence": "LOW",
+      "risk_reward": 2.04
+    },
+    {
       "ticker": "AAPL",
       "entry_date": "2026-10-02",
       "exit_date": "2026-10-05",
@@ -161762,11 +161777,11 @@
     }
   ],
   "performance": {
-    "total_trades": 10784,
-    "winners": 4745,
+    "total_trades": 10785,
+    "winners": 4746,
     "losers": 6039,
     "win_rate": 44.0,
-    "total_pnl_dollars": -110493.79,
+    "total_pnl_dollars": -110185.29,
     "avg_pnl_pct": -0.17,
     "avg_win_pct": 1.81,
     "avg_loss_pct": -1.73,

@@ -71,20 +71,6 @@
       "sector": "Information Technology"
     },
     {
-      "ticker": "MPC",
-      "entry_date": "2026-09-25",
-      "current_price": 433.43,
-      "entry_price": 385.84,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 34.3,
-      "ml_expected_pnl": -0.38,
-      "rsi": 57.16,
-      "adx": 38.85,
-      "rs_vs_spy": 2.88,
-      "market_cap": "Large",
-      "sector": "Energy"
-    },
-    {
       "ticker": "LPG",
       "entry_date": "2026-09-25",
       "current_price": 57.72,
@@ -531,14 +517,14 @@
       "avg_pnl_pct": 0.36
     },
     "LOW": {
-      "count": 8395,
+      "count": 8396,
       "avg_win_rate": 44.0,
       "avg_pnl_pct": -0.24
     }
   },
   "model_info": {
-    "last_trained": "2026-10-05 21:12:06",
+    "last_trained": "2026-10-06 01:22:10",
     "is_trained": true
   },
-  "last_updated": "2026-10-05T21:12:13.691955Z"
+  "last_updated": "2026-10-06T01:22:13.908037Z"
 }
