@@ -2,7 +2,7 @@
   "new_setups": [
     {
       "ticker": "CTVA",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 13.3,
       "current_price": 13.3,
       "stop_loss": 11.36,
@@ -19,15 +19,15 @@
       "price_to_8ema_pct": 0.97,
       "price_to_21ema_pct": 4.44,
       "ml_confidence": "LOW",
-      "ml_win_prob": 43.7,
-      "ml_expected_pnl": -0.18,
+      "ml_win_prob": 41.9,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "MRVL",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 265.86,
       "current_price": 265.91,
       "stop_loss": 237.77,
@@ -44,15 +44,15 @@
       "price_to_8ema_pct": -2.21,
       "price_to_21ema_pct": 1.94,
       "ml_confidence": "LOW",
-      "ml_win_prob": 37.4,
-      "ml_expected_pnl": -0.59,
-      "insider_net": -51513,
+      "ml_win_prob": 36.2,
+      "ml_expected_pnl": -0.48,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "APH",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 86.19,
       "current_price": 86.19,
       "stop_loss": 81.3,
@@ -62,22 +62,22 @@
       "sector": "Information Technology",
       "pullback_date": "2026-10-12",
       "rsi": 56.78,
-      "adx": 20.12,
-      "demarker": 0.511,
+      "adx": 20.13,
+      "demarker": 0.51,
       "rs_vs_spy": 7.38,
-      "volume_ratio": 0.87,
+      "volume_ratio": 0.88,
       "price_to_8ema_pct": -0.1,
       "price_to_21ema_pct": 2.06,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.4,
-      "ml_expected_pnl": -0.09,
+      "ml_win_prob": 39.7,
+      "ml_expected_pnl": 0.03,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "CIEN",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 405.01,
       "current_price": 404.94,
       "stop_loss": 337.11,
@@ -94,15 +94,15 @@
       "price_to_8ema_pct": -2.03,
       "price_to_21ema_pct": 3.87,
       "ml_confidence": "LOW",
-      "ml_win_prob": 40.6,
-      "ml_expected_pnl": -0.52,
-      "insider_net": -41405,
+      "ml_win_prob": 37.8,
+      "ml_expected_pnl": -0.42,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "ESI",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 36.45,
       "current_price": 36.47,
       "stop_loss": 33.99,
@@ -119,18 +119,18 @@
       "price_to_8ema_pct": -0.46,
       "price_to_21ema_pct": 1.17,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.8,
-      "ml_expected_pnl": -0.18,
+      "ml_win_prob": 39.7,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "ADI",
-      "entry_date": "2026-10-12",
-      "entry_price": 406.24,
+      "entry_date": "2026-10-13",
+      "entry_price": 406.25,
       "current_price": 406.22,
-      "stop_loss": 384.79,
+      "stop_loss": 384.8,
       "fib_target": 440.97,
       "risk_reward": 1.62,
       "market_cap": "Large",
@@ -144,15 +144,15 @@
       "price_to_8ema_pct": -0.14,
       "price_to_21ema_pct": 2.48,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.7,
-      "ml_expected_pnl": -0.17,
-      "insider_net": -49879,
+      "ml_win_prob": 40.5,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "ENTG",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 160.01,
       "current_price": 160.01,
       "stop_loss": 147.21,
@@ -169,15 +169,15 @@
       "price_to_8ema_pct": -1.14,
       "price_to_21ema_pct": 3.18,
       "ml_confidence": "LOW",
-      "ml_win_prob": 41.8,
-      "ml_expected_pnl": -0.18,
-      "insider_net": -4062,
+      "ml_win_prob": 38.6,
+      "ml_expected_pnl": -0.17,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "APLE",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 16.23,
       "current_price": 16.23,
       "stop_loss": 15.64,
@@ -194,15 +194,15 @@
       "price_to_8ema_pct": -0.0,
       "price_to_21ema_pct": 0.9,
       "ml_confidence": "LOW",
-      "ml_win_prob": 45.2,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 41.2,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "MTSI",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 306.36,
       "current_price": 306.26,
       "stop_loss": 272.28,
@@ -219,15 +219,15 @@
       "price_to_8ema_pct": -3.57,
       "price_to_21ema_pct": 1.58,
       "ml_confidence": "LOW",
-      "ml_win_prob": 37.9,
-      "ml_expected_pnl": -0.69,
-      "insider_net": -7641,
+      "ml_win_prob": 35.4,
+      "ml_expected_pnl": -0.58,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "RAL",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 72.31,
       "current_price": 72.31,
       "stop_loss": 67.83,
@@ -244,15 +244,40 @@
       "price_to_8ema_pct": 0.05,
       "price_to_21ema_pct": 2.63,
       "ml_confidence": "LOW",
-      "ml_win_prob": 43.3,
-      "ml_expected_pnl": -0.17,
-      "insider_net": -31934,
+      "ml_win_prob": 40.9,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "COHU",
+      "entry_date": "2026-10-13",
+      "entry_price": 65.21,
+      "current_price": 65.23,
+      "stop_loss": 58.54,
+      "fib_target": 82.79,
+      "risk_reward": 2.63,
+      "market_cap": "Small",
+      "sector": "Information Technology",
+      "pullback_date": "2026-10-12",
+      "rsi": 53.31,
+      "adx": 56.29,
+      "demarker": 0.536,
+      "rs_vs_spy": 27.98,
+      "volume_ratio": 0.98,
+      "price_to_8ema_pct": -4.67,
+      "price_to_21ema_pct": 0.3,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 33.0,
+      "ml_expected_pnl": -0.63,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "GNRC",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 218.37,
       "current_price": 218.37,
       "stop_loss": 199.93,
@@ -269,40 +294,15 @@
       "price_to_8ema_pct": -0.06,
       "price_to_21ema_pct": 3.77,
       "ml_confidence": "LOW",
-      "ml_win_prob": 41.4,
-      "ml_expected_pnl": -0.17,
-      "insider_net": -12689,
+      "ml_win_prob": 39.4,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
-      "ticker": "COHU",
-      "entry_date": "2026-10-12",
-      "entry_price": 65.21,
-      "current_price": 65.23,
-      "stop_loss": 58.54,
-      "fib_target": 82.79,
-      "risk_reward": 2.63,
-      "market_cap": "Small",
-      "sector": "Information Technology",
-      "pullback_date": "2026-10-12",
-      "rsi": 53.31,
-      "adx": 56.29,
-      "demarker": 0.536,
-      "rs_vs_spy": 27.98,
-      "volume_ratio": 0.97,
-      "price_to_8ema_pct": -4.67,
-      "price_to_21ema_pct": 0.3,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 35.8,
-      "ml_expected_pnl": -1.31,
-      "insider_net": -107763,
-      "hold_days": 0,
-      "has_ao_entry": false
-    },
-    {
       "ticker": "GEV",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 996.8,
       "current_price": 997.36,
       "stop_loss": 926.56,
@@ -319,15 +319,15 @@
       "price_to_8ema_pct": 0.31,
       "price_to_21ema_pct": 2.2,
       "ml_confidence": "LOW",
-      "ml_win_prob": 45.2,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 41.4,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "PDFS",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 52.69,
       "current_price": 52.76,
       "stop_loss": 47.85,
@@ -344,18 +344,18 @@
       "price_to_8ema_pct": -0.53,
       "price_to_21ema_pct": 3.75,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.8,
-      "ml_expected_pnl": -0.18,
-      "insider_net": -4895,
+      "ml_win_prob": 39.8,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "NTCT",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 40.05,
       "current_price": 40.03,
-      "stop_loss": 37.92,
+      "stop_loss": 37.91,
       "fib_target": 43.91,
       "risk_reward": 1.81,
       "market_cap": "Small",
@@ -363,21 +363,21 @@
       "pullback_date": "2026-10-12",
       "rsi": 53.36,
       "adx": 33.83,
-      "demarker": 0.605,
+      "demarker": 0.606,
       "rs_vs_spy": 4.65,
       "volume_ratio": 0.94,
       "price_to_8ema_pct": -0.29,
       "price_to_21ema_pct": 0.91,
       "ml_confidence": "LOW",
-      "ml_win_prob": 43.1,
-      "ml_expected_pnl": -0.17,
-      "insider_net": -21269,
+      "ml_win_prob": 40.0,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "AMN",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 36.28,
       "current_price": 36.26,
       "stop_loss": 33.81,
@@ -387,22 +387,22 @@
       "sector": "Health Care",
       "pullback_date": "2026-10-12",
       "rsi": 57.97,
-      "adx": 30.25,
+      "adx": 30.26,
       "demarker": 0.6,
       "rs_vs_spy": 3.6,
       "volume_ratio": 1.0,
       "price_to_8ema_pct": 0.48,
       "price_to_21ema_pct": 2.36,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.9,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 40.8,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "ROG",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 145.84,
       "current_price": 145.91,
       "stop_loss": 132.75,
@@ -415,19 +415,19 @@
       "adx": 46.22,
       "demarker": 0.673,
       "rs_vs_spy": 7.97,
-      "volume_ratio": 1.24,
+      "volume_ratio": 1.25,
       "price_to_8ema_pct": -2.28,
       "price_to_21ema_pct": 1.06,
       "ml_confidence": "LOW",
-      "ml_win_prob": 38.8,
-      "ml_expected_pnl": -0.59,
+      "ml_win_prob": 35.1,
+      "ml_expected_pnl": -0.48,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "DFIN",
-      "entry_date": "2026-10-12",
+      "entry_date": "2026-10-13",
       "entry_price": 48.69,
       "current_price": 48.71,
       "stop_loss": 45.52,
@@ -444,9 +444,9 @@
       "price_to_8ema_pct": -0.14,
       "price_to_21ema_pct": 0.39,
       "ml_confidence": "LOW",
-      "ml_win_prob": 42.6,
-      "ml_expected_pnl": -0.17,
-      "insider_net": -5670,
+      "ml_win_prob": 40.3,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     }
@@ -474,7 +474,7 @@
       "ml_win_prob": 40.3,
       "ml_expected_pnl": 0.09,
       "insider_net": 0,
-      "hold_days": 160,
+      "hold_days": 161,
       "has_ao_entry": false
     },
     {
@@ -499,7 +499,7 @@
       "ml_win_prob": 41.3,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 21,
+      "hold_days": 22,
       "has_ao_entry": false
     },
     {
@@ -524,7 +524,7 @@
       "ml_win_prob": 42.5,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -549,7 +549,7 @@
       "ml_win_prob": 34.3,
       "ml_expected_pnl": -0.31,
       "insider_net": 0,
-      "hold_days": 17,
+      "hold_days": 18,
       "has_ao_entry": true
     },
     {
@@ -574,7 +574,7 @@
       "ml_win_prob": 41.0,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 17,
+      "hold_days": 18,
       "has_ao_entry": false
     },
     {
@@ -583,7 +583,7 @@
       "entry_price": 435.56,
       "current_price": 473.63,
       "stop_loss": 457.9250042724609,
-      "fib_target": 494.5516837304688,
+      "fib_target": 502.5972506459767,
       "risk_reward": 1.72,
       "market_cap": "Large",
       "sector": "Information Technology",
@@ -599,7 +599,7 @@
       "ml_win_prob": 43.8,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 14,
+      "hold_days": 15,
       "has_ao_entry": false
     },
     {
@@ -624,7 +624,7 @@
       "ml_win_prob": 46.9,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -649,7 +649,7 @@
       "ml_win_prob": 44.4,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -674,7 +674,7 @@
       "ml_win_prob": 43.6,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -699,7 +699,7 @@
       "ml_win_prob": 42.4,
       "ml_expected_pnl": -0.46,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -724,7 +724,7 @@
       "ml_win_prob": 51.8,
       "ml_expected_pnl": -0.09,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -732,7 +732,7 @@
       "entry_date": "2026-10-02",
       "entry_price": 151.26,
       "current_price": 155.61,
-      "stop_loss": 143.28,
+      "stop_loss": 143.27,
       "fib_target": 178.33,
       "risk_reward": 1.84,
       "market_cap": "Large",
@@ -749,7 +749,7 @@
       "ml_win_prob": 50.7,
       "ml_expected_pnl": -0.05,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -774,7 +774,7 @@
       "ml_win_prob": 46.4,
       "ml_expected_pnl": -0.37,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -799,7 +799,7 @@
       "ml_win_prob": 45.1,
       "ml_expected_pnl": -0.29,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -824,7 +824,7 @@
       "ml_win_prob": 44.5,
       "ml_expected_pnl": -0.24,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -849,7 +849,7 @@
       "ml_win_prob": 38.5,
       "ml_expected_pnl": -0.31,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -874,7 +874,7 @@
       "ml_win_prob": 38.5,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 10,
+      "hold_days": 11,
       "has_ao_entry": false
     },
     {
@@ -899,7 +899,7 @@
       "ml_win_prob": 48.6,
       "ml_expected_pnl": -0.11,
       "insider_net": 0,
-      "hold_days": 6,
+      "hold_days": 7,
       "has_ao_entry": false
     },
     {
@@ -924,7 +924,7 @@
       "ml_win_prob": 46.6,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 6,
+      "hold_days": 7,
       "has_ao_entry": false
     },
     {
@@ -949,7 +949,7 @@
       "ml_win_prob": 47.3,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 6,
+      "hold_days": 7,
       "has_ao_entry": false
     },
     {
@@ -974,7 +974,7 @@
       "ml_win_prob": 41.2,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 5,
+      "hold_days": 6,
       "has_ao_entry": false
     },
     {
@@ -999,7 +999,7 @@
       "ml_win_prob": 44.3,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1017,14 +1017,14 @@
       "adx": 47.38,
       "demarker": 0.516,
       "rs_vs_spy": 13.8,
-      "volume_ratio": 0.98,
+      "volume_ratio": 1.04,
       "price_to_8ema_pct": 0.47,
       "price_to_21ema_pct": 2.77,
       "ml_confidence": "LOW",
       "ml_win_prob": 37.5,
       "ml_expected_pnl": -0.33,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1049,7 +1049,7 @@
       "ml_win_prob": 46.1,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1074,7 +1074,7 @@
       "ml_win_prob": 36.7,
       "ml_expected_pnl": -0.72,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1099,7 +1099,7 @@
       "ml_win_prob": 37.5,
       "ml_expected_pnl": -0.72,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1117,14 +1117,14 @@
       "adx": 56.01,
       "demarker": 0.739,
       "rs_vs_spy": 15.37,
-      "volume_ratio": 1.13,
+      "volume_ratio": 1.14,
       "price_to_8ema_pct": 1.53,
       "price_to_21ema_pct": 5.79,
       "ml_confidence": "LOW",
       "ml_win_prob": 36.7,
       "ml_expected_pnl": -1.08,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1149,7 +1149,7 @@
       "ml_win_prob": 41.8,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1174,7 +1174,7 @@
       "ml_win_prob": 40.6,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1199,7 +1199,7 @@
       "ml_win_prob": 41.1,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1224,7 +1224,7 @@
       "ml_win_prob": 42.9,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1249,7 +1249,7 @@
       "ml_win_prob": 40.7,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1274,7 +1274,7 @@
       "ml_win_prob": 41.0,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 4,
+      "hold_days": 5,
       "has_ao_entry": false
     },
     {
@@ -1299,7 +1299,7 @@
       "ml_win_prob": 43.4,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1324,7 +1324,7 @@
       "ml_win_prob": 39.2,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1349,7 +1349,7 @@
       "ml_win_prob": 41.1,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1374,7 +1374,7 @@
       "ml_win_prob": 43.1,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": true
     },
     {
@@ -1399,7 +1399,7 @@
       "ml_win_prob": 42.6,
       "ml_expected_pnl": -0.15,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": true
     },
     {
@@ -1424,7 +1424,7 @@
       "ml_win_prob": 43.3,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1449,7 +1449,7 @@
       "ml_win_prob": 43.5,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1457,15 +1457,15 @@
       "entry_date": "2026-10-09",
       "entry_price": 94.39,
       "current_price": 91.5,
-      "stop_loss": 84.36,
+      "stop_loss": 84.35,
       "fib_target": 105.5,
       "risk_reward": 1.92,
       "market_cap": "Small",
       "sector": "Industrials",
       "pullback_date": "2026-10-12",
       "rsi": 52.65,
-      "adx": 54.7,
-      "demarker": 0.642,
+      "adx": 54.68,
+      "demarker": 0.641,
       "rs_vs_spy": 14.59,
       "volume_ratio": 0.61,
       "price_to_8ema_pct": -2.28,
@@ -1474,7 +1474,7 @@
       "ml_win_prob": 37.8,
       "ml_expected_pnl": -0.55,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     },
     {
@@ -1499,7 +1499,7 @@
       "ml_win_prob": 42.8,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 3,
+      "hold_days": 4,
       "has_ao_entry": false
     }
   ],
@@ -1512,5 +1512,5 @@
     "spy_rsi": 59.9,
     "vix": 15.21
   },
-  "last_updated": "2026-10-12T21:37:36.685607Z"
+  "last_updated": "2026-10-13T02:12:13.027983Z"
 }
