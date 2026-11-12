@@ -1,6 +1,21 @@
 {
   "closed_positions": [
     {
+      "ticker": "HUM",
+      "entry_date": "2026-11-09",
+      "exit_date": "2026-11-12",
+      "entry_price": 423.22,
+      "exit_price": 427.4522,
+      "pnl_pct": 1.0,
+      "pnl_dollars": 50.0,
+      "hold_days": 3.0,
+      "exit_reason": "Stop Loss Hit",
+      "market_cap": "Large",
+      "sector": "Health Care",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.74
+    },
+    {
       "ticker": "FDS",
       "entry_date": "2026-10-29",
       "exit_date": "2026-11-11",
@@ -183122,13 +183137,13 @@
     }
   ],
   "performance": {
-    "total_trades": 12208,
-    "winners": 5440,
+    "total_trades": 12209,
+    "winners": 5441,
     "losers": 6768,
     "win_rate": 44.6,
-    "total_pnl_dollars": -119963.78,
+    "total_pnl_dollars": -119913.78,
     "avg_pnl_pct": -0.17,
-    "avg_win_pct": 1.76,
+    "avg_win_pct": 1.75,
     "avg_loss_pct": -1.71,
     "profit_factor": 0.81
   }
