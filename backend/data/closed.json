@@ -1,6 +1,21 @@
 {
   "closed_positions": [
     {
+      "ticker": "GHC",
+      "entry_date": "2026-11-12",
+      "exit_date": "2026-11-13",
+      "entry_price": 1216.03,
+      "exit_price": 1213.0400390625,
+      "pnl_pct": -0.25,
+      "pnl_dollars": -12.29,
+      "hold_days": null,
+      "exit_reason": "Setup deteriorated",
+      "market_cap": "Mid",
+      "sector": "Consumer Discretionary",
+      "ml_confidence": "LOW",
+      "risk_reward": 1.52
+    },
+    {
       "ticker": "LTH",
       "entry_date": "2026-11-04",
       "exit_date": "2026-11-12",
@@ -184802,11 +184817,11 @@
     }
   ],
   "performance": {
-    "total_trades": 12320,
+    "total_trades": 12321,
     "winners": 5474,
-    "losers": 6846,
+    "losers": 6847,
     "win_rate": 44.4,
-    "total_pnl_dollars": -122853.9,
+    "total_pnl_dollars": -122866.19,
     "avg_pnl_pct": -0.17,
     "avg_win_pct": 1.75,
     "avg_loss_pct": -1.71,
