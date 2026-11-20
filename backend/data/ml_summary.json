@@ -101,7 +101,7 @@
     {
       "ticker": "EG",
       "entry_date": "2026-10-29",
-      "current_price": 421.99,
+      "current_price": 421.78,
       "entry_price": 400.7,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.1,
@@ -143,7 +143,7 @@
     {
       "ticker": "MTD",
       "entry_date": "2026-10-30",
-      "current_price": 1705.66,
+      "current_price": 1705.79,
       "entry_price": 1674.81,
       "ml_confidence": "LOW",
       "ml_win_prob": 47.7,
@@ -199,7 +199,7 @@
     {
       "ticker": "BF-B",
       "entry_date": "2026-11-04",
-      "current_price": 30.11,
+      "current_price": 30.12,
       "entry_price": 28.95,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.4,
@@ -255,7 +255,7 @@
     {
       "ticker": "CON",
       "entry_date": "2026-11-06",
-      "current_price": 41.44,
+      "current_price": 41.43,
       "entry_price": 42.1,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.8,
@@ -311,7 +311,7 @@
     {
       "ticker": "AAPL",
       "entry_date": "2026-11-07",
-      "current_price": 349.1,
+      "current_price": 349.11,
       "entry_price": 342.37,
       "ml_confidence": "LOW",
       "ml_win_prob": 38.7,
@@ -353,7 +353,7 @@
     {
       "ticker": "FTV",
       "entry_date": "2026-11-07",
-      "current_price": 65.41,
+      "current_price": 65.42,
       "entry_price": 65.37,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.2,
@@ -381,7 +381,7 @@
     {
       "ticker": "BOX",
       "entry_date": "2026-11-07",
-      "current_price": 43.09,
+      "current_price": 43.08,
       "entry_price": 41.95,
       "ml_confidence": "LOW",
       "ml_win_prob": 37.3,
@@ -409,7 +409,7 @@
     {
       "ticker": "MAS",
       "entry_date": "2026-11-07",
-      "current_price": 82.78,
+      "current_price": 82.79,
       "entry_price": 82.22,
       "ml_confidence": "LOW",
       "ml_win_prob": 30.4,
@@ -423,7 +423,7 @@
     {
       "ticker": "ED",
       "entry_date": "2026-11-07",
-      "current_price": 119.1,
+      "current_price": 119.08,
       "entry_price": 118.56,
       "ml_confidence": "LOW",
       "ml_win_prob": 30.6,
@@ -451,7 +451,7 @@
     {
       "ticker": "CHD",
       "entry_date": "2026-11-07",
-      "current_price": 109.68,
+      "current_price": 109.67,
       "entry_price": 109.33,
       "ml_confidence": "LOW",
       "ml_win_prob": 31.4,
@@ -465,7 +465,7 @@
     {
       "ticker": "CB",
       "entry_date": "2026-11-07",
-      "current_price": 370.17,
+      "current_price": 370.09,
       "entry_price": 365.02,
       "ml_confidence": "LOW",
       "ml_win_prob": 33.8,
@@ -493,7 +493,7 @@
     {
       "ticker": "ALLE",
       "entry_date": "2026-11-07",
-      "current_price": 186.01,
+      "current_price": 185.96,
       "entry_price": 185.39,
       "ml_confidence": "LOW",
       "ml_win_prob": 33.2,
@@ -507,7 +507,7 @@
     {
       "ticker": "RLI",
       "entry_date": "2026-11-07",
-      "current_price": 70.94,
+      "current_price": 70.92,
       "entry_price": 68.35,
       "ml_confidence": "LOW",
       "ml_win_prob": 30.6,
@@ -535,7 +535,7 @@
     {
       "ticker": "AFG",
       "entry_date": "2026-11-07",
-      "current_price": 156.94,
+      "current_price": 156.9,
       "entry_price": 154.55,
       "ml_confidence": "LOW",
       "ml_win_prob": 37.5,
@@ -577,7 +577,7 @@
     {
       "ticker": "CPK",
       "entry_date": "2026-11-07",
-      "current_price": 136.3,
+      "current_price": 136.16,
       "entry_price": 140.28,
       "ml_confidence": "LOW",
       "ml_win_prob": 29.0,
@@ -591,7 +591,7 @@
     {
       "ticker": "R",
       "entry_date": "2026-11-07",
-      "current_price": 282.09,
+      "current_price": 282.54,
       "entry_price": 266.39,
       "ml_confidence": "LOW",
       "ml_win_prob": 36.3,
@@ -619,7 +619,7 @@
     {
       "ticker": "MSCI",
       "entry_date": "2026-11-09",
-      "current_price": 624.63,
+      "current_price": 624.66,
       "entry_price": 646.45,
       "ml_confidence": "LOW",
       "ml_win_prob": 51.7,
@@ -647,7 +647,7 @@
     {
       "ticker": "THG",
       "entry_date": "2026-11-10",
-      "current_price": 242.85,
+      "current_price": 242.81,
       "entry_price": 245.23,
       "ml_confidence": "LOW",
       "ml_win_prob": 35.7,
@@ -661,7 +661,7 @@
     {
       "ticker": "ECL",
       "entry_date": "2026-11-11",
-      "current_price": 297.29,
+      "current_price": 297.42,
       "entry_price": 306.03,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.8,
@@ -731,7 +731,7 @@
     {
       "ticker": "MDT",
       "entry_date": "2026-11-13",
-      "current_price": 100.64,
+      "current_price": 100.63,
       "entry_price": 102.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 49.0,
@@ -745,7 +745,7 @@
     {
       "ticker": "CL",
       "entry_date": "2026-11-13",
-      "current_price": 96.91,
+      "current_price": 96.9,
       "entry_price": 99.48,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.6,
@@ -759,7 +759,7 @@
     {
       "ticker": "HOG",
       "entry_date": "2026-11-13",
-      "current_price": 32.69,
+      "current_price": 32.68,
       "entry_price": 32.4,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.0,
@@ -773,7 +773,7 @@
     {
       "ticker": "AWK",
       "entry_date": "2026-11-13",
-      "current_price": 148.29,
+      "current_price": 148.33,
       "entry_price": 149.29,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.5,
@@ -787,7 +787,7 @@
     {
       "ticker": "MRSH",
       "entry_date": "2026-11-13",
-      "current_price": 204.69,
+      "current_price": 204.74,
       "entry_price": 207.55,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.0,
@@ -829,7 +829,7 @@
     {
       "ticker": "MHK",
       "entry_date": "2026-11-13",
-      "current_price": 142.84,
+      "current_price": 142.77,
       "entry_price": 146.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.0,
@@ -885,7 +885,7 @@
     {
       "ticker": "PSA",
       "entry_date": "2026-11-14",
-      "current_price": 326.72,
+      "current_price": 326.71,
       "entry_price": 332.59,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.0,
@@ -899,7 +899,7 @@
     {
       "ticker": "CCK",
       "entry_date": "2026-11-14",
-      "current_price": 118.43,
+      "current_price": 118.45,
       "entry_price": 121.57,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.7,
@@ -909,20 +909,6 @@
       "rs_vs_spy": 9.2,
       "market_cap": "Mid",
       "sector": "Materials"
-    },
-    {
-      "ticker": "GME",
-      "entry_date": "2026-11-17",
-      "current_price": 26.97,
-      "entry_price": 25.36,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 28.6,
-      "ml_expected_pnl": -0.14,
-      "rsi": 53.63,
-      "adx": 33.97,
-      "rs_vs_spy": 0.57,
-      "market_cap": "Mid",
-      "sector": "Consumer Discretionary"
     },
     {
       "ticker": "BKH",
@@ -955,7 +941,7 @@
     {
       "ticker": "EXR",
       "entry_date": "2026-11-17",
-      "current_price": 156.0,
+      "current_price": 155.96,
       "entry_price": 156.55,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.5,
@@ -983,7 +969,7 @@
     {
       "ticker": "CPAY",
       "entry_date": "2026-11-17",
-      "current_price": 434.42,
+      "current_price": 434.31,
       "entry_price": 452.31,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.3,
@@ -997,7 +983,7 @@
     {
       "ticker": "DFIN",
       "entry_date": "2026-11-17",
-      "current_price": 65.44,
+      "current_price": 65.43,
       "entry_price": 66.87,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.0,
@@ -1011,7 +997,7 @@
     {
       "ticker": "BRK-B",
       "entry_date": "2026-11-18",
-      "current_price": 572.2,
+      "current_price": 572.08,
       "entry_price": 574.27,
       "ml_confidence": "LOW",
       "ml_win_prob": 40.7,
@@ -1039,7 +1025,7 @@
     {
       "ticker": "SWK",
       "entry_date": "2026-11-18",
-      "current_price": 107.68,
+      "current_price": 107.65,
       "entry_price": 110.82,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.3,
@@ -1053,7 +1039,7 @@
     {
       "ticker": "SBH",
       "entry_date": "2026-11-18",
-      "current_price": 18.26,
+      "current_price": 18.27,
       "entry_price": 19.08,
       "ml_confidence": "LOW",
       "ml_win_prob": 39.4,
@@ -1067,7 +1053,7 @@
     {
       "ticker": "GKOS",
       "entry_date": "2026-11-18",
-      "current_price": 238.12,
+      "current_price": 238.11,
       "entry_price": 233.09,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.4,
@@ -1081,7 +1067,7 @@
     {
       "ticker": "RSG",
       "entry_date": "2026-11-18",
-      "current_price": 246.54,
+      "current_price": 246.6,
       "entry_price": 249.24,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.2,
@@ -1193,7 +1179,7 @@
     {
       "ticker": "NI",
       "entry_date": "2026-11-19",
-      "current_price": 44.58,
+      "current_price": 44.59,
       "entry_price": 44.58,
       "ml_confidence": "LOW",
       "ml_win_prob": 42.3,
@@ -1235,7 +1221,7 @@
     {
       "ticker": "HD",
       "entry_date": "2026-11-19",
-      "current_price": 336.9,
+      "current_price": 336.84,
       "entry_price": 336.92,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.9,
@@ -1249,7 +1235,7 @@
     {
       "ticker": "HAYW",
       "entry_date": "2026-11-19",
-      "current_price": 16.1,
+      "current_price": 16.11,
       "entry_price": 16.1,
       "ml_confidence": "LOW",
       "ml_win_prob": 50.5,
@@ -1361,7 +1347,7 @@
     {
       "ticker": "OTIS",
       "entry_date": "2026-11-19",
-      "current_price": 75.97,
+      "current_price": 75.95,
       "entry_price": 75.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.0,
@@ -1389,7 +1375,7 @@
     {
       "ticker": "CAH",
       "entry_date": "2026-11-19",
-      "current_price": 272.37,
+      "current_price": 272.36,
       "entry_price": 272.37,
       "ml_confidence": "LOW",
       "ml_win_prob": 54.3,
@@ -1403,7 +1389,7 @@
     {
       "ticker": "ITT",
       "entry_date": "2026-11-19",
-      "current_price": 206.19,
+      "current_price": 206.27,
       "entry_price": 206.19,
       "ml_confidence": "LOW",
       "ml_win_prob": 48.0,
@@ -1417,7 +1403,7 @@
     {
       "ticker": "CLX",
       "entry_date": "2026-11-19",
-      "current_price": 104.97,
+      "current_price": 104.95,
       "entry_price": 104.97,
       "ml_confidence": "LOW",
       "ml_win_prob": 47.9,
@@ -1431,7 +1417,7 @@
     {
       "ticker": "AHR",
       "entry_date": "2026-11-19",
-      "current_price": 57.63,
+      "current_price": 57.61,
       "entry_price": 57.63,
       "ml_confidence": "LOW",
       "ml_win_prob": 55.6,
@@ -1445,7 +1431,7 @@
     {
       "ticker": "BRO",
       "entry_date": "2026-11-19",
-      "current_price": 72.34,
+      "current_price": 72.33,
       "entry_price": 72.34,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.8,
@@ -1473,7 +1459,7 @@
     {
       "ticker": "DG",
       "entry_date": "2026-11-19",
-      "current_price": 133.55,
+      "current_price": 133.49,
       "entry_price": 133.55,
       "ml_confidence": "LOW",
       "ml_win_prob": 49.1,
@@ -1501,7 +1487,7 @@
     {
       "ticker": "AFL",
       "entry_date": "2026-11-19",
-      "current_price": 124.76,
+      "current_price": 124.75,
       "entry_price": 124.76,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.7,
@@ -1557,7 +1543,7 @@
     {
       "ticker": "AEE",
       "entry_date": "2026-11-19",
-      "current_price": 111.58,
+      "current_price": 111.59,
       "entry_price": 111.58,
       "ml_confidence": "LOW",
       "ml_win_prob": 44.4,
@@ -1599,7 +1585,7 @@
     {
       "ticker": "ALL",
       "entry_date": "2026-11-19",
-      "current_price": 266.76,
+      "current_price": 266.74,
       "entry_price": 266.76,
       "ml_confidence": "LOW",
       "ml_win_prob": 43.4,
@@ -1613,7 +1599,7 @@
     {
       "ticker": "FDX",
       "entry_date": "2026-11-19",
-      "current_price": 314.67,
+      "current_price": 314.69,
       "entry_price": 314.67,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.1,
@@ -1627,7 +1613,7 @@
     {
       "ticker": "FERG",
       "entry_date": "2026-11-19",
-      "current_price": 247.5,
+      "current_price": 247.42,
       "entry_price": 247.5,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.4,
@@ -1655,7 +1641,7 @@
     {
       "ticker": "AOS",
       "entry_date": "2026-11-19",
-      "current_price": 63.73,
+      "current_price": 63.72,
       "entry_price": 63.73,
       "ml_confidence": "LOW",
       "ml_win_prob": 45.9,
@@ -1669,7 +1655,7 @@
     {
       "ticker": "DD",
       "entry_date": "2026-11-19",
-      "current_price": 149.65,
+      "current_price": 149.68,
       "entry_price": 149.65,
       "ml_confidence": "LOW",
       "ml_win_prob": 47.2,
@@ -1683,7 +1669,7 @@
     {
       "ticker": "HIG",
       "entry_date": "2026-11-19",
-      "current_price": 135.59,
+      "current_price": 135.63,
       "entry_price": 135.59,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.8,
@@ -1725,7 +1711,7 @@
     {
       "ticker": "CBOE",
       "entry_date": "2026-11-19",
-      "current_price": 357.87,
+      "current_price": 358.12,
       "entry_price": 357.87,
       "ml_confidence": "LOW",
       "ml_win_prob": 56.2,
@@ -1739,7 +1725,7 @@
     {
       "ticker": "EPAM",
       "entry_date": "2026-11-19",
-      "current_price": 150.5,
+      "current_price": 150.49,
       "entry_price": 150.5,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 54.0,
@@ -1753,7 +1739,7 @@
     {
       "ticker": "JKHY",
       "entry_date": "2026-11-19",
-      "current_price": 170.24,
+      "current_price": 170.28,
       "entry_price": 170.27,
       "ml_confidence": "LOW",
       "ml_win_prob": 57.0,
@@ -1767,7 +1753,7 @@
     {
       "ticker": "OGS",
       "entry_date": "2026-11-19",
-      "current_price": 80.85,
+      "current_price": 80.86,
       "entry_price": 80.85,
       "ml_confidence": "LOW",
       "ml_win_prob": 41.0,
@@ -1809,7 +1795,7 @@
     {
       "ticker": "ENOV",
       "entry_date": "2026-11-19",
-      "current_price": 26.24,
+      "current_price": 26.23,
       "entry_price": 26.24,
       "ml_confidence": "LOW",
       "ml_win_prob": 54.5,
@@ -1823,7 +1809,7 @@
     {
       "ticker": "AON",
       "entry_date": "2026-11-19",
-      "current_price": 331.14,
+      "current_price": 331.18,
       "entry_price": 331.11,
       "ml_confidence": "LOW",
       "ml_win_prob": 58.1,
@@ -1851,7 +1837,7 @@
     {
       "ticker": "EPR",
       "entry_date": "2026-11-19",
-      "current_price": 58.87,
+      "current_price": 58.9,
       "entry_price": 58.87,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.5,
@@ -1879,7 +1865,7 @@
     {
       "ticker": "H",
       "entry_date": "2026-11-19",
-      "current_price": 186.56,
+      "current_price": 186.52,
       "entry_price": 186.56,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.9,
@@ -1893,7 +1879,7 @@
     {
       "ticker": "MCK",
       "entry_date": "2026-11-19",
-      "current_price": 1062.51,
+      "current_price": 1063.05,
       "entry_price": 1062.51,
       "ml_confidence": "LOW",
       "ml_win_prob": 54.9,
@@ -1907,7 +1893,7 @@
     {
       "ticker": "AVA",
       "entry_date": "2026-11-19",
-      "current_price": 39.63,
+      "current_price": 39.61,
       "entry_price": 39.63,
       "ml_confidence": "LOW",
       "ml_win_prob": 57.2,
@@ -1921,7 +1907,7 @@
     {
       "ticker": "DLX",
       "entry_date": "2026-11-19",
-      "current_price": 25.27,
+      "current_price": 25.26,
       "entry_price": 25.27,
       "ml_confidence": "MEDIUM",
       "ml_win_prob": 54.8,
@@ -1949,7 +1935,7 @@
     {
       "ticker": "ATR",
       "entry_date": "2026-11-19",
-      "current_price": 140.43,
+      "current_price": 140.36,
       "entry_price": 140.43,
       "ml_confidence": "LOW",
       "ml_win_prob": 49.1,
@@ -1991,7 +1977,7 @@
     {
       "ticker": "HAE",
       "entry_date": "2026-11-19",
-      "current_price": 120.28,
+      "current_price": 120.4,
       "entry_price": 120.28,
       "ml_confidence": "LOW",
       "ml_win_prob": 49.4,
@@ -2005,7 +1991,7 @@
     {
       "ticker": "NWN",
       "entry_date": "2026-11-19",
-      "current_price": 50.98,
+      "current_price": 51.0,
       "entry_price": 50.98,
       "ml_confidence": "LOW",
       "ml_win_prob": 47.9,
@@ -2033,7 +2019,7 @@
     {
       "ticker": "BMI",
       "entry_date": "2026-11-19",
-      "current_price": 154.61,
+      "current_price": 154.49,
       "entry_price": 154.61,
       "ml_confidence": "LOW",
       "ml_win_prob": 46.9,
@@ -2113,14 +2099,14 @@
       "avg_pnl_pct": 0.36
     },
     "LOW": {
-      "count": 10685,
+      "count": 10686,
       "avg_win_rate": 43.7,
       "avg_pnl_pct": -0.26
     }
   },
   "model_info": {
-    "last_trained": "2026-11-19 21:13:20",
+    "last_trained": "2026-11-20 01:50:19",
     "is_trained": true
   },
-  "last_updated": "2026-11-19T21:13:25.741306Z"
+  "last_updated": "2026-11-20T01:50:30.718784Z"
 }
