@@ -2,7 +2,7 @@
   "new_setups": [
     {
       "ticker": "JNJ",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 273.94,
       "current_price": 273.94,
       "stop_loss": 260.73,
@@ -19,15 +19,65 @@
       "price_to_8ema_pct": 0.2,
       "price_to_21ema_pct": 0.58,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.4,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 20.2,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
+      "ticker": "VLY",
+      "entry_date": "2026-11-27",
+      "entry_price": 14.18,
+      "current_price": 14.18,
+      "stop_loss": 13.5,
+      "fib_target": 15.68,
+      "risk_reward": 2.22,
+      "market_cap": "Mid",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 56.11,
+      "adx": 26.31,
+      "demarker": 0.452,
+      "rs_vs_spy": 7.77,
+      "volume_ratio": 1.01,
+      "price_to_8ema_pct": 1.01,
+      "price_to_21ema_pct": 1.34,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 17.3,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "TOST",
+      "entry_date": "2026-11-27",
+      "entry_price": 33.71,
+      "current_price": 33.71,
+      "stop_loss": 30.98,
+      "fib_target": 38.89,
+      "risk_reward": 1.9,
+      "market_cap": "Mid",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 53.21,
+      "adx": 31.83,
+      "demarker": 0.395,
+      "rs_vs_spy": 12.74,
+      "volume_ratio": 0.72,
+      "price_to_8ema_pct": 1.31,
+      "price_to_21ema_pct": 1.41,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 14.5,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "NI",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 45.11,
       "current_price": 45.12,
       "stop_loss": 43.47,
@@ -44,15 +94,15 @@
       "price_to_8ema_pct": 0.35,
       "price_to_21ema_pct": 1.35,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.9,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 18.5,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "IR",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 83.14,
       "current_price": 83.15,
       "stop_loss": 76.94,
@@ -69,15 +119,15 @@
       "price_to_8ema_pct": 0.85,
       "price_to_21ema_pct": 1.54,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.9,
-      "ml_expected_pnl": -0.18,
+      "ml_win_prob": 18.2,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "FISV",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 59.78,
       "current_price": 59.77,
       "stop_loss": 55.1,
@@ -94,15 +144,15 @@
       "price_to_8ema_pct": 1.19,
       "price_to_21ema_pct": 3.31,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.4,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 13.5,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "D",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 67.99,
       "current_price": 68.0,
       "stop_loss": 65.34,
@@ -119,15 +169,15 @@
       "price_to_8ema_pct": 1.0,
       "price_to_21ema_pct": 1.67,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.4,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 12.2,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "ARES",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 133.94,
       "current_price": 133.94,
       "stop_loss": 121.13,
@@ -144,15 +194,15 @@
       "price_to_8ema_pct": 2.65,
       "price_to_21ema_pct": 3.45,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.0,
-      "ml_expected_pnl": -0.18,
+      "ml_win_prob": 13.8,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "AXTA",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 36.06,
       "current_price": 36.05,
       "stop_loss": 33.63,
@@ -169,15 +219,40 @@
       "price_to_8ema_pct": 1.23,
       "price_to_21ema_pct": 1.46,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.6,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 19.0,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SARO",
+      "entry_date": "2026-11-27",
+      "entry_price": 27.61,
+      "current_price": 27.61,
+      "stop_loss": 25.5,
+      "fib_target": 31.16,
+      "risk_reward": 1.68,
+      "market_cap": "Mid",
+      "sector": "Industrials",
+      "pullback_date": "2026-11-25",
+      "rsi": 63.69,
+      "adx": 65.36,
+      "demarker": 0.513,
+      "rs_vs_spy": 31.51,
+      "volume_ratio": 0.8,
+      "price_to_8ema_pct": 1.45,
+      "price_to_21ema_pct": 4.98,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 14.9,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "GEHC",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 83.33,
       "current_price": 83.31,
       "stop_loss": 79.3,
@@ -194,7 +269,7 @@
       "price_to_8ema_pct": 1.27,
       "price_to_21ema_pct": 3.72,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.9,
+      "ml_win_prob": 10.8,
       "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
@@ -202,7 +277,7 @@
     },
     {
       "ticker": "CWK",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 13.92,
       "current_price": 13.91,
       "stop_loss": 12.39,
@@ -219,15 +294,15 @@
       "price_to_8ema_pct": 4.4,
       "price_to_21ema_pct": 5.37,
       "ml_confidence": "LOW",
-      "ml_win_prob": 20.8,
-      "ml_expected_pnl": -0.22,
+      "ml_win_prob": 10.6,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "LNT",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 73.14,
       "current_price": 73.13,
       "stop_loss": 70.0,
@@ -244,15 +319,15 @@
       "price_to_8ema_pct": 0.93,
       "price_to_21ema_pct": 1.94,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.4,
-      "ml_expected_pnl": -0.15,
+      "ml_win_prob": 13.1,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "FA",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 21.6,
       "current_price": 21.59,
       "stop_loss": 19.82,
@@ -269,15 +344,15 @@
       "price_to_8ema_pct": 1.15,
       "price_to_21ema_pct": 1.25,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.4,
-      "ml_expected_pnl": -0.2,
+      "ml_win_prob": 18.1,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "CURB",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 29.33,
       "current_price": 29.33,
       "stop_loss": 28.05,
@@ -294,15 +369,40 @@
       "price_to_8ema_pct": 1.05,
       "price_to_21ema_pct": 1.55,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.0,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 13.0,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
+      "ticker": "STZ",
+      "entry_date": "2026-11-27",
+      "entry_price": 139.97,
+      "current_price": 139.92,
+      "stop_loss": 132.6,
+      "fib_target": 157.61,
+      "risk_reward": 2.39,
+      "market_cap": "Large",
+      "sector": "Consumer Staples",
+      "pullback_date": "2026-11-25",
+      "rsi": 53.15,
+      "adx": 34.46,
+      "demarker": 0.468,
+      "rs_vs_spy": 15.89,
+      "volume_ratio": 0.95,
+      "price_to_8ema_pct": -0.52,
+      "price_to_21ema_pct": 0.26,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 18.3,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "ATO",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 173.26,
       "current_price": 173.23,
       "stop_loss": 165.09,
@@ -319,15 +419,40 @@
       "price_to_8ema_pct": 1.19,
       "price_to_21ema_pct": 1.45,
       "ml_confidence": "LOW",
-      "ml_win_prob": 25.0,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 19.4,
+      "ml_expected_pnl": -0.14,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SONO",
+      "entry_date": "2026-11-27",
+      "entry_price": 17.49,
+      "current_price": 17.49,
+      "stop_loss": 15.41,
+      "fib_target": 21.23,
+      "risk_reward": 1.79,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 51.4,
+      "adx": 20.12,
+      "demarker": 0.687,
+      "rs_vs_spy": 5.74,
+      "volume_ratio": 0.9,
+      "price_to_8ema_pct": -0.19,
+      "price_to_21ema_pct": 0.65,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 22.0,
+      "ml_expected_pnl": -0.09,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "OHI",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 47.35,
       "current_price": 47.37,
       "stop_loss": 44.98,
@@ -344,15 +469,40 @@
       "price_to_8ema_pct": 1.26,
       "price_to_21ema_pct": 1.4,
       "ml_confidence": "LOW",
-      "ml_win_prob": 20.4,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 11.8,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
+      "ticker": "SPGI",
+      "entry_date": "2026-11-27",
+      "entry_price": 460.74,
+      "current_price": 460.86,
+      "stop_loss": 433.03,
+      "fib_target": 514.34,
+      "risk_reward": 1.93,
+      "market_cap": "Large",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 55.67,
+      "adx": 43.31,
+      "demarker": 0.448,
+      "rs_vs_spy": 9.96,
+      "volume_ratio": 0.89,
+      "price_to_8ema_pct": 1.36,
+      "price_to_21ema_pct": 1.46,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 15.6,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "ALL",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 271.39,
       "current_price": 271.37,
       "stop_loss": 258.59,
@@ -369,7 +519,7 @@
       "price_to_8ema_pct": 1.26,
       "price_to_21ema_pct": 3.16,
       "ml_confidence": "LOW",
-      "ml_win_prob": 25.7,
+      "ml_win_prob": 16.6,
       "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
@@ -377,7 +527,7 @@
     },
     {
       "ticker": "EFX",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 185.68,
       "current_price": 185.71,
       "stop_loss": 173.36,
@@ -394,15 +544,65 @@
       "price_to_8ema_pct": 2.0,
       "price_to_21ema_pct": 2.7,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.2,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 15.8,
+      "ml_expected_pnl": -0.14,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "RCL",
+      "entry_date": "2026-11-27",
+      "entry_price": 314.11,
+      "current_price": 313.96,
+      "stop_loss": 289.11,
+      "fib_target": 371.43,
+      "risk_reward": 2.29,
+      "market_cap": "Large",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 52.73,
+      "adx": 40.05,
+      "demarker": 0.41,
+      "rs_vs_spy": 12.5,
+      "volume_ratio": 0.87,
+      "price_to_8ema_pct": 0.38,
+      "price_to_21ema_pct": 0.98,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 13.1,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "PRU",
+      "entry_date": "2026-11-27",
+      "entry_price": 120.22,
+      "current_price": 120.23,
+      "stop_loss": 114.7,
+      "fib_target": 134.33,
+      "risk_reward": 2.55,
+      "market_cap": "Large",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 54.74,
+      "adx": 43.41,
+      "demarker": 0.459,
+      "rs_vs_spy": 12.64,
+      "volume_ratio": 0.93,
+      "price_to_8ema_pct": 0.72,
+      "price_to_21ema_pct": 1.19,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 14.8,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "CME",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 311.74,
       "current_price": 311.54,
       "stop_loss": 297.99,
@@ -419,15 +619,15 @@
       "price_to_8ema_pct": 0.7,
       "price_to_21ema_pct": 1.72,
       "ml_confidence": "LOW",
-      "ml_win_prob": 26.9,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 18.8,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "BXP",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 64.02,
       "current_price": 64.05,
       "stop_loss": 60.12,
@@ -444,15 +644,15 @@
       "price_to_8ema_pct": 1.77,
       "price_to_21ema_pct": 1.86,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.7,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 11.9,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "FLS",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 82.46,
       "current_price": 82.41,
       "stop_loss": 75.57,
@@ -469,15 +669,15 @@
       "price_to_8ema_pct": 1.3,
       "price_to_21ema_pct": 3.1,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.4,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 15.1,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "OLLI",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 93.31,
       "current_price": 93.3,
       "stop_loss": 84.76,
@@ -494,15 +694,40 @@
       "price_to_8ema_pct": 0.17,
       "price_to_21ema_pct": 0.85,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.2,
-      "ml_expected_pnl": -0.21,
+      "ml_win_prob": 16.0,
+      "ml_expected_pnl": -0.17,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "RDN",
+      "entry_date": "2026-11-27",
+      "entry_price": 37.21,
+      "current_price": 37.21,
+      "stop_loss": 35.44,
+      "fib_target": 41.12,
+      "risk_reward": 2.21,
+      "market_cap": "Small",
+      "sector": "Financials",
+      "pullback_date": "2026-11-24",
+      "rsi": 61.63,
+      "adx": 33.83,
+      "demarker": 0.688,
+      "rs_vs_spy": 14.38,
+      "volume_ratio": 0.91,
+      "price_to_8ema_pct": 1.17,
+      "price_to_21ema_pct": 2.71,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 16.7,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "CBOE",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 351.8,
       "current_price": 351.9,
       "stop_loss": 329.43,
@@ -519,15 +744,40 @@
       "price_to_8ema_pct": -1.95,
       "price_to_21ema_pct": 0.12,
       "ml_confidence": "LOW",
-      "ml_win_prob": 25.5,
-      "ml_expected_pnl": -0.66,
+      "ml_win_prob": 19.5,
+      "ml_expected_pnl": -0.64,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": true
+    },
+    {
+      "ticker": "TKO",
+      "entry_date": "2026-11-27",
+      "entry_price": 191.44,
+      "current_price": 191.43,
+      "stop_loss": 175.78,
+      "fib_target": 217.07,
+      "risk_reward": 1.64,
+      "market_cap": "Large",
+      "sector": "Communication Services",
+      "pullback_date": "2026-11-25",
+      "rsi": 55.2,
+      "adx": 36.38,
+      "demarker": 0.513,
+      "rs_vs_spy": 17.3,
+      "volume_ratio": 0.88,
+      "price_to_8ema_pct": 1.8,
+      "price_to_21ema_pct": 2.25,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 12.5,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "KMPR",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 32.75,
       "current_price": 32.73,
       "stop_loss": 30.14,
@@ -544,15 +794,40 @@
       "price_to_8ema_pct": 0.35,
       "price_to_21ema_pct": 1.4,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.2,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 15.4,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "VRSK",
+      "entry_date": "2026-11-27",
+      "entry_price": 204.76,
+      "current_price": 204.85,
+      "stop_loss": 191.28,
+      "fib_target": 230.48,
+      "risk_reward": 1.91,
+      "market_cap": "Large",
+      "sector": "Industrials",
+      "pullback_date": "2026-11-24",
+      "rsi": 56.49,
+      "adx": 40.32,
+      "demarker": 0.499,
+      "rs_vs_spy": 15.08,
+      "volume_ratio": 1.03,
+      "price_to_8ema_pct": 0.64,
+      "price_to_21ema_pct": 1.97,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 19.0,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "BBT",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 30.63,
       "current_price": 30.63,
       "stop_loss": 29.0,
@@ -569,17 +844,17 @@
       "price_to_8ema_pct": 1.14,
       "price_to_21ema_pct": 1.61,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.7,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 15.9,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "DUOL",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 153.45,
-      "current_price": 153.5,
+      "current_price": 153.54,
       "stop_loss": 134.41,
       "fib_target": 196.34,
       "risk_reward": 2.25,
@@ -594,15 +869,15 @@
       "price_to_8ema_pct": 0.9,
       "price_to_21ema_pct": 1.25,
       "ml_confidence": "LOW",
-      "ml_win_prob": 18.7,
-      "ml_expected_pnl": -0.28,
+      "ml_win_prob": 12.1,
+      "ml_expected_pnl": -0.27,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "CHDN",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 95.7,
       "current_price": 95.7,
       "stop_loss": 90.04,
@@ -619,15 +894,40 @@
       "price_to_8ema_pct": 0.68,
       "price_to_21ema_pct": 1.73,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.3,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 14.8,
+      "ml_expected_pnl": -0.14,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SMG",
+      "entry_date": "2026-11-27",
+      "entry_price": 62.56,
+      "current_price": 62.57,
+      "stop_loss": 57.94,
+      "fib_target": 75.26,
+      "risk_reward": 2.75,
+      "market_cap": "Mid",
+      "sector": "Materials",
+      "pullback_date": "2026-11-25",
+      "rsi": 55.18,
+      "adx": 47.19,
+      "demarker": 0.338,
+      "rs_vs_spy": 13.2,
+      "volume_ratio": 0.77,
+      "price_to_8ema_pct": 1.18,
+      "price_to_21ema_pct": 2.08,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 15.6,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "HGV",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 44.57,
       "current_price": 44.56,
       "stop_loss": 41.64,
@@ -644,15 +944,15 @@
       "price_to_8ema_pct": 0.15,
       "price_to_21ema_pct": 3.7,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.9,
-      "ml_expected_pnl": -0.15,
+      "ml_win_prob": 13.3,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "ATEN",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 31.1,
       "current_price": 31.09,
       "stop_loss": 27.26,
@@ -669,15 +969,65 @@
       "price_to_8ema_pct": 1.5,
       "price_to_21ema_pct": 7.72,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.4,
-      "ml_expected_pnl": -0.22,
+      "ml_win_prob": 17.7,
+      "ml_expected_pnl": -0.23,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "TXRH",
+      "entry_date": "2026-11-27",
+      "entry_price": 185.0,
+      "current_price": 184.91,
+      "stop_loss": 174.0,
+      "fib_target": 211.87,
+      "risk_reward": 2.44,
+      "market_cap": "Mid",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 53.6,
+      "adx": 35.27,
+      "demarker": 0.461,
+      "rs_vs_spy": 13.07,
+      "volume_ratio": 0.79,
+      "price_to_8ema_pct": 0.61,
+      "price_to_21ema_pct": 1.25,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 12.3,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "THO",
+      "entry_date": "2026-11-27",
+      "entry_price": 79.32,
+      "current_price": 79.26,
+      "stop_loss": 73.89,
+      "fib_target": 93.99,
+      "risk_reward": 2.7,
+      "market_cap": "Mid",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 58.18,
+      "adx": 47.79,
+      "demarker": 0.401,
+      "rs_vs_spy": 18.82,
+      "volume_ratio": 0.91,
+      "price_to_8ema_pct": 2.0,
+      "price_to_21ema_pct": 3.62,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 11.9,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "HCA",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 491.01,
       "current_price": 491.2,
       "stop_loss": 454.71,
@@ -694,15 +1044,40 @@
       "price_to_8ema_pct": 1.23,
       "price_to_21ema_pct": 1.65,
       "ml_confidence": "LOW",
-      "ml_win_prob": 19.6,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 12.1,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
+      "ticker": "QNST",
+      "entry_date": "2026-11-27",
+      "entry_price": 18.53,
+      "current_price": 18.54,
+      "stop_loss": 16.64,
+      "fib_target": 23.64,
+      "risk_reward": 2.71,
+      "market_cap": "Small",
+      "sector": "Communication Services",
+      "pullback_date": "2026-11-25",
+      "rsi": 53.33,
+      "adx": 41.58,
+      "demarker": 0.355,
+      "rs_vs_spy": 20.53,
+      "volume_ratio": 0.67,
+      "price_to_8ema_pct": -0.54,
+      "price_to_21ema_pct": 0.78,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 13.9,
+      "ml_expected_pnl": -0.18,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "GXO",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 55.04,
       "current_price": 55.04,
       "stop_loss": 50.84,
@@ -719,15 +1094,15 @@
       "price_to_8ema_pct": 1.04,
       "price_to_21ema_pct": 2.94,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.4,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 16.0,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "BR",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 187.14,
       "current_price": 187.08,
       "stop_loss": 177.8,
@@ -744,15 +1119,40 @@
       "price_to_8ema_pct": 0.78,
       "price_to_21ema_pct": 1.17,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.1,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 16.7,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "UNFI",
+      "entry_date": "2026-11-27",
+      "entry_price": 50.61,
+      "current_price": 50.56,
+      "stop_loss": 46.45,
+      "fib_target": 57.44,
+      "risk_reward": 1.64,
+      "market_cap": "Small",
+      "sector": "Consumer Staples",
+      "pullback_date": "2026-11-25",
+      "rsi": 59.12,
+      "adx": 27.83,
+      "demarker": 0.719,
+      "rs_vs_spy": 13.39,
+      "volume_ratio": 0.86,
+      "price_to_8ema_pct": 0.99,
+      "price_to_21ema_pct": 3.58,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 16.0,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "ALSN",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 123.15,
       "current_price": 123.09,
       "stop_loss": 112.87,
@@ -769,17 +1169,17 @@
       "price_to_8ema_pct": 1.49,
       "price_to_21ema_pct": 2.79,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.1,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 17.0,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "H",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 186.43,
-      "current_price": 186.53,
+      "current_price": 186.49,
       "stop_loss": 176.24,
       "fib_target": 204.78,
       "risk_reward": 1.8,
@@ -794,15 +1194,15 @@
       "price_to_8ema_pct": -0.23,
       "price_to_21ema_pct": 1.12,
       "ml_confidence": "LOW",
-      "ml_win_prob": 20.7,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 14.3,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "AVNT",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 45.41,
       "current_price": 45.44,
       "stop_loss": 42.22,
@@ -819,15 +1219,15 @@
       "price_to_8ema_pct": 2.47,
       "price_to_21ema_pct": 3.45,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.9,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 15.1,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "HAE",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 120.44,
       "current_price": 120.29,
       "stop_loss": 112.2,
@@ -844,15 +1244,90 @@
       "price_to_8ema_pct": -0.39,
       "price_to_21ema_pct": 0.08,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.1,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 15.3,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SR",
+      "entry_date": "2026-11-27",
+      "entry_price": 87.81,
+      "current_price": 87.79,
+      "stop_loss": 82.64,
+      "fib_target": 98.11,
+      "risk_reward": 1.99,
+      "market_cap": "Mid",
+      "sector": "Utilities",
+      "pullback_date": "2026-11-25",
+      "rsi": 57.34,
+      "adx": 44.57,
+      "demarker": 0.347,
+      "rs_vs_spy": 9.9,
+      "volume_ratio": 1.05,
+      "price_to_8ema_pct": 0.77,
+      "price_to_21ema_pct": 1.2,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 13.7,
+      "ml_expected_pnl": -0.14,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": true
+    },
+    {
+      "ticker": "TYL",
+      "entry_date": "2026-11-27",
+      "entry_price": 420.28,
+      "current_price": 420.22,
+      "stop_loss": 394.82,
+      "fib_target": 461.15,
+      "risk_reward": 1.61,
+      "market_cap": "Large",
+      "sector": "Information Technology",
+      "pullback_date": "2026-11-25",
+      "rsi": 62.47,
+      "adx": 22.8,
+      "demarker": 0.549,
+      "rs_vs_spy": 23.65,
+      "volume_ratio": 0.73,
+      "price_to_8ema_pct": 1.77,
+      "price_to_21ema_pct": 3.56,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 15.6,
+      "ml_expected_pnl": -0.09,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "TPC",
+      "entry_date": "2026-11-27",
+      "entry_price": 90.57,
+      "current_price": 90.67,
+      "stop_loss": 80.34,
+      "fib_target": 111.87,
+      "risk_reward": 2.08,
+      "market_cap": "Small",
+      "sector": "Industrials",
+      "pullback_date": "2026-11-25",
+      "rsi": 51.71,
+      "adx": 36.9,
+      "demarker": 0.483,
+      "rs_vs_spy": 18.78,
+      "volume_ratio": 0.6,
+      "price_to_8ema_pct": -1.37,
+      "price_to_21ema_pct": 0.25,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 19.5,
+      "ml_expected_pnl": -0.57,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "MIDD",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 135.26,
       "current_price": 135.22,
       "stop_loss": 127.18,
@@ -869,15 +1344,40 @@
       "price_to_8ema_pct": 0.54,
       "price_to_21ema_pct": 3.81,
       "ml_confidence": "LOW",
-      "ml_win_prob": 26.8,
+      "ml_win_prob": 16.7,
       "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
+      "ticker": "ULTA",
+      "entry_date": "2026-11-27",
+      "entry_price": 642.64,
+      "current_price": 642.48,
+      "stop_loss": 605.08,
+      "fib_target": 711.58,
+      "risk_reward": 1.84,
+      "market_cap": "Large",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 54.77,
+      "adx": 34.28,
+      "demarker": 0.475,
+      "rs_vs_spy": 10.98,
+      "volume_ratio": 0.92,
+      "price_to_8ema_pct": 0.69,
+      "price_to_21ema_pct": 1.17,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 17.3,
+      "ml_expected_pnl": -0.16,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "BANR",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 70.2,
       "current_price": 70.22,
       "stop_loss": 65.96,
@@ -894,15 +1394,15 @@
       "price_to_8ema_pct": 1.56,
       "price_to_21ema_pct": 1.8,
       "ml_confidence": "LOW",
-      "ml_win_prob": 24.4,
-      "ml_expected_pnl": -0.05,
+      "ml_win_prob": 17.0,
+      "ml_expected_pnl": 0.04,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "JLL",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 372.25,
       "current_price": 372.26,
       "stop_loss": 341.59,
@@ -919,15 +1419,15 @@
       "price_to_8ema_pct": 3.21,
       "price_to_21ema_pct": 4.62,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.4,
-      "ml_expected_pnl": -0.16,
+      "ml_win_prob": 10.7,
+      "ml_expected_pnl": -0.12,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "MSCI",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 633.0,
       "current_price": 632.93,
       "stop_loss": 601.13,
@@ -944,15 +1444,15 @@
       "price_to_8ema_pct": -0.03,
       "price_to_21ema_pct": 0.53,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.1,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 16.2,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "NWN",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 51.77,
       "current_price": 51.81,
       "stop_loss": 49.57,
@@ -969,15 +1469,40 @@
       "price_to_8ema_pct": 0.44,
       "price_to_21ema_pct": 1.41,
       "ml_confidence": "LOW",
-      "ml_win_prob": 22.1,
-      "ml_expected_pnl": -0.16,
+      "ml_win_prob": 13.1,
+      "ml_expected_pnl": -0.12,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
+      "ticker": "PRKS",
+      "entry_date": "2026-11-27",
+      "entry_price": 39.26,
+      "current_price": 39.21,
+      "stop_loss": 34.9,
+      "fib_target": 48.19,
+      "risk_reward": 2.05,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 56.34,
+      "adx": 54.14,
+      "demarker": 0.518,
+      "rs_vs_spy": 33.85,
+      "volume_ratio": 0.77,
+      "price_to_8ema_pct": 0.86,
+      "price_to_21ema_pct": 3.76,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 13.0,
+      "ml_expected_pnl": -0.22,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
       "ticker": "DLX",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 26.1,
       "current_price": 26.06,
       "stop_loss": 23.77,
@@ -994,15 +1519,40 @@
       "price_to_8ema_pct": 1.37,
       "price_to_21ema_pct": 3.47,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.8,
-      "ml_expected_pnl": -0.19,
+      "ml_win_prob": 15.7,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SEZL",
+      "entry_date": "2026-11-27",
+      "entry_price": 145.71,
+      "current_price": 145.89,
+      "stop_loss": 123.87,
+      "fib_target": 206.95,
+      "risk_reward": 2.8,
+      "market_cap": "Small",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 52.7,
+      "adx": 44.37,
+      "demarker": 0.313,
+      "rs_vs_spy": 19.27,
+      "volume_ratio": 0.84,
+      "price_to_8ema_pct": -0.81,
+      "price_to_21ema_pct": 1.01,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 16.0,
+      "ml_expected_pnl": -0.29,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "IDA",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 143.77,
       "current_price": 143.8,
       "stop_loss": 138.76,
@@ -1019,15 +1569,65 @@
       "price_to_8ema_pct": 0.32,
       "price_to_21ema_pct": 0.5,
       "ml_confidence": "LOW",
-      "ml_win_prob": 20.7,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 14.3,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": true
+    },
+    {
+      "ticker": "WGO",
+      "entry_date": "2026-11-27",
+      "entry_price": 32.28,
+      "current_price": 32.26,
+      "stop_loss": 29.68,
+      "fib_target": 38.3,
+      "risk_reward": 2.31,
+      "market_cap": "Small",
+      "sector": "Consumer Discretionary",
+      "pullback_date": "2026-11-25",
+      "rsi": 60.14,
+      "adx": 39.26,
+      "demarker": 0.395,
+      "rs_vs_spy": 19.95,
+      "volume_ratio": 0.93,
+      "price_to_8ema_pct": 2.53,
+      "price_to_21ema_pct": 5.18,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 11.8,
+      "ml_expected_pnl": -0.13,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "SSD",
+      "entry_date": "2026-11-27",
+      "entry_price": 199.19,
+      "current_price": 199.19,
+      "stop_loss": 185.22,
+      "fib_target": 221.72,
+      "risk_reward": 1.61,
+      "market_cap": "Mid",
+      "sector": "Industrials",
+      "pullback_date": "2026-11-25",
+      "rsi": 57.56,
+      "adx": 46.2,
+      "demarker": 0.531,
+      "rs_vs_spy": 11.63,
+      "volume_ratio": 1.04,
+      "price_to_8ema_pct": 1.89,
+      "price_to_21ema_pct": 2.65,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 18.1,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "GIII",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 31.67,
       "current_price": 31.65,
       "stop_loss": 29.75,
@@ -1044,15 +1644,15 @@
       "price_to_8ema_pct": 0.8,
       "price_to_21ema_pct": 1.98,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.2,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 12.1,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": true
     },
     {
       "ticker": "GATX",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 186.28,
       "current_price": 186.08,
       "stop_loss": 176.52,
@@ -1069,15 +1669,15 @@
       "price_to_8ema_pct": 0.66,
       "price_to_21ema_pct": 1.64,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.7,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 18.1,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "LKFN",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 61.06,
       "current_price": 61.05,
       "stop_loss": 58.54,
@@ -1094,15 +1694,15 @@
       "price_to_8ema_pct": 0.34,
       "price_to_21ema_pct": 0.55,
       "ml_confidence": "LOW",
-      "ml_win_prob": 23.4,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 16.5,
+      "ml_expected_pnl": -0.15,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "MSEX",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 58.22,
       "current_price": 58.19,
       "stop_loss": 54.77,
@@ -1119,15 +1719,15 @@
       "price_to_8ema_pct": 1.48,
       "price_to_21ema_pct": 2.24,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.7,
-      "ml_expected_pnl": -0.14,
+      "ml_win_prob": 12.5,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "ERIE",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 279.82,
       "current_price": 279.69,
       "stop_loss": 263.68,
@@ -1144,15 +1744,15 @@
       "price_to_8ema_pct": 2.06,
       "price_to_21ema_pct": 4.25,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.8,
-      "ml_expected_pnl": -0.12,
+      "ml_win_prob": 14.1,
+      "ml_expected_pnl": -0.11,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "DORM",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 135.27,
       "current_price": 135.17,
       "stop_loss": 127.63,
@@ -1169,15 +1769,40 @@
       "price_to_8ema_pct": 0.88,
       "price_to_21ema_pct": 1.67,
       "ml_confidence": "LOW",
-      "ml_win_prob": 21.3,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 12.0,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "WDFC",
+      "entry_date": "2026-11-27",
+      "entry_price": 227.4,
+      "current_price": 227.47,
+      "stop_loss": 214.6,
+      "fib_target": 248.98,
+      "risk_reward": 1.69,
+      "market_cap": "Small",
+      "sector": "Consumer Staples",
+      "pullback_date": "2026-11-25",
+      "rsi": 59.56,
+      "adx": 30.78,
+      "demarker": 0.549,
+      "rs_vs_spy": 13.42,
+      "volume_ratio": 0.92,
+      "price_to_8ema_pct": 1.83,
+      "price_to_21ema_pct": 3.1,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 11.4,
+      "ml_expected_pnl": -0.14,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
     },
     {
       "ticker": "ABG",
-      "entry_date": "2026-11-26",
+      "entry_date": "2026-11-27",
       "entry_price": 203.22,
       "current_price": 203.06,
       "stop_loss": 189.87,
@@ -1194,8 +1819,58 @@
       "price_to_8ema_pct": 1.28,
       "price_to_21ema_pct": 2.82,
       "ml_confidence": "LOW",
-      "ml_win_prob": 20.9,
-      "ml_expected_pnl": -0.17,
+      "ml_win_prob": 11.7,
+      "ml_expected_pnl": -0.14,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "TRST",
+      "entry_date": "2026-11-27",
+      "entry_price": 57.0,
+      "current_price": 56.94,
+      "stop_loss": 54.89,
+      "fib_target": 62.61,
+      "risk_reward": 2.65,
+      "market_cap": "Small",
+      "sector": "Financials",
+      "pullback_date": "2026-11-25",
+      "rsi": 52.63,
+      "adx": 23.16,
+      "demarker": 0.375,
+      "rs_vs_spy": 7.73,
+      "volume_ratio": 1.07,
+      "price_to_8ema_pct": 0.22,
+      "price_to_21ema_pct": 0.42,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 20.6,
+      "ml_expected_pnl": -0.15,
+      "insider_net": 0,
+      "hold_days": 0,
+      "has_ao_entry": false
+    },
+    {
+      "ticker": "UFPT",
+      "entry_date": "2026-11-27",
+      "entry_price": 305.02,
+      "current_price": 305.67,
+      "stop_loss": 277.68,
+      "fib_target": 374.78,
+      "risk_reward": 2.55,
+      "market_cap": "Small",
+      "sector": "Health Care",
+      "pullback_date": "2026-11-25",
+      "rsi": 52.64,
+      "adx": 30.99,
+      "demarker": 0.548,
+      "rs_vs_spy": 13.85,
+      "volume_ratio": 0.77,
+      "price_to_8ema_pct": 0.77,
+      "price_to_21ema_pct": 1.26,
+      "ml_confidence": "LOW",
+      "ml_win_prob": 12.6,
+      "ml_expected_pnl": -0.16,
       "insider_net": 0,
       "hold_days": 0,
       "has_ao_entry": false
@@ -1224,7 +1899,7 @@
       "ml_win_prob": 40.3,
       "ml_expected_pnl": 0.09,
       "insider_net": 0,
-      "hold_days": 205,
+      "hold_days": 206,
       "has_ao_entry": false
     },
     {
@@ -1249,7 +1924,7 @@
       "ml_win_prob": 42.4,
       "ml_expected_pnl": -0.46,
       "insider_net": 0,
-      "hold_days": 55,
+      "hold_days": 56,
       "has_ao_entry": false
     },
     {
@@ -1274,7 +1949,7 @@
       "ml_win_prob": 38.5,
       "ml_expected_pnl": -0.31,
       "insider_net": 0,
-      "hold_days": 55,
+      "hold_days": 56,
       "has_ao_entry": false
     },
     {
@@ -1299,7 +1974,7 @@
       "ml_win_prob": 49.9,
       "ml_expected_pnl": -0.11,
       "insider_net": 0,
-      "hold_days": 30,
+      "hold_days": 31,
       "has_ao_entry": true
     },
     {
@@ -1324,7 +1999,7 @@
       "ml_win_prob": 47.7,
       "ml_expected_pnl": -0.71,
       "insider_net": 0,
-      "hold_days": 28,
+      "hold_days": 29,
       "has_ao_entry": false
     },
     {
@@ -1349,7 +2024,7 @@
       "ml_win_prob": 50.1,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 28,
+      "hold_days": 29,
       "has_ao_entry": false
     },
     {
@@ -1374,7 +2049,7 @@
       "ml_win_prob": 30.0,
       "ml_expected_pnl": -0.05,
       "insider_net": 0,
-      "hold_days": 23,
+      "hold_days": 24,
       "has_ao_entry": true
     },
     {
@@ -1399,7 +2074,7 @@
       "ml_win_prob": 38.9,
       "ml_expected_pnl": -0.06,
       "insider_net": 0,
-      "hold_days": 23,
+      "hold_days": 24,
       "has_ao_entry": false
     },
     {
@@ -1424,7 +2099,7 @@
       "ml_win_prob": 39.3,
       "ml_expected_pnl": -0.79,
       "insider_net": 0,
-      "hold_days": 20,
+      "hold_days": 21,
       "has_ao_entry": false
     },
     {
@@ -1449,7 +2124,7 @@
       "ml_win_prob": 41.2,
       "ml_expected_pnl": -0.63,
       "insider_net": 0,
-      "hold_days": 20,
+      "hold_days": 21,
       "has_ao_entry": true
     },
     {
@@ -1474,7 +2149,7 @@
       "ml_win_prob": 40.8,
       "ml_expected_pnl": -0.72,
       "insider_net": 0,
-      "hold_days": 20,
+      "hold_days": 21,
       "has_ao_entry": false
     },
     {
@@ -1499,7 +2174,7 @@
       "ml_win_prob": 36.0,
       "ml_expected_pnl": -0.68,
       "insider_net": 0,
-      "hold_days": 20,
+      "hold_days": 21,
       "has_ao_entry": false
     },
     {
@@ -1524,7 +2199,7 @@
       "ml_win_prob": 39.4,
       "ml_expected_pnl": -0.69,
       "insider_net": 0,
-      "hold_days": 20,
+      "hold_days": 21,
       "has_ao_entry": false
     },
     {
@@ -1549,7 +2224,7 @@
       "ml_win_prob": 38.7,
       "ml_expected_pnl": -0.15,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1557,7 +2232,7 @@
       "entry_date": "2026-11-07",
       "entry_price": 19.92,
       "current_price": 22.18,
-      "stop_loss": 20.2,
+      "stop_loss": 21.42206286539945,
       "fib_target": 25.69,
       "risk_reward": 1.74,
       "market_cap": "Small",
@@ -1574,7 +2249,7 @@
       "ml_win_prob": 38.2,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1599,7 +2274,7 @@
       "ml_win_prob": 35.2,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1624,7 +2299,7 @@
       "ml_win_prob": 29.3,
       "ml_expected_pnl": -0.14,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1649,7 +2324,7 @@
       "ml_win_prob": 37.3,
       "ml_expected_pnl": -0.53,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1674,7 +2349,7 @@
       "ml_win_prob": 36.6,
       "ml_expected_pnl": -0.15,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1699,7 +2374,7 @@
       "ml_win_prob": 30.4,
       "ml_expected_pnl": -0.13,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1724,7 +2399,7 @@
       "ml_win_prob": 30.6,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1749,7 +2424,7 @@
       "ml_win_prob": 32.3,
       "ml_expected_pnl": -0.14,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1774,7 +2449,7 @@
       "ml_win_prob": 31.4,
       "ml_expected_pnl": -0.14,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1799,7 +2474,7 @@
       "ml_win_prob": 33.8,
       "ml_expected_pnl": -0.15,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": true
     },
     {
@@ -1824,7 +2499,7 @@
       "ml_win_prob": 33.2,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1849,7 +2524,7 @@
       "ml_win_prob": 30.6,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1874,7 +2549,7 @@
       "ml_win_prob": 32.0,
       "ml_expected_pnl": -0.13,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1899,7 +2574,7 @@
       "ml_win_prob": 37.5,
       "ml_expected_pnl": -0.13,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1924,7 +2599,7 @@
       "ml_win_prob": 29.8,
       "ml_expected_pnl": -0.0,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1949,7 +2624,7 @@
       "ml_win_prob": 29.0,
       "ml_expected_pnl": -0.12,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1957,7 +2632,7 @@
       "entry_date": "2026-11-07",
       "entry_price": 266.39,
       "current_price": 282.54,
-      "stop_loss": 273.0761400706316,
+      "stop_loss": 273.07614007063245,
       "fib_target": 306.32,
       "risk_reward": 1.91,
       "market_cap": "Mid",
@@ -1974,7 +2649,7 @@
       "ml_win_prob": 36.3,
       "ml_expected_pnl": -0.77,
       "insider_net": 0,
-      "hold_days": 19,
+      "hold_days": 20,
       "has_ao_entry": false
     },
     {
@@ -1999,7 +2674,7 @@
       "ml_win_prob": 41.9,
       "ml_expected_pnl": 0.01,
       "insider_net": 0,
-      "hold_days": 16,
+      "hold_days": 17,
       "has_ao_entry": false
     },
     {
@@ -2024,7 +2699,7 @@
       "ml_win_prob": 35.7,
       "ml_expected_pnl": -0.01,
       "insider_net": 0,
-      "hold_days": 16,
+      "hold_days": 17,
       "has_ao_entry": false
     },
     {
@@ -2049,7 +2724,7 @@
       "ml_win_prob": 45.4,
       "ml_expected_pnl": -0.35,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2074,7 +2749,7 @@
       "ml_win_prob": 48.6,
       "ml_expected_pnl": -0.06,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": true
     },
     {
@@ -2099,7 +2774,7 @@
       "ml_win_prob": 48.0,
       "ml_expected_pnl": -0.27,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2124,7 +2799,7 @@
       "ml_win_prob": 48.5,
       "ml_expected_pnl": -0.04,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": true
     },
     {
@@ -2149,7 +2824,7 @@
       "ml_win_prob": 50.0,
       "ml_expected_pnl": -0.03,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2174,7 +2849,7 @@
       "ml_win_prob": 48.0,
       "ml_expected_pnl": -0.07,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2199,7 +2874,7 @@
       "ml_win_prob": 53.4,
       "ml_expected_pnl": -0.03,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2224,7 +2899,7 @@
       "ml_win_prob": 45.6,
       "ml_expected_pnl": -0.07,
       "insider_net": 0,
-      "hold_days": 13,
+      "hold_days": 14,
       "has_ao_entry": false
     },
     {
@@ -2249,7 +2924,7 @@
       "ml_win_prob": 50.0,
       "ml_expected_pnl": -0.02,
       "insider_net": 0,
-      "hold_days": 12,
+      "hold_days": 13,
       "has_ao_entry": false
     },
     {
@@ -2274,7 +2949,7 @@
       "ml_win_prob": 46.7,
       "ml_expected_pnl": -0.03,
       "insider_net": 0,
-      "hold_days": 12,
+      "hold_days": 13,
       "has_ao_entry": true
     },
     {
@@ -2299,7 +2974,7 @@
       "ml_win_prob": 37.4,
       "ml_expected_pnl": -10.06,
       "insider_net": 0,
-      "hold_days": 9,
+      "hold_days": 10,
       "has_ao_entry": false
     },
     {
@@ -2324,7 +2999,7 @@
       "ml_win_prob": 43.6,
       "ml_expected_pnl": -0.09,
       "insider_net": 0,
-      "hold_days": 9,
+      "hold_days": 10,
       "has_ao_entry": true
     },
     {
@@ -2349,7 +3024,7 @@
       "ml_win_prob": 41.5,
       "ml_expected_pnl": -0.09,
       "insider_net": 0,
-      "hold_days": 9,
+      "hold_days": 10,
       "has_ao_entry": false
     },
     {
@@ -2374,7 +3049,7 @@
       "ml_win_prob": 32.8,
       "ml_expected_pnl": -0.31,
       "insider_net": 0,
-      "hold_days": 9,
+      "hold_days": 10,
       "has_ao_entry": false
     },
     {
@@ -2399,7 +3074,7 @@
       "ml_win_prob": 42.0,
       "ml_expected_pnl": -0.15,
       "insider_net": 0,
-      "hold_days": 9,
+      "hold_days": 10,
       "has_ao_entry": false
     },
     {
@@ -2424,7 +3099,7 @@
       "ml_win_prob": 40.7,
       "ml_expected_pnl": -0.84,
       "insider_net": 0,
-      "hold_days": 8,
+      "hold_days": 9,
       "has_ao_entry": true
     },
     {
@@ -2449,7 +3124,7 @@
       "ml_win_prob": 43.4,
       "ml_expected_pnl": -0.98,
       "insider_net": 0,
-      "hold_days": 8,
+      "hold_days": 9,
       "has_ao_entry": false
     },
     {
@@ -2474,14 +3149,14 @@
       "ml_win_prob": 43.2,
       "ml_expected_pnl": -0.86,
       "insider_net": 0,
-      "hold_days": 8,
+      "hold_days": 9,
       "has_ao_entry": false
     },
     {
       "ticker": "MSI",
       "entry_date": "2026-11-18",
       "entry_price": 524.19,
-      "current_price": 540.69,
+      "current_price": 540.7,
       "stop_loss": 494.96,
       "fib_target": 572.94,
       "risk_reward": 1.89,
@@ -2499,7 +3174,7 @@
       "ml_win_prob": 36.8,
       "ml_expected_pnl": -1.05,
       "insider_net": 0,
-      "hold_days": 8,
+      "hold_days": 9,
       "has_ao_entry": true
     },
     {
@@ -2524,7 +3199,7 @@
       "ml_win_prob": 37.4,
       "ml_expected_pnl": -0.71,
       "insider_net": 0,
-      "hold_days": 8,
+      "hold_days": 9,
       "has_ao_entry": false
     },
     {
@@ -2549,7 +3224,7 @@
       "ml_win_prob": 42.6,
       "ml_expected_pnl": -1.19,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": false
     },
     {
@@ -2574,7 +3249,7 @@
       "ml_win_prob": 54.3,
       "ml_expected_pnl": -1.67,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": true
     },
     {
@@ -2599,7 +3274,7 @@
       "ml_win_prob": 55.6,
       "ml_expected_pnl": -1.68,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": false
     },
     {
@@ -2624,7 +3299,7 @@
       "ml_win_prob": 48.6,
       "ml_expected_pnl": -1.29,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": false
     },
     {
@@ -2649,7 +3324,7 @@
       "ml_win_prob": 42.7,
       "ml_expected_pnl": -0.97,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": false
     },
     {
@@ -2674,7 +3349,7 @@
       "ml_win_prob": 54.9,
       "ml_expected_pnl": -1.19,
       "insider_net": 0,
-      "hold_days": 7,
+      "hold_days": 8,
       "has_ao_entry": true
     },
     {
@@ -2699,7 +3374,7 @@
       "ml_win_prob": 39.5,
       "ml_expected_pnl": -1.8,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2724,7 +3399,7 @@
       "ml_win_prob": 39.9,
       "ml_expected_pnl": -1.7,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2749,7 +3424,7 @@
       "ml_win_prob": 40.6,
       "ml_expected_pnl": -2.31,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2774,7 +3449,7 @@
       "ml_win_prob": 43.6,
       "ml_expected_pnl": 5.27,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2799,7 +3474,7 @@
       "ml_win_prob": 40.4,
       "ml_expected_pnl": -0.94,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2824,7 +3499,7 @@
       "ml_win_prob": 35.3,
       "ml_expected_pnl": -1.7,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -2849,7 +3524,7 @@
       "ml_win_prob": 42.3,
       "ml_expected_pnl": -2.19,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -2874,7 +3549,7 @@
       "ml_win_prob": 38.1,
       "ml_expected_pnl": -0.94,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2899,7 +3574,7 @@
       "ml_win_prob": 37.1,
       "ml_expected_pnl": -1.7,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -2924,32 +3599,7 @@
       "ml_win_prob": 33.7,
       "ml_expected_pnl": -1.72,
       "insider_net": 0,
-      "hold_days": 2,
-      "has_ao_entry": true
-    },
-    {
-      "ticker": "MHK",
-      "entry_date": "2026-11-24",
-      "entry_price": 144.78,
-      "current_price": 152.08,
-      "stop_loss": 146.2278,
-      "fib_target": 170.24,
-      "risk_reward": 2.42,
-      "market_cap": "Small",
-      "sector": "Consumer Discretionary",
-      "pullback_date": "2026-11-24",
-      "rsi": 55.37,
-      "adx": 51.84,
-      "demarker": 0.449,
-      "rs_vs_spy": 22.81,
-      "volume_ratio": 0.63,
-      "price_to_8ema_pct": 0.11,
-      "price_to_21ema_pct": 1.91,
-      "ml_confidence": "LOW",
-      "ml_win_prob": 41.7,
-      "ml_expected_pnl": -1.94,
-      "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -2974,7 +3624,7 @@
       "ml_win_prob": 37.8,
       "ml_expected_pnl": -2.12,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -2999,7 +3649,7 @@
       "ml_win_prob": 41.0,
       "ml_expected_pnl": -1.8,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -3024,7 +3674,7 @@
       "ml_win_prob": 37.5,
       "ml_expected_pnl": -1.77,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3049,7 +3699,7 @@
       "ml_win_prob": 19.7,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -3074,7 +3724,7 @@
       "ml_win_prob": 18.4,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -3083,7 +3733,7 @@
       "entry_price": 110.74,
       "current_price": 109.22,
       "stop_loss": 101.09,
-      "fib_target": 133.78,
+      "fib_target": 133.77,
       "risk_reward": 3.02,
       "market_cap": "Large",
       "sector": "Industrials",
@@ -3099,7 +3749,7 @@
       "ml_win_prob": 20.0,
       "ml_expected_pnl": -0.9,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": true
     },
     {
@@ -3124,7 +3774,7 @@
       "ml_win_prob": 18.0,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3149,7 +3799,7 @@
       "ml_win_prob": 16.2,
       "ml_expected_pnl": -0.59,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3174,7 +3824,7 @@
       "ml_win_prob": 17.3,
       "ml_expected_pnl": -1.01,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3199,7 +3849,7 @@
       "ml_win_prob": 16.9,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3224,7 +3874,7 @@
       "ml_win_prob": 23.6,
       "ml_expected_pnl": -0.45,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3249,7 +3899,7 @@
       "ml_win_prob": 18.2,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3274,7 +3924,7 @@
       "ml_win_prob": 16.9,
       "ml_expected_pnl": -0.87,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3299,7 +3949,7 @@
       "ml_win_prob": 20.1,
       "ml_expected_pnl": -0.9,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3307,9 +3957,9 @@
       "entry_date": "2026-11-24",
       "entry_price": 44.62,
       "current_price": 44.58,
-      "stop_loss": 42.04,
+      "stop_loss": 42.03,
       "fib_target": 49.29,
-      "risk_reward": 1.82,
+      "risk_reward": 1.81,
       "market_cap": "Small",
       "sector": "Consumer Discretionary",
       "pullback_date": "2026-11-25",
@@ -3317,14 +3967,14 @@
       "adx": 51.46,
       "demarker": 0.495,
       "rs_vs_spy": 25.86,
-      "volume_ratio": 0.74,
+      "volume_ratio": 0.75,
       "price_to_8ema_pct": 0.74,
       "price_to_21ema_pct": 3.52,
       "ml_confidence": "LOW",
       "ml_win_prob": 17.6,
       "ml_expected_pnl": -0.86,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3349,7 +3999,7 @@
       "ml_win_prob": 32.7,
       "ml_expected_pnl": -0.16,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3374,7 +4024,7 @@
       "ml_win_prob": 38.1,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3399,7 +4049,7 @@
       "ml_win_prob": 35.2,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3424,7 +4074,7 @@
       "ml_win_prob": 36.0,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3449,7 +4099,7 @@
       "ml_win_prob": 35.8,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3474,7 +4124,7 @@
       "ml_win_prob": 33.2,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3499,7 +4149,7 @@
       "ml_win_prob": 36.9,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3524,7 +4174,7 @@
       "ml_win_prob": 36.7,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3549,7 +4199,7 @@
       "ml_win_prob": 35.8,
       "ml_expected_pnl": -0.23,
       "insider_net": 0,
-      "hold_days": 2,
+      "hold_days": 3,
       "has_ao_entry": false
     },
     {
@@ -3574,7 +4224,7 @@
       "ml_win_prob": 34.3,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3599,7 +4249,7 @@
       "ml_win_prob": 19.8,
       "ml_expected_pnl": -0.19,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3624,7 +4274,7 @@
       "ml_win_prob": 28.4,
       "ml_expected_pnl": -0.3,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3649,7 +4299,7 @@
       "ml_win_prob": 23.9,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3674,7 +4324,7 @@
       "ml_win_prob": 22.7,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3699,7 +4349,7 @@
       "ml_win_prob": 22.6,
       "ml_expected_pnl": -0.28,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3724,7 +4374,7 @@
       "ml_win_prob": 22.4,
       "ml_expected_pnl": -0.18,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3749,7 +4399,7 @@
       "ml_win_prob": 33.9,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3774,7 +4424,7 @@
       "ml_win_prob": 40.6,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": true
     },
     {
@@ -3799,7 +4449,7 @@
       "ml_win_prob": 37.6,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3824,7 +4474,7 @@
       "ml_win_prob": 32.9,
       "ml_expected_pnl": -0.33,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3849,14 +4499,14 @@
       "ml_win_prob": 36.0,
       "ml_expected_pnl": -0.29,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
       "ticker": "TTC",
       "entry_date": "2026-11-25",
       "entry_price": 105.92,
-      "current_price": 105.84,
+      "current_price": 105.83,
       "stop_loss": 99.46,
       "fib_target": 117.3,
       "risk_reward": 1.76,
@@ -3864,8 +4514,8 @@
       "sector": "Industrials",
       "pullback_date": "2026-11-25",
       "rsi": 56.18,
-      "adx": 20.22,
-      "demarker": 0.465,
+      "adx": 20.21,
+      "demarker": 0.468,
       "rs_vs_spy": 8.32,
       "volume_ratio": 0.92,
       "price_to_8ema_pct": 1.38,
@@ -3874,7 +4524,7 @@
       "ml_win_prob": 36.9,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3899,7 +4549,7 @@
       "ml_win_prob": 37.7,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3924,7 +4574,7 @@
       "ml_win_prob": 37.8,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3949,7 +4599,7 @@
       "ml_win_prob": 37.8,
       "ml_expected_pnl": -0.39,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     },
     {
@@ -3974,18 +4624,18 @@
       "ml_win_prob": 39.3,
       "ml_expected_pnl": -0.17,
       "insider_net": 0,
-      "hold_days": 1,
+      "hold_days": 2,
       "has_ao_entry": false
     }
   ],
   "summary": {
-    "new_count": 48,
-    "existing_count": 111,
-    "total_active": 159,
+    "new_count": 75,
+    "existing_count": 110,
+    "total_active": 185,
     "spy_price": 716.7,
     "spy_above_200sma": false,
     "spy_rsi": 39.9,
     "vix": 26.8
   },
-  "last_updated": "2026-11-26T22:08:54.670293Z"
+  "last_updated": "2026-11-27T03:01:22.103854Z"
 }
